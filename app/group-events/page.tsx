@@ -9,22 +9,26 @@ export const metadata = {
 
 const eventTypes = [
   {
-    icon: 'corporate_fare',
+    image: '/images/corporate-dinner.jpg',
+    alt: 'A corporate dinner table',
     title: 'Corporate Function',
     description: 'Off-sites, year-end parties, client dinners, and team lunches.'
   },
   {
-    icon: 'favorite',
+    image: '/images/family-dining.jpg',
+    alt: 'A large table gathering',
     title: 'Fundraiser',
     description: 'A private room and a shared table designed for the room to focus.'
   },
   {
-    icon: 'celebration',
+    image: '/images/birthday-cake.jpg',
+    alt: 'A celebration in progress',
     title: 'Private Party',
     description: 'Birthdays, anniversaries, retirements — up to 45 of your favourite people.'
   },
   {
-    icon: 'sports_bar',
+    image: '/images/sports-watch.jpg',
+    alt: 'Watching the game at the bar',
     title: 'Special Event',
     description: 'Big-screen TV for the game, set menus, and a room that knows how to host.'
   }
@@ -104,19 +108,27 @@ export default function GroupEventsPage() {
           <h2 className="font-headline text-4xl font-bold text-white tracking-tight">
             Built for any occasion
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {eventTypes.map((e) => (
               <div
                 key={e.title}
-                className="bg-navy-deep/40 border border-white/5 rounded-3xl p-8 flex flex-col gap-4"
+                className="group relative overflow-hidden rounded-3xl aspect-[4/5]"
               >
-                <span className="material-symbols-outlined text-gold-luxe text-3xl">{e.icon}</span>
-                <h3 className="font-headline text-xl font-bold text-white tracking-tight">
-                  {e.title}
-                </h3>
-                <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
-                  {e.description}
-                </p>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  alt={e.alt}
+                  src={e.image}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/50 to-navy-deep/10" />
+                <div className="absolute inset-0 p-7 flex flex-col justify-end gap-2">
+                  <h3 className="font-headline text-2xl font-bold text-white tracking-tight leading-tight">
+                    {e.title}
+                  </h3>
+                  <p className="font-body text-sm text-white/75 font-medium leading-relaxed">
+                    {e.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>

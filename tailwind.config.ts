@@ -11,9 +11,6 @@ const config: Config = {
       colors: {
         'navy-deep': '#0A1128',
         'gold-luxe': '#C5A059',
-        amber: '#D9AE5E',
-        cream: '#F2E4C4',
-        ember: '#E07A3B',
         'outline-variant': '#44474c',
         outline: '#8e9197',
         'on-background': '#ece6d6',

@@ -25,14 +25,14 @@ export default function HomePage() {
               Known for sizzling steaks and tender, fall-off-the-bone ribs. Casual dining with
               family and friends at our London and St Thomas rooms. Open daily from 11:30am.
             </p>
-            <a
-              href="tel:+15196812669"
+            <Link
+              href="/dinner-menus/"
               className="group relative px-14 py-5 overflow-hidden bg-white text-navy-deep rounded-full transition-all hover:scale-105 active:scale-95 shadow-xl shadow-white/5 inline-block"
             >
               <span className="relative z-10 font-label font-bold tracking-widest uppercase text-xs">
-                Book a Table
+                View the Menu
               </span>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -103,9 +103,9 @@ export default function HomePage() {
             <div className="absolute -bottom-10 left-0 w-2/3 aspect-square bg-navy-deep rounded-2xl border-8 border-background overflow-hidden hidden md:block">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                alt="On the plate"
+                alt="Guests at the table"
                 className="w-full h-full object-cover"
-                src="/images/bbq-ribs.jpg"
+                src="/images/family-dining.jpg"
               />
             </div>
           </div>
@@ -127,26 +127,32 @@ export default function HomePage() {
               After 5pm
             </span>
             <h2 className="font-headline text-4xl md:text-6xl font-bold text-white tracking-tight leading-[1.02]">
-              The room settles, <br />
-              <span className="italic text-gold-luxe">the bar warms up.</span>
+              Stay for <span className="italic text-gold-luxe">happy hour.</span>
             </h2>
             <p className="font-body text-base md:text-lg text-white/80 font-medium leading-relaxed max-w-md">
-              Happy hour every day, 3–5pm and 8pm to close. Half-price apps, $6 pints, and the
-              bar program we&apos;re quietly proud of.
+              Every day, 3–5pm and 8pm to close. Half-price apps, $6 pints, and the bar program
+              we&apos;re quietly proud of.
             </p>
+            <Link
+              href="/daily-features/"
+              className="inline-flex items-center gap-2 font-label text-xs uppercase tracking-[0.2em] text-white hover:text-gold-luxe transition-colors mt-2 w-fit border-b border-white/40 hover:border-gold-luxe pb-1"
+            >
+              See this week&apos;s features
+              <span className="material-symbols-outlined text-sm">east</span>
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="py-32 px-6 md:px-12 bg-navy-deep/20">
+      <section className="py-24 px-6 md:px-12 bg-navy-deep/20">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-xl">
               <span className="font-label text-white/60 tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
                 Our Kitchen
               </span>
-              <h2 className="font-headline text-5xl md:text-6xl font-bold text-white tracking-tight">
-                SLOW-COOKED, HAND-FINISHED
+              <h2 className="font-headline text-5xl md:text-6xl font-bold text-white tracking-tight leading-[1.02]">
+                Slow-cooked. <span className="italic text-gold-luxe">Hand-finished.</span>
               </h2>
             </div>
             <p className="font-body text-sm text-on-surface-variant uppercase tracking-widest max-w-[250px] leading-loose font-bold">
@@ -245,69 +251,63 @@ export default function HomePage() {
               More ways to visit
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link
-              href="/daily-features/"
-              className="group bg-navy-deep border border-white/5 hover:border-gold-luxe/40 rounded-3xl p-8 flex flex-col gap-5 transition-all hover:-translate-y-1"
-            >
-              <span className="material-symbols-outlined text-gold-luxe text-3xl">
-                local_activity
-              </span>
-              <h3 className="font-headline text-2xl font-bold text-white tracking-tight">
-                Daily Features
-              </h3>
-              <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
-                Weeknight specials plus all-day happy hours.
-              </p>
-              <span className="material-symbols-outlined text-gold-luxe text-lg mt-auto group-hover:translate-x-2 transition-transform">
-                east
-              </span>
-            </Link>
-            <Link
-              href="/birthday-club/"
-              className="group bg-navy-deep border border-white/5 hover:border-gold-luxe/40 rounded-3xl p-8 flex flex-col gap-5 transition-all hover:-translate-y-1"
-            >
-              <span className="material-symbols-outlined text-gold-luxe text-3xl">cake</span>
-              <h3 className="font-headline text-2xl font-bold text-white tracking-tight">
-                Birthday Club
-              </h3>
-              <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
-                Sign up — dessert on us on your birthday.
-              </p>
-              <span className="material-symbols-outlined text-gold-luxe text-lg mt-auto group-hover:translate-x-2 transition-transform">
-                east
-              </span>
-            </Link>
-            <Link
-              href="/group-events/"
-              className="group bg-navy-deep border border-white/5 hover:border-gold-luxe/40 rounded-3xl p-8 flex flex-col gap-5 transition-all hover:-translate-y-1"
-            >
-              <span className="material-symbols-outlined text-gold-luxe text-3xl">groups</span>
-              <h3 className="font-headline text-2xl font-bold text-white tracking-tight">
-                Group Events
-              </h3>
-              <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
-                Private room for up to 45 with a big-screen TV.
-              </p>
-              <span className="material-symbols-outlined text-gold-luxe text-lg mt-auto group-hover:translate-x-2 transition-transform">
-                east
-              </span>
-            </Link>
-            <Link
-              href="/contact-us/"
-              className="group bg-navy-deep border border-white/5 hover:border-gold-luxe/40 rounded-3xl p-8 flex flex-col gap-5 transition-all hover:-translate-y-1"
-            >
-              <span className="material-symbols-outlined text-gold-luxe text-3xl">mail</span>
-              <h3 className="font-headline text-2xl font-bold text-white tracking-tight">
-                Contact Us
-              </h3>
-              <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
-                Reach the team at info@elevensixty.ca.
-              </p>
-              <span className="material-symbols-outlined text-gold-luxe text-lg mt-auto group-hover:translate-x-2 transition-transform">
-                east
-              </span>
-            </Link>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              {
+                href: '/daily-features/',
+                img: '/images/happy-hour.jpg',
+                alt: 'Happy hour at the bar',
+                title: 'Daily Features',
+                body: 'Weeknight specials plus all-day happy hours.'
+              },
+              {
+                href: '/birthday-club/',
+                img: '/images/birthday-cake.jpg',
+                alt: 'Birthday dessert with a candle',
+                title: 'Birthday Club',
+                body: 'Sign up — dessert on us on your birthday.'
+              },
+              {
+                href: '/group-events/',
+                img: '/images/private-event.jpg',
+                alt: 'The private event room',
+                title: 'Group Events',
+                body: 'Private room for up to 45 with a big-screen TV.'
+              },
+              {
+                href: '/contact-us/',
+                img: '/images/restaurant-exterior.jpg',
+                alt: 'Outside Eleven Sixty',
+                title: 'Contact Us',
+                body: 'Reach the team at info@elevensixty.ca.'
+              }
+            ].map((c) => (
+              <Link
+                key={c.href}
+                href={c.href}
+                className="group relative overflow-hidden rounded-3xl aspect-[4/5] block"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  alt={c.alt}
+                  src={c.img}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/50 to-navy-deep/10" />
+                <div className="absolute inset-0 p-7 flex flex-col justify-end gap-2">
+                  <h3 className="font-headline text-2xl md:text-3xl font-bold text-white tracking-tight leading-tight">
+                    {c.title}
+                  </h3>
+                  <p className="font-body text-sm text-white/75 font-medium leading-relaxed">
+                    {c.body}
+                  </p>
+                  <span className="mt-3 font-label text-[11px] uppercase tracking-[0.2em] text-gold-luxe font-bold inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                    Explore
+                    <span className="material-symbols-outlined text-sm">east</span>
+                  </span>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
