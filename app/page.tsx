@@ -36,58 +36,22 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 h-full overflow-y-auto no-scrollbar bg-background border-t md:border-t-0 border-white/5">
-          <div className="flex flex-col gap-1 p-1">
-            <div className="relative h-[819px] w-full overflow-hidden rounded-xl">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                alt="Interior — London"
-                className="w-full h-full object-cover"
-                src="/images/interior-bar.jpg"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-transparent to-transparent" />
-              <div className="absolute bottom-10 left-10">
-                <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 mb-2 block font-bold">
-                  Location 01
-                </span>
-                <h3 className="text-3xl font-headline font-bold text-white tracking-tight">
-                  London, Ontario
-                </h3>
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-1">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  alt="Grilled steak"
-                  className="w-full h-full object-cover"
-                  src="/images/grilled-steak.jpg"
-                />
-              </div>
-              <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  alt="Slow-smoked ribs"
-                  className="w-full h-full object-cover"
-                  src="/images/bbq-ribs.jpg"
-                />
-              </div>
-            </div>
-            <div className="relative h-[614px] w-full overflow-hidden rounded-xl">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                alt="Interior — St Thomas"
-                className="w-full h-full object-cover"
-                src="/images/pub-food.jpg"
-              />
-              <div className="absolute bottom-10 left-10">
-                <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 mb-2 block font-bold">
-                  Location 02
-                </span>
-                <h3 className="text-3xl font-headline font-bold text-white tracking-tight">
-                  St Thomas, Ontario
-                </h3>
-              </div>
+        <div className="relative w-full md:w-1/2 h-full bg-background border-t md:border-t-0 border-white/5">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            alt="The Eleven Sixty dining room"
+            className="absolute inset-0 w-full h-full object-cover"
+            src="/images/interior-bar.jpg"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/70 via-transparent to-transparent" />
+          <div className="absolute bottom-10 left-10 right-10 flex items-end justify-between gap-6">
+            <div>
+              <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/70 mb-2 block font-bold">
+                Inside the Rooms
+              </span>
+              <h3 className="text-3xl md:text-4xl font-headline font-bold text-white tracking-tight">
+                London &amp; St Thomas
+              </h3>
             </div>
           </div>
         </div>
