@@ -71,7 +71,7 @@ export default function MenuPage({ menu }: { menu: Menu }) {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt="The Eleven Sixty dining room"
-                src="https://loremflickr.com/cache/resized/65535_54562342175_1a4b15ec00_k_1280_720_nofilter.jpg"
+                src="/images/interior-bar.jpg"
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-navy-deep/20 to-navy-deep" />

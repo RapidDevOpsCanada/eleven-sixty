@@ -38,7 +38,7 @@ export const MENUS: Menu[] = [
     subtitle:
       'Shareables, salads, and handhelds from the same kitchen that cooks dinner. In and out in under an hour — or stay as long as you like.',
     heroImage:
-      'https://loremflickr.com/cache/resized/65535_54504274646_7f6901ab56_h_1280_720_nofilter.jpg',
+      '/images/lunch-sandwich.jpg',
     heroImageAlt: 'Lunch sandwich and sides',
     sections: [
       {
@@ -182,7 +182,7 @@ export const MENUS: Menu[] = [
     subtitle:
       'The dinner menu is where the grill hits its stride. Slow-smoked ribs, AAA Canadian steaks, seafood, and the bowl-and-sandwich classics that keep the room full.',
     heroImage:
-      'https://loremflickr.com/cache/resized/65535_54309918754_aa2345af79_h_1280_720_nofilter.jpg',
+      '/images/grilled-steak.jpg',
     heroImageAlt: 'Grilled steak on the plate',
     sections: [
       {
@@ -456,7 +456,7 @@ export const MENUS: Menu[] = [
     subtitle:
       'Our dessert selection rotates seasonally and is presented at the table by your server. Ask about the nightly feature — and remember: on your birthday, dessert is on us.',
     heroImage:
-      'https://loremflickr.com/cache/resized/65535_54578508315_5090f8bffe_k_1280_720_nofilter.jpg',
+      '/images/dessert.jpg',
     heroImageAlt: 'Chocolate dessert plate',
     sections: [
       {
@@ -477,7 +477,7 @@ export const MENUS: Menu[] = [
     subtitle:
       'Six named mains for the little ones, cooked the way we\u2019d cook them for the adult menu — no shortcuts, no frozen nuggets.',
     heroImage:
-      'https://loremflickr.com/cache/resized/65535_54580530898_dbaafc5dc9_h_1280_720_nofilter.jpg',
+      '/images/family-dining.jpg',
     heroImageAlt: 'Family gathered around the table',
     sections: [
       {
@@ -532,7 +532,7 @@ export const MENUS: Menu[] = [
     subtitle:
       'The bar program at Eleven Sixty is built to live alongside the grill — a wide list for any dinner, a rotating specials board for anyone paying attention.',
     heroImage:
-      'https://loremflickr.com/cache/resized/65535_54492533079_68a5fbbd92_h_1280_720_nofilter.jpg',
+      '/images/cocktail.jpg',
     heroImageAlt: 'Cocktail on the bar',
     sections: [
       {
@@ -802,7 +802,7 @@ export const MENUS: Menu[] = [
     subtitle:
       'A rotating cast of weeknight specials plus our all-day happy hours. The card changes Monday mornings — these are the regulars.',
     heroImage:
-      'https://loremflickr.com/cache/resized/65535_50822756101_4c0eecb53f_h_1280_720_nofilter.jpg',
+      '/images/happy-hour.jpg',
     heroImageAlt: 'Happy hour at the bar',
     sections: [
       {

@@ -2,10 +2,10 @@ import Link from 'next/link';
 import type { Article } from '@/lib/db';
 
 const FALLBACK_IMAGES = [
-  'https://loremflickr.com/cache/resized/65535_54562342175_1a4b15ec00_k_1280_720_nofilter.jpg',
-  'https://loremflickr.com/cache/resized/65535_54309918754_aa2345af79_h_1280_720_nofilter.jpg',
-  'https://loremflickr.com/cache/resized/65535_54427364915_f37d498ff5_h_1280_720_nofilter.jpg',
-  'https://loremflickr.com/cache/resized/65535_54578205014_f4c3a905a1_h_1280_720_nofilter.jpg'
+  '/images/interior-bar.jpg',
+  '/images/grilled-steak.jpg',
+  '/images/bbq-ribs.jpg',
+  '/images/pub-food.jpg'
 ];
 
 export function getArticleImage(a: Pick<Article, 'id'>): string {

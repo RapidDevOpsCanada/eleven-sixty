@@ -35,7 +35,7 @@ export default function BirthdayClubPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               alt="Birthday dessert with a candle"
-              src="https://loremflickr.com/cache/resized/65535_54532538752_99b604c603_k_1280_720_nofilter.jpg"
+              src="/images/birthday-cake.jpg"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/60 via-transparent to-transparent" />

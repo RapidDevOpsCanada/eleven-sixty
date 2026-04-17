@@ -49,7 +49,7 @@ export default function HomePage() {
               <img
                 alt="Interior — London"
                 className="w-full h-full object-cover"
-                src="https://loremflickr.com/cache/resized/65535_54562342175_1a4b15ec00_k_1280_720_nofilter.jpg"
+                src="/images/interior-bar.jpg"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-transparent to-transparent" />
               <div className="absolute bottom-10 left-10">
@@ -67,7 +67,7 @@ export default function HomePage() {
                 <img
                   alt="Grilled steak"
                   className="w-full h-full object-cover"
-                  src="https://loremflickr.com/cache/resized/65535_54309918754_aa2345af79_h_1280_720_nofilter.jpg"
+                  src="/images/grilled-steak.jpg"
                 />
               </div>
               <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
@@ -75,7 +75,7 @@ export default function HomePage() {
                 <img
                   alt="Slow-smoked ribs"
                   className="w-full h-full object-cover"
-                  src="https://loremflickr.com/cache/resized/65535_54427364915_f37d498ff5_h_1280_720_nofilter.jpg"
+                  src="/images/bbq-ribs.jpg"
                 />
               </div>
             </div>
@@ -84,7 +84,7 @@ export default function HomePage() {
               <img
                 alt="Interior — St Thomas"
                 className="w-full h-full object-cover"
-                src="https://loremflickr.com/cache/resized/65535_54578205014_f4c3a905a1_h_1280_720_nofilter.jpg"
+                src="/images/pub-food.jpg"
               />
               <div className="absolute bottom-10 left-10">
                 <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe mb-2 block font-bold">
@@ -139,7 +139,7 @@ export default function HomePage() {
               <img
                 alt="From the grill"
                 className="w-full h-full object-cover"
-                src="https://loremflickr.com/cache/resized/65535_54309918754_aa2345af79_h_1280_720_nofilter.jpg"
+                src="/images/grilled-steak.jpg"
               />
             </div>
             <div className="absolute -bottom-10 left-0 w-2/3 aspect-square bg-navy-deep rounded-2xl border-8 border-background overflow-hidden hidden md:block">
@@ -147,7 +147,7 @@ export default function HomePage() {
               <img
                 alt="On the plate"
                 className="w-full h-full object-cover"
-                src="https://loremflickr.com/cache/resized/65535_54427364915_f37d498ff5_h_1280_720_nofilter.jpg"
+                src="/images/bbq-ribs.jpg"
               />
             </div>
           </div>
@@ -175,7 +175,7 @@ export default function HomePage() {
               <img
                 alt="The dining room"
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-1000"
-                src="https://loremflickr.com/cache/resized/65535_54578205014_f4c3a905a1_h_1280_720_nofilter.jpg"
+                src="/images/pub-food.jpg"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep to-transparent opacity-80" />
               <div className="absolute bottom-12 left-12">

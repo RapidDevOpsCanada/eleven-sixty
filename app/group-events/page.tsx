@@ -59,7 +59,7 @@ export default function GroupEventsPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               alt="A private dining room set for a group"
-              src="https://loremflickr.com/cache/resized/65535_53532575812_43e90bbc3b_h_1280_720_nofilter.jpg"
+              src="/images/private-event.jpg"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/60 via-transparent to-transparent" />
@@ -129,7 +129,7 @@ export default function GroupEventsPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               alt="The dining room at Eleven Sixty"
-              src="https://loremflickr.com/cache/resized/65535_54562342175_1a4b15ec00_k_1280_720_nofilter.jpg"
+              src="/images/interior-bar.jpg"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-navy-deep/20 to-navy-deep" />

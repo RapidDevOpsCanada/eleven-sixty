@@ -34,7 +34,7 @@ export default function ContactPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               alt="The dining room"
-              src="https://loremflickr.com/cache/resized/65535_53040508317_45980ea605_h_1280_720_nofilter.jpg"
+              src="/images/restaurant-exterior.jpg"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/60 via-transparent to-transparent" />
