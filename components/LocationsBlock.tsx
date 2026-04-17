@@ -5,7 +5,7 @@ export default function LocationsBlock() {
         <div className="flex items-start justify-between">
           <div>
             <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-3 block">
-              The London Room
+              Wellington Rd
             </span>
             <h3 className="font-headline text-3xl font-bold text-white tracking-tight">London</h3>
           </div>
@@ -32,7 +32,7 @@ export default function LocationsBlock() {
         <div className="flex items-start justify-between">
           <div>
             <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-3 block">
-              The St Thomas Room
+              Talbot St
             </span>
             <h3 className="font-headline text-3xl font-bold text-white tracking-tight">
               St Thomas

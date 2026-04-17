@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 export const metadata = {
   title: 'Group Events — Eleven Sixty Bar & Grill',
   description:
-    'Eleven Sixty Bar & Grill is the perfect venue for your next corporate function, fundraiser, private party, or special event. Private room for up to 45.'
+    'Eleven Sixty Bar & Grill is the perfect venue for your next corporate function, fundraiser, private party, or special event. Private dining for up to 45.'
 };
 
 const eventTypes = [
@@ -18,7 +18,7 @@ const eventTypes = [
     image: '/images/family-dining.jpg',
     alt: 'A large table gathering',
     title: 'Fundraiser',
-    description: 'A private room and a shared table designed for the room to focus.'
+    description: 'A private space and a shared table designed to help the group focus.'
   },
   {
     image: '/images/birthday-cake.jpg',
@@ -30,7 +30,7 @@ const eventTypes = [
     image: '/images/sports-watch.jpg',
     alt: 'Watching the game at the bar',
     title: 'Special Event',
-    description: 'Big-screen TV for the game, set menus, and a room that knows how to host.'
+    description: 'Big-screen TV for the game, set menus, and a space that knows how to host.'
   }
 ];
 
@@ -49,20 +49,20 @@ export default function GroupEventsPage() {
               </span>
             </div>
             <h1 className="font-headline font-bold text-5xl md:text-7xl text-white tracking-tight leading-[0.95]">
-              Private <span className="italic text-gold-luxe">room.</span>
+              Private <span className="italic text-gold-luxe">space.</span>
               <br />
               Big <span className="italic text-gold-luxe">screen.</span>
             </h1>
             <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium">
               Eleven Sixty Bar &amp; Grill is the perfect venue for your next corporate
-              function, fundraiser, private party, or special event. Our private room will
+              function, fundraiser, private party, or special event. Our private space will
               ensure your next event is one you will remember.
             </p>
           </div>
           <div className="lg:col-span-2 relative aspect-[4/3] rounded-3xl overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="A private dining room set for a group"
+              alt="A private space set for a group"
               src="/images/private-event.jpg"
               className="w-full h-full object-cover"
             />
@@ -77,7 +77,7 @@ export default function GroupEventsPage() {
             <div className="flex flex-col gap-4">
               <span className="material-symbols-outlined text-gold-luxe text-5xl">groups</span>
               <span className="font-label text-[11px] uppercase tracking-[0.3em] text-white/60 font-bold">
-                Private room capacity
+                Private space capacity
               </span>
             </div>
             <div className="flex flex-col gap-6">
@@ -85,7 +85,7 @@ export default function GroupEventsPage() {
                 45
               </span>
               <p className="font-body text-lg text-on-surface-variant font-medium leading-relaxed max-w-md">
-                The private room seats up to 45 — corporate lunches, birthdays, fundraisers,
+                The private space seats up to 45 — corporate lunches, birthdays, fundraisers,
                 and the kind of night that deserves its own door.
               </p>
             </div>
@@ -121,7 +121,7 @@ export default function GroupEventsPage() {
               Built for any <span className="italic text-gold-luxe">occasion.</span>
             </h2>
             <p className="font-body text-base text-on-surface-variant font-medium leading-relaxed">
-              Four common shapes. We&apos;ll tailor the room, the menu, and the tempo to match
+              Four common shapes. We&apos;ll tailor the space, the menu, and the tempo to match
               what you&apos;re planning.
             </p>
           </div>
@@ -283,7 +283,7 @@ export default function GroupEventsPage() {
                   className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
                 >
                   <option value="" disabled>
-                    Choose a room
+                    Choose a location
                   </option>
                   <option value="london">London — 1160 Wellington Rd</option>
                   <option value="st-thomas">St Thomas — 1093 Talbot St</option>
@@ -326,7 +326,7 @@ export default function GroupEventsPage() {
           <div className="relative min-h-[260px] md:min-h-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="The dining room at Eleven Sixty"
+              alt="Inside Eleven Sixty"
               src="/images/interior-bar.jpg"
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover"
@@ -342,7 +342,7 @@ export default function GroupEventsPage() {
             </h2>
             <p className="font-body text-on-surface-variant font-medium leading-relaxed">
               Tell us the date, the headcount, and the occasion — we&apos;ll walk you through
-              available menus and the room.
+              available menus and the space.
             </p>
             <div className="flex flex-col gap-3 pt-3">
               <a

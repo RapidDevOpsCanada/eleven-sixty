@@ -22,17 +22,11 @@ export default function HomePage() {
             </div>
             <h1 className="font-headline font-bold text-6xl md:text-8xl mb-8 leading-[0.95] text-white tracking-tight">
               PREMIER<br />BAR &amp;<br />
-              <span className="relative inline-block italic text-gold-luxe">
-                grill.
-                <span
-                  aria-hidden="true"
-                  className="absolute left-0 -bottom-2 md:-bottom-3 h-[3px] w-[110%] bg-gold-luxe/60 rounded-full -skew-x-12"
-                />
-              </span>
+              <span className="italic text-gold-luxe">grill.</span>
             </h1>
             <p className="font-body text-base text-on-surface-variant max-w-sm mb-10 leading-relaxed font-medium">
               Known for sizzling steaks and tender, fall-off-the-bone ribs. Casual dining with
-              family and friends at our London and St Thomas rooms. Open daily from 11:30am.
+              family and friends at our London and St Thomas locations. Open daily from 11:30am.
             </p>
             <Link
               href="/dinner-menus/"
@@ -100,7 +94,7 @@ export default function HomePage() {
         <div className="relative w-full md:w-1/2 h-full bg-background border-t md:border-t-0 border-white/5 overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            alt="The Eleven Sixty dining room"
+            alt="Inside Eleven Sixty"
             className="absolute inset-0 w-full h-full object-cover animate-slow-zoom"
             src="/images/interior-bar.jpg"
           />
@@ -108,7 +102,7 @@ export default function HomePage() {
           <div className="absolute bottom-10 left-10 right-10 flex items-end justify-between gap-6">
             <div>
               <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/70 mb-2 block font-bold">
-                Inside the Rooms
+                Visit Us
               </span>
               <h3 className="text-3xl md:text-4xl font-headline font-bold text-white tracking-tight">
                 London &amp; St Thomas
@@ -138,7 +132,7 @@ export default function HomePage() {
               </p>
               <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium">
                 Grab social drinks in the lounge, settle in for an intimate dinner, or host a
-                private event for up to fifty. Two Ontario rooms, one table always open.
+                private event for up to fifty. Two Ontario locations, one table always open.
               </p>
             </div>
             <Link
@@ -281,10 +275,10 @@ export default function HomePage() {
               {
                 href: '/group-events/',
                 img: '/images/private-event.jpg',
-                alt: 'The private event room',
+                alt: 'The private event space',
                 title: 'Group Events',
-                body: 'Private room for up to 45 with a big-screen TV.',
-                cta: 'Book the room'
+                body: 'Private dining for up to 45 with a big-screen TV.',
+                cta: 'Book the space'
               },
               {
                 href: '/contact-us/',
@@ -332,7 +326,7 @@ export default function HomePage() {
           <FadeIn className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-xl">
               <span className="font-label text-white/60 tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
-                Two Rooms
+                Two Locations
               </span>
               <h2 className="font-headline text-5xl md:text-6xl font-bold text-white tracking-tight leading-[1.02]">
                 Find <span className="italic text-gold-luxe">us.</span>
@@ -352,7 +346,7 @@ export default function HomePage() {
               <div className="flex items-start justify-between px-2">
                 <div>
                   <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-3 block">
-                    The London Room
+                    Wellington Rd
                   </span>
                   <h3 className="font-headline text-4xl font-bold text-white tracking-tight">
                     London
@@ -419,7 +413,7 @@ export default function HomePage() {
               <div className="flex items-start justify-between px-2">
                 <div>
                   <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-3 block">
-                    The St Thomas Room
+                    Talbot St
                   </span>
                   <h3 className="font-headline text-4xl font-bold text-white tracking-tight">
                     St Thomas

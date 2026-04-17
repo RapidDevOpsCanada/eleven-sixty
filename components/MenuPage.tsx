@@ -106,7 +106,7 @@ export default function MenuPage({ menu }: { menu: Menu }) {
                 Book a table in London or St Thomas.
               </h2>
               <p className="font-body text-on-surface-variant font-medium leading-relaxed">
-                Reserve online through OpenTable, or call your closest room directly. Private
+                Reserve online through OpenTable, or call your closest location directly. Private
                 dining for up to 45 available on request.
               </p>
               <div className="flex flex-col gap-3 pt-3">

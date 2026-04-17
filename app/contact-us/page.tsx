@@ -34,7 +34,7 @@ export default function ContactPage() {
           <div className="lg:col-span-2 relative aspect-[4/3] rounded-3xl overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="The dining room"
+              alt="Inside Eleven Sixty"
               src="/images/restaurant-exterior.jpg"
               className="w-full h-full object-cover"
             />
@@ -87,7 +87,7 @@ export default function ContactPage() {
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-navy-deep via-navy-deep/85 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-7 md:p-9 flex flex-col gap-3">
                 <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold">
-                  The London Room
+                  Wellington Rd
                 </span>
                 <h3 className="font-headline text-3xl md:text-4xl font-bold text-white tracking-tight">
                   London
@@ -128,7 +128,7 @@ export default function ContactPage() {
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-navy-deep via-navy-deep/85 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-7 md:p-9 flex flex-col gap-3">
                 <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold">
-                  The St Thomas Room
+                  Talbot St
                 </span>
                 <h3 className="font-headline text-3xl md:text-4xl font-bold text-white tracking-tight">
                   St Thomas

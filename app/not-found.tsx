@@ -25,7 +25,7 @@ export default function NotFound() {
           <div className="inline-flex items-center gap-3">
             <div className="h-[1px] w-8 bg-white/30" />
             <span className="font-label uppercase tracking-[0.4em] text-white/60 text-[11px] font-bold">
-              Lost in the room
+              Off the menu
             </span>
           </div>
           <h1 className="font-headline font-bold text-7xl md:text-[11rem] text-white tracking-tighter leading-none">

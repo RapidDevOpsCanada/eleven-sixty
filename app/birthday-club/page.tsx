@@ -171,7 +171,7 @@ export default function BirthdayClubPage() {
       <section className="px-6 md:px-12 pb-32">
         <div className="max-w-7xl mx-auto flex flex-col gap-8">
           <h2 className="font-headline text-3xl font-bold text-white tracking-tight">
-            Celebrate at either room
+            Celebrate at either location
           </h2>
           <LocationsBlock />
         </div>

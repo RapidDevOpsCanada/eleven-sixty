@@ -180,7 +180,7 @@ export const MENUS: Menu[] = [
     kicker: 'The Full Menu',
     tagline: 'Ribs, steaks & the full kitchen',
     subtitle:
-      'The dinner menu is where the grill hits its stride. Slow-smoked ribs, AAA Canadian steaks, seafood, and the bowl-and-sandwich classics that keep the room full.',
+      'The dinner menu is where the grill hits its stride. Slow-smoked ribs, AAA Canadian steaks, seafood, and the bowl-and-sandwich classics that keep the place full.',
     heroImage:
       '/images/grilled-steak.jpg',
     heroImageAlt: 'Grilled steak on the plate',
@@ -520,7 +520,7 @@ export const MENUS: Menu[] = [
         ]
       }
     ],
-    pricingNote: 'Prices available in-room.'
+    pricingNote: 'Prices available in person.'
   },
   {
     slug: 'drinks-menu',
@@ -812,7 +812,7 @@ export const MENUS: Menu[] = [
           {
             name: 'Two Can Dine',
             price: '$75',
-            description: 'A shared feature menu for two. Details in-room.'
+            description: 'A shared feature menu for two. Details in person.'
           },
           { name: '1160 IPA', price: '$7', note: '18 oz pint' },
           {
@@ -851,7 +851,7 @@ export const MENUS: Menu[] = [
           {
             name: 'Three-Course Prix Fixe',
             price: '$42 per person',
-            description: 'A composed three-course feature. Details in-room.'
+            description: 'A composed three-course feature. Details in person.'
           },
           {
             name: 'Peller Chardonnay or Cab/Merlot',
@@ -865,7 +865,7 @@ export const MENUS: Menu[] = [
         items: [
           {
             name: 'Family Meal Night',
-            description: 'Shared-table feature. Details in-room.'
+            description: 'Shared-table feature. Details in person.'
           },
           { name: 'Classic Caesars', price: '$7' },
           {

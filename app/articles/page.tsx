@@ -37,7 +37,7 @@ export default async function ArticlesPage() {
               Stories from <span className="italic text-gold-luxe">the grill</span>
             </h1>
             <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium max-w-xl">
-              Dispatches on the ribs, the steaks, the rooms in London and St Thomas, and the
+              Dispatches on the ribs, the steaks, the places in London and St Thomas, and the
               regulars who make Eleven Sixty the neighbourhood bar &amp; grill it is.
             </p>
           </div>
