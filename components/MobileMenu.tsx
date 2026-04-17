@@ -47,15 +47,16 @@ export default function MobileMenu() {
   return (
     <>
       <button
+        type="button"
         aria-label="Open menu"
         onClick={() => setOpen(true)}
-        className="text-white/80 material-symbols-outlined text-2xl"
+        className="text-white/80 material-symbols-outlined text-2xl pointer-events-auto cursor-pointer"
       >
         menu
       </button>
 
       {open && (
-        <div className="fixed inset-0 z-[100] bg-navy-deep/95 backdrop-blur-xl overflow-y-auto">
+        <div className="fixed inset-0 z-[100] bg-navy-deep/95 backdrop-blur-xl overflow-y-auto pointer-events-auto">
           <div className="max-w-5xl mx-auto px-6 md:px-12 py-8">
             <div className="flex items-center justify-between mb-16">
               <Link

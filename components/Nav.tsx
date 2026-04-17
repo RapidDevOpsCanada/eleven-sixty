@@ -47,7 +47,9 @@ export default function Nav() {
               Contact
             </Link>
           </div>
-          <MobileMenu />
+          <div className="md:hidden">
+            <MobileMenu />
+          </div>
         </div>
       </div>
     </nav>
