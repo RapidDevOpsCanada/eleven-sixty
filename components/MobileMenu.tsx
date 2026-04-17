@@ -32,13 +32,6 @@ const SECTIONS: { heading: string; links: { label: string; href: string }[] }[] 
       { label: 'Contact Us', href: '/contact-us/' },
       { label: 'Locations', href: '/#locations' }
     ]
-  },
-  {
-    heading: 'More',
-    links: [
-      { label: 'Home', href: '/' },
-      { label: 'Field Notes', href: '/articles/' }
-    ]
   }
 ];
 
@@ -92,7 +85,7 @@ export default function MobileMenu() {
           <OpenStatus />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 mb-16">
           {SECTIONS.map((s) => (
             <div key={s.heading} className="flex flex-col gap-6">
               <h3 className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold">

@@ -12,8 +12,7 @@ const STATIC_PATHS = [
   '/daily-features/',
   '/birthday-club/',
   '/group-events/',
-  '/contact-us/',
-  '/articles/'
+  '/contact-us/'
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

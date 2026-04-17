@@ -47,38 +47,3 @@ body {
   }
 }
 
-.article-body p {
-  margin-bottom: 1.5rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.8;
-  color: #c4c6cd;
-  font-weight: 400;
-}
-
-.article-body p:first-of-type::first-letter {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-  font-size: 4.5rem;
-  float: left;
-  line-height: 1;
-  padding: 0.35rem 0.75rem 0 0;
-  color: #C5A059;
-}
-
-.article-body h3 {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-  font-size: 1.875rem;
-  color: #fff;
-  margin: 2.5rem 0 1rem;
-}
-
-.article-body blockquote {
-  border-left: 2px solid #C5A059;
-  padding-left: 1.5rem;
-  margin: 2rem 0;
-  font-style: italic;
-  color: #fff;
-  font-size: 1.25rem;
-}

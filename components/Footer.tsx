@@ -68,9 +68,6 @@ export default function Footer() {
                 <Link href="/contact-us/" className="hover:text-white transition-colors">
                   Contact
                 </Link>
-                <Link href="/articles/" className="hover:text-white transition-colors">
-                  Field Notes
-                </Link>
               </div>
             </div>
           </div>

@@ -820,89 +820,242 @@ export default function PreviewPage() {
         </div>
       </Section>
 
-      {/* 13 Mobile */}
+      {/* 12 Mobile */}
       <Section
         index="12"
         label="Mobile"
-        title="A full-screen overlay, not a cramped pill."
+        title="A full-screen overlay with real substance."
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <ul className="flex flex-col gap-5 font-body text-base text-on-surface-variant leading-relaxed">
-            <ListRow>
-              Hamburger opens a portal-rendered overlay — lives outside the nav&apos;s
-              backdrop-filter so nothing clips it.
-            </ListRow>
-            <ListRow>
-              Links grouped into three rails (Menus / Visit / More). A gold vertical bar marks
-              the active page.
-            </ListRow>
-            <ListRow>Live Open / Closed status near the top of the overlay.</ListRow>
-            <ListRow>
-              Bottom splits into &ldquo;Reserve on OpenTable&rdquo; (London + St Thomas) and
-              &ldquo;Or call directly&rdquo;.
-            </ListRow>
-            <ListRow>Sticky bottom bar on menu pages keeps both call numbers visible.</ListRow>
-            <ListRow>
-              Scroll-to-top button appears past 600px so long menus never trap the user at the
-              bottom.
-            </ListRow>
-          </ul>
-          <div className="relative mx-auto w-full max-w-[320px] aspect-[9/19] rounded-[3rem] border border-white/10 bg-navy-deep overflow-hidden shadow-2xl shadow-black/50">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/interior-bar.jpg"
-              alt=""
-              loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover opacity-20"
-            />
-            <div className="absolute inset-0 bg-navy-deep/90 backdrop-blur-xl" />
-            <div className="relative h-full p-6 flex flex-col gap-5">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <span className="w-6 h-6 rounded-full bg-gold-luxe text-navy-deep text-[8px] font-black flex items-center justify-center">
-                    11
-                  </span>
-                  <span className="text-sm font-headline font-bold text-white tracking-tight">
-                    ELEVEN <span className="text-gold-luxe">SIXTY</span>
-                  </span>
-                </div>
-                <span className="material-symbols-outlined text-white/80 text-xl">close</span>
-              </div>
-              <div className="inline-flex items-center gap-2 font-label text-[10px] uppercase tracking-[0.2em] font-bold text-white">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                Open · closes 9pm
-              </div>
-              <div className="flex flex-col gap-2 pt-2">
-                {[
-                  { label: 'Lunch', active: false },
-                  { label: 'Dinner', active: true },
-                  { label: 'Desserts', active: false },
-                  { label: 'Drinks', active: false }
-                ].map((l) => (
-                  <div key={l.label} className="relative pl-3">
-                    {l.active && (
-                      <span className="absolute left-0 top-1 w-1 h-5 rounded-full bg-gold-luxe" />
-                    )}
-                    <span
-                      className={`font-headline text-lg font-bold tracking-tight ${
-                        l.active ? 'text-gold-luxe' : 'text-white'
-                      }`}
-                    >
-                      {l.label}
+        <p className="font-body text-base text-on-surface-variant font-medium leading-relaxed max-w-2xl -mt-4">
+          The hamburger doesn&apos;t open a skinny list — it opens a full-screen overlay with
+          every section of the site, live open/closed status, both OpenTable reservation links,
+          and both direct phone numbers. Two phone mockups below show the overlay (top to
+          bottom) and the sticky call bar used on menu pages.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-start mt-4">
+          {/* Mockup 1 — top of overlay */}
+          <div className="flex flex-col gap-4 items-center">
+            <span className="font-label text-[10px] uppercase tracking-[0.25em] text-white/50 font-bold">
+              Overlay · top
+            </span>
+            <div className="relative mx-auto w-full max-w-[320px] aspect-[9/19] rounded-[3rem] border border-white/10 bg-navy-deep overflow-hidden shadow-2xl shadow-black/50">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/interior-bar.jpg"
+                alt=""
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover opacity-20"
+              />
+              <div className="absolute inset-0 bg-navy-deep/90 backdrop-blur-xl" />
+              <div className="relative h-full p-5 flex flex-col gap-4 overflow-hidden">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="w-6 h-6 rounded-full bg-gold-luxe text-navy-deep text-[8px] font-black flex items-center justify-center">
+                      11
+                    </span>
+                    <span className="text-sm font-headline font-bold text-white tracking-tight">
+                      ELEVEN <span className="text-gold-luxe">SIXTY</span>
                     </span>
                   </div>
-                ))}
+                  <span className="material-symbols-outlined text-white/80 text-xl">close</span>
+                </div>
+                <div className="inline-flex items-center gap-2 font-label text-[9px] uppercase tracking-[0.2em] font-bold text-white">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                  Open · closes 9pm
+                </div>
+                <div className="flex flex-col gap-4 mt-1">
+                  <div>
+                    <span className="font-label text-[9px] uppercase tracking-[0.25em] text-gold-luxe font-bold mb-2 block">
+                      Menus
+                    </span>
+                    <div className="flex flex-col gap-1.5">
+                      {[
+                        { l: 'Lunch', active: false },
+                        { l: 'Dinner', active: true },
+                        { l: 'Desserts', active: false },
+                        { l: 'Kids', active: false },
+                        { l: 'Drinks', active: false },
+                        { l: 'Daily Features', active: false }
+                      ].map((m) => (
+                        <div key={m.l} className="relative pl-2.5">
+                          {m.active && (
+                            <span className="absolute left-0 top-1 w-[3px] h-4 rounded-full bg-gold-luxe" />
+                          )}
+                          <span
+                            className={`font-headline text-sm font-bold tracking-tight ${
+                              m.active ? 'text-gold-luxe' : 'text-white'
+                            }`}
+                          >
+                            {m.l}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="mt-auto flex flex-col gap-2">
-                <span className="bg-gold-luxe text-navy-deep font-label text-[10px] uppercase tracking-widest font-bold px-4 py-2.5 rounded-full text-center">
-                  Reserve London
+            </div>
+          </div>
+
+          {/* Mockup 2 — bottom of overlay */}
+          <div className="flex flex-col gap-4 items-center">
+            <span className="font-label text-[10px] uppercase tracking-[0.25em] text-white/50 font-bold">
+              Overlay · bottom
+            </span>
+            <div className="relative mx-auto w-full max-w-[320px] aspect-[9/19] rounded-[3rem] border border-white/10 bg-navy-deep overflow-hidden shadow-2xl shadow-black/50">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/interior-bar.jpg"
+                alt=""
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover opacity-20"
+              />
+              <div className="absolute inset-0 bg-navy-deep/90 backdrop-blur-xl" />
+              <div className="relative h-full p-5 flex flex-col gap-3 overflow-hidden">
+                <div>
+                  <span className="font-label text-[9px] uppercase tracking-[0.25em] text-gold-luxe font-bold mb-2 block">
+                    Visit
+                  </span>
+                  <div className="flex flex-col gap-1.5">
+                    {['Birthday Club', 'Group Events', 'Contact Us', 'Locations'].map((v) => (
+                      <span
+                        key={v}
+                        className="font-headline text-sm font-bold tracking-tight text-white"
+                      >
+                        {v}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div className="border-t border-white/10 pt-3 flex flex-col gap-2">
+                  <span className="font-label text-[9px] uppercase tracking-[0.25em] text-white/60 font-bold">
+                    Reserve on OpenTable
+                  </span>
+                  <span className="bg-gold-luxe text-navy-deep font-label text-[9px] uppercase tracking-widest font-bold px-3 py-2 rounded-full text-center">
+                    Reserve London ↗
+                  </span>
+                  <span className="border border-white/20 text-white font-label text-[9px] uppercase tracking-widest font-bold px-3 py-2 rounded-full text-center">
+                    Reserve St Thomas ↗
+                  </span>
+                </div>
+                <div className="flex flex-col gap-2 mt-auto">
+                  <span className="font-label text-[9px] uppercase tracking-[0.25em] text-white/60 font-bold">
+                    Or call directly
+                  </span>
+                  <span className="border border-white/10 text-white font-label text-[9px] uppercase tracking-widest font-bold px-3 py-2 rounded-full text-center">
+                    London · 519-681-2669
+                  </span>
+                  <span className="border border-white/10 text-white font-label text-[9px] uppercase tracking-widest font-bold px-3 py-2 rounded-full text-center">
+                    St Thomas · 519-631-8282
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Mockup 3 — sticky bottom bar on menu pages */}
+          <div className="flex flex-col gap-4 items-center">
+            <span className="font-label text-[10px] uppercase tracking-[0.25em] text-white/50 font-bold">
+              Sticky call bar · menu pages
+            </span>
+            <div className="relative mx-auto w-full max-w-[320px] aspect-[9/19] rounded-[3rem] border border-white/10 bg-background overflow-hidden shadow-2xl shadow-black/50">
+              {/* Menu content preview */}
+              <div className="absolute inset-0 p-5 flex flex-col gap-3">
+                <div className="flex items-center justify-between bg-navy-deep rounded-full px-3 py-2 border border-white/10">
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-5 h-5 rounded-full bg-gold-luxe text-navy-deep text-[7px] font-black flex items-center justify-center">
+                      11
+                    </span>
+                    <span className="text-[10px] font-headline font-bold text-white tracking-tight">
+                      ELEVEN <span className="text-gold-luxe">SIXTY</span>
+                    </span>
+                  </div>
+                  <span className="material-symbols-outlined text-white/80 text-base">menu</span>
+                </div>
+                <div className="flex flex-col gap-0.5 mt-2">
+                  <span className="font-label text-[7px] uppercase tracking-[0.3em] text-white/50 font-bold">
+                    Home / Menu / Dinner
+                  </span>
+                  <span className="font-headline text-3xl font-bold text-white tracking-tight leading-none">
+                    Dinner
+                  </span>
+                </div>
+                <div className="flex flex-col gap-2 mt-3">
+                  {[
+                    { n: 'Onion Summit', p: '$17.75' },
+                    { n: 'Baby Back Ribs', p: '$39' },
+                    { n: '14oz Ribeye', p: '$44.75' },
+                    { n: 'Salmon', p: '$31.75' }
+                  ].map((i) => (
+                    <div key={i.n} className="flex items-baseline gap-2">
+                      <span className="font-headline text-[11px] font-bold text-white tracking-tight">
+                        {i.n}
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        className="flex-1 border-b border-dotted border-white/15 translate-y-[-2px]"
+                      />
+                      <span className="font-headline text-[11px] font-bold text-gold-luxe">
+                        {i.p}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              {/* Sticky bar at bottom */}
+              <div className="absolute inset-x-0 bottom-0 bg-navy-deep/95 backdrop-blur-xl border-t border-white/10 px-3 py-3 flex gap-2">
+                <span className="flex-1 bg-gold-luxe text-navy-deep font-label text-[9px] uppercase tracking-widest font-bold px-2 py-2 rounded-full text-center inline-flex items-center justify-center gap-1">
+                  <span className="material-symbols-outlined text-xs">call</span>
+                  London
                 </span>
-                <span className="border border-white/20 text-white font-label text-[10px] uppercase tracking-widest font-bold px-4 py-2.5 rounded-full text-center">
-                  Reserve St Thomas
+                <span className="flex-1 border border-white/20 text-white font-label text-[9px] uppercase tracking-widest font-bold px-2 py-2 rounded-full text-center inline-flex items-center justify-center gap-1">
+                  <span className="material-symbols-outlined text-xs">call</span>
+                  St Thomas
                 </span>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+          <ul className="flex flex-col gap-4 font-body text-base text-on-surface-variant leading-relaxed">
+            <ListRow>
+              Hamburger renders the overlay through a <code className="text-gold-luxe">React.createPortal</code>{' '}
+              into document.body so it escapes the nav&apos;s backdrop-filter and covers the
+              viewport reliably.
+            </ListRow>
+            <ListRow>
+              Live Open / Closed badge at the top, pinned to America/Toronto so it&apos;s
+              correct for every viewer.
+            </ListRow>
+            <ListRow>
+              Links grouped into two sections (Menus · Visit) with the active page marked by a
+              gold vertical bar.
+            </ListRow>
+            <ListRow>
+              Faint interior photo behind a navy-deep/90 backdrop-blur so the overlay feels on
+              brand, not a generic dropdown.
+            </ListRow>
+          </ul>
+          <ul className="flex flex-col gap-4 font-body text-base text-on-surface-variant leading-relaxed">
+            <ListRow>
+              Two explicit reservation paths at the bottom: &ldquo;Reserve on OpenTable&rdquo;
+              (both locations) and &ldquo;Or call directly&rdquo; (both numbers).
+            </ListRow>
+            <ListRow>
+              Menu pages also carry a sticky bottom bar with both call numbers so booking is
+              one tap away regardless of how deep you are in the menu.
+            </ListRow>
+            <ListRow>
+              Scroll-to-top floating button appears past 600px on long menu or article pages,
+              positioned above the sticky bar so they don&apos;t collide.
+            </ListRow>
+            <ListRow>
+              Body scroll is locked while the overlay is open; click-outside and Escape both
+              close it.
+            </ListRow>
+          </ul>
         </div>
       </Section>
 
