@@ -2,10 +2,10 @@ import Link from 'next/link';
 import type { Article } from '@/lib/db';
 
 const FALLBACK_IMAGES = [
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuAOl2b28maZFrvP6eXR2JOhD_4BkeuId2GJ_lDvzT4DQi7PI7gAyTiOfd789TiRawsQpa4h2BnoVWwVRoqcCaf-h2HQ8IhNq_a6eTWbc3_RwL-vgw-yAOLJS03D6QjF6cx2Y34WAFBtsbZ8fzlhlM-JF9XIxusBNPON0V9ilhe4QcodzfJS3vtHrYme85kmiiA4hU5_vpJyUmZSSAXRdge-KOcLgktIBo-7gA9Z7m-vownltVd7hFC_OKYfiqzlw-QIEmk0wtsPKF0',
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuAR9msnBuCJsaAUe8XDuSpoXqa2GfYYwak0ESJOzTNOiL5irVRHaLcbWd4EwJozdgLxzo-iADD3LqxQp6UQHFj3GUFVC3Lqy6ZygwI_2gvfDf8FKgEFF4gqXvw09CdCheaUi_7ZmnM81D8Jt4kAGZq7dZKFAYav5A_jV0SwRZvE191o9Sa67idphY4HpHoZGlelDVRKFGm3OOHRozo636i6RAZNKMEbkDLnaWQSA9x0E3WuIKReTdoumHbLh2_8g9qfbyrMT6QVmvU',
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuCpB4U_tT9TdXD82jLbL3whS4xIr_GlOxQC2VWXcbMfnWDq9l9SMag5KkJdwOWwotBEHk2SWYPHs0INp3jo6jOgF5crkl--3Gn2FOZSBFsMr16A81VozosPd_o-rNLbGrtV69zCnHo3FGkAXhljejH1fWs0PpqkAiG3xdDOKws5p-2QIXWlw6ljBKRhb7e0zGPPATFxXysg_0YeXDKu4jiJ2GhRFVgOV6XmRZ9eHu0Fv2LZGJRCs5-WyDQ7-h7sF5fQDhakUaTc7V0',
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuCCPkcCwOGnUfcBTF4kyHJDFAuDvLGchBd1lR63gXMbNiXzx0fb-JEiO0W-PEcUOOnTRx0pPZoWnbLyGHN_HqJ4vD_5k0rIvjcj4hwMGrIiChIQTxc6f49Extkh-jTBnWRcfZOsg5kSCzZzl0_7L_LrZkSXcQbs4Sk6l_TwjGolX9rwljMgUfQVbeRIjZ69cwDjl61cUu6_yB_-C7dMMm3c-rZNMD6XX49Ys9kmZ-3Fa2HRFGvIGdFxkkQwnCl4iNGUzpfzuMqWH-o'
+  'https://loremflickr.com/cache/resized/65535_54562342175_1a4b15ec00_k_1280_720_nofilter.jpg',
+  'https://loremflickr.com/cache/resized/65535_54309918754_aa2345af79_h_1280_720_nofilter.jpg',
+  'https://loremflickr.com/cache/resized/65535_54427364915_f37d498ff5_h_1280_720_nofilter.jpg',
+  'https://loremflickr.com/cache/resized/65535_54578205014_f4c3a905a1_h_1280_720_nofilter.jpg'
 ];
 
 export function getArticleImage(a: Pick<Article, 'id'>): string {

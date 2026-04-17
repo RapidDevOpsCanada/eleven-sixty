@@ -11,7 +11,7 @@ export const metadata = {
 export default function BirthdayClubPage() {
   return (
     <>
-      <Nav showCommandBar={false} />
+      <Nav />
 
       <section className="pt-40 md:pt-48 pb-16 px-6 md:px-12 bg-background">
         <div className="max-w-7xl mx-auto flex flex-col gap-8 max-w-3xl">

@@ -8,7 +8,7 @@ import type { Menu } from '@/lib/menuData';
 export default function MenuPage({ menu }: { menu: Menu }) {
   return (
     <>
-      <Nav showCommandBar={false} />
+      <Nav />
 
       <section className="pt-40 md:pt-48 pb-16 px-6 md:px-12 bg-background">
         <div className="max-w-7xl mx-auto flex flex-col gap-10">

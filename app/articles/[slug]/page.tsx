@@ -43,7 +43,7 @@ export default async function ArticleDetailPage({
 
   return (
     <>
-      <Nav showCommandBar={false} />
+      <Nav />
 
       <article className="pt-32 md:pt-40 pb-24">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
