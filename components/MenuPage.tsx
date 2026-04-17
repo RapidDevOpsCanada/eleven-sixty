@@ -1,30 +1,11 @@
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import MenuSectionBlock from '@/components/MenuSectionBlock';
 import MenuTabs from '@/components/MenuTabs';
-import { MENUS, getMenuBySlug } from '@/lib/menuData';
+import type { Menu } from '@/lib/menuData';
 
-export function generateStaticParams() {
-  return MENUS.map((m) => ({ slug: m.slug }));
-}
-
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const menu = getMenuBySlug(slug);
-  if (!menu) return { title: 'Menu — Eleven Sixty' };
-  return {
-    title: `${menu.title} Menu — Eleven Sixty Bar & Grill`,
-    description: menu.subtitle ?? menu.tagline
-  };
-}
-
-export default async function MenuPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const menu = getMenuBySlug(slug);
-  if (!menu) notFound();
-
+export default function MenuPage({ menu }: { menu: Menu }) {
   return (
     <>
       <Nav showCommandBar={false} />
@@ -35,7 +16,7 @@ export default async function MenuPage({ params }: { params: Promise<{ slug: str
             <div className="inline-flex items-center gap-3">
               <div className="h-[1px] w-8 bg-gold-luxe" />
               <Link
-                href="/menu"
+                href="/"
                 className="font-label uppercase tracking-[0.4em] text-gold-luxe text-[11px] font-bold hover:text-white transition-colors"
               >
                 {menu.kicker}
@@ -83,7 +64,7 @@ export default async function MenuPage({ params }: { params: Promise<{ slug: str
             </h2>
             <p className="font-body text-on-surface-variant font-medium leading-relaxed">
               Open daily from 11:30am. Call your closest room to reserve — private dining for up
-              to 50 available on request.
+              to 45 available on request.
             </p>
           </div>
           <div className="flex flex-col gap-3">

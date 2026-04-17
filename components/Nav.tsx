@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import MobileMenu from './MobileMenu';
 
 export default function Nav({ showCommandBar = true }: { showCommandBar?: boolean }) {
   return (
@@ -14,34 +15,46 @@ export default function Nav({ showCommandBar = true }: { showCommandBar?: boolea
             </span>
             ELEVEN <span className="text-gold-luxe">SIXTY</span>
           </Link>
-          <div className="hidden md:flex gap-8 items-center">
+          <div className="hidden md:flex gap-7 items-center">
             <Link
-              href="/menu"
+              href="/dinner-menus/"
               className="font-label text-[11px] font-semibold uppercase tracking-wider text-white hover:text-gold-luxe transition-colors"
             >
               Menu
             </Link>
             <Link
-              href="/#locations"
-              className="font-label text-[11px] font-semibold uppercase tracking-wider text-white/50 hover:text-gold-luxe transition-colors"
+              href="/daily-features/"
+              className="font-label text-[11px] font-semibold uppercase tracking-wider text-white/60 hover:text-gold-luxe transition-colors"
             >
-              Locations
+              Features
             </Link>
             <Link
-              href="/categories/events"
-              className="font-label text-[11px] font-semibold uppercase tracking-wider text-white/50 hover:text-gold-luxe transition-colors"
+              href="/group-events/"
+              className="font-label text-[11px] font-semibold uppercase tracking-wider text-white/60 hover:text-gold-luxe transition-colors"
             >
               Events
             </Link>
+            <Link
+              href="/birthday-club/"
+              className="font-label text-[11px] font-semibold uppercase tracking-wider text-white/60 hover:text-gold-luxe transition-colors"
+            >
+              Birthday Club
+            </Link>
+            <Link
+              href="/contact-us/"
+              className="font-label text-[11px] font-semibold uppercase tracking-wider text-white/60 hover:text-gold-luxe transition-colors"
+            >
+              Contact
+            </Link>
           </div>
-          <button className="text-white/80 material-symbols-outlined text-2xl">menu</button>
+          <MobileMenu />
         </div>
 
         {showCommandBar && (
           <div className="pointer-events-auto command-bar-blur rounded-2xl md:rounded-full p-2 flex flex-col md:flex-row items-center gap-2 max-w-4xl mx-auto w-full shadow-2xl">
             <div className="flex-1 w-full grid grid-cols-2 gap-2 md:flex md:items-center">
               <Link
-                href="/menu"
+                href="/dinner-menus/"
                 className="flex items-center gap-3 px-4 py-2 hover:bg-white/5 rounded-full transition-colors cursor-pointer group flex-1"
               >
                 <span className="material-symbols-outlined text-gold-luxe">restaurant_menu</span>
@@ -55,16 +68,16 @@ export default function Nav({ showCommandBar = true }: { showCommandBar?: boolea
                 </div>
               </Link>
               <Link
-                href="/#locations"
+                href="/group-events/"
                 className="flex items-center gap-3 px-4 py-2 hover:bg-white/5 rounded-full transition-colors cursor-pointer group flex-1"
               >
                 <span className="material-symbols-outlined text-gold-luxe">calendar_today</span>
                 <div className="flex flex-col">
                   <span className="text-[9px] uppercase tracking-tighter text-white/40 font-bold">
-                    Reservation
+                    Private Room
                   </span>
                   <span className="text-xs font-bold text-white whitespace-nowrap">
-                    Book a Table
+                    Book an Event
                   </span>
                 </div>
               </Link>

@@ -15,7 +15,9 @@ export type MenuSection = {
 
 export type Menu = {
   slug: string;
+  path: string;
   title: string;
+  navLabel: string;
   kicker: string;
   tagline: string;
   subtitle?: string;
@@ -25,8 +27,10 @@ export type Menu = {
 
 export const MENUS: Menu[] = [
   {
-    slug: 'lunch',
+    slug: 'lunch-menu',
+    path: '/lunch-menu/',
     title: 'Lunch',
+    navLabel: 'Lunch',
     kicker: 'Served Daily',
     tagline: '11:30am — 3:00pm',
     subtitle:
@@ -164,8 +168,10 @@ export const MENUS: Menu[] = [
     ]
   },
   {
-    slug: 'dinner',
+    slug: 'dinner-menus',
+    path: '/dinner-menus/',
     title: 'Dinner',
+    navLabel: 'Dinner',
     kicker: 'The Full Menu',
     tagline: 'Ribs, steaks & the full kitchen',
     subtitle:
@@ -434,7 +440,9 @@ export const MENUS: Menu[] = [
   },
   {
     slug: 'desserts',
+    path: '/desserts/',
     title: 'Desserts',
+    navLabel: 'Desserts',
     kicker: 'The Sweet End',
     tagline: 'Served tableside',
     subtitle:
@@ -449,12 +457,14 @@ export const MENUS: Menu[] = [
     ]
   },
   {
-    slug: 'kids',
+    slug: 'kids-menu',
+    path: '/kids-menu/',
     title: 'Kids Menu',
+    navLabel: 'Kids',
     kicker: 'For the Little Ones',
     tagline: 'Kids Eat Free Wednesdays',
     subtitle:
-      'One free kids’ meal for every adult entrée on Wednesdays. Every dish is cooked the way we’d cook it for the adult menu — no shortcuts, no frozen nuggets.',
+      'One free kids\u2019 meal for every adult entrée on Wednesdays. Every dish is cooked the way we\u2019d cook it for the adult menu — no shortcuts, no frozen nuggets.',
     sections: [
       {
         title: 'Mains',
@@ -499,8 +509,10 @@ export const MENUS: Menu[] = [
     pricingNote: 'Prices available in-room. Kids Eat Free every Wednesday with an adult entrée.'
   },
   {
-    slug: 'drinks',
+    slug: 'drinks-menu',
+    path: '/drinks-menu/',
     title: 'Drinks',
+    navLabel: 'Drinks',
     kicker: 'From the Bar',
     tagline: 'Beer · Wine · Cocktails · Caesars',
     subtitle:
@@ -764,8 +776,10 @@ export const MENUS: Menu[] = [
     ]
   },
   {
-    slug: 'features',
+    slug: 'daily-features',
+    path: '/daily-features/',
     title: 'Daily Features',
+    navLabel: 'Features',
     kicker: 'Every Week',
     tagline: 'Monday through Sunday',
     subtitle:
@@ -780,11 +794,7 @@ export const MENUS: Menu[] = [
             price: '$75',
             description: 'A shared feature menu for two. Details in-room.'
           },
-          {
-            name: '1160 IPA',
-            price: '$7',
-            note: '18 oz pint'
-          },
+          { name: '1160 IPA', price: '$7', note: '18 oz pint' },
           {
             name: 'Wayne Gretzky Pinot Grigio or Merlot',
             description: '½ price on bottles.'
@@ -798,8 +808,7 @@ export const MENUS: Menu[] = [
           {
             name: 'Mules',
             price: '$7',
-            description:
-              'Your choice: 1160 · Irish · Canadian · Italian.'
+            description: 'Your choice: 1160 · Irish · Canadian · Italian.'
           }
         ]
       },
@@ -854,19 +863,9 @@ export const MENUS: Menu[] = [
             name: 'Half-priced Appetizers',
             description: 'From our shareables list.'
           },
-          {
-            name: 'Domestic Draught',
-            price: '$6',
-            note: 'Pint'
-          },
-          {
-            name: 'Bottles of Wine',
-            description: '$10 off.'
-          },
-          {
-            name: 'Tequila Shots',
-            description: 'Half price.'
-          }
+          { name: 'Domestic Draught', price: '$6', note: 'Pint' },
+          { name: 'Bottles of Wine', description: '$10 off.' },
+          { name: 'Tequila Shots', description: 'Half price.' }
         ]
       }
     ]

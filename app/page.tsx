@@ -121,7 +121,7 @@ export default function HomePage() {
             </div>
             <Link
               className="font-label text-white bg-navy-deep px-8 py-4 rounded-full self-start tracking-widest uppercase text-xs font-bold flex items-center gap-4 group border border-white/10 hover:border-gold-luxe transition-all"
-              href="/menu"
+              href="/dinner-menus/"
             >
               View the Menu
               <span className="material-symbols-outlined text-lg text-gold-luxe group-hover:translate-x-2 transition-transform">
@@ -202,6 +202,83 @@ export default function HomePage() {
                 </span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-6 md:px-12 bg-background">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16 max-w-xl">
+            <span className="font-label text-gold-luxe tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
+              Explore
+            </span>
+            <h2 className="font-headline text-4xl md:text-5xl font-bold text-white tracking-tight">
+              More ways to visit
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Link
+              href="/daily-features/"
+              className="group bg-navy-deep border border-white/5 hover:border-gold-luxe/40 rounded-3xl p-8 flex flex-col gap-5 transition-all hover:-translate-y-1"
+            >
+              <span className="material-symbols-outlined text-gold-luxe text-3xl">
+                local_activity
+              </span>
+              <h3 className="font-headline text-2xl font-bold text-white tracking-tight">
+                Daily Features
+              </h3>
+              <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
+                Weeknight specials plus all-day happy hours.
+              </p>
+              <span className="material-symbols-outlined text-gold-luxe text-lg mt-auto group-hover:translate-x-2 transition-transform">
+                east
+              </span>
+            </Link>
+            <Link
+              href="/birthday-club/"
+              className="group bg-navy-deep border border-white/5 hover:border-gold-luxe/40 rounded-3xl p-8 flex flex-col gap-5 transition-all hover:-translate-y-1"
+            >
+              <span className="material-symbols-outlined text-gold-luxe text-3xl">cake</span>
+              <h3 className="font-headline text-2xl font-bold text-white tracking-tight">
+                Birthday Club
+              </h3>
+              <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
+                Sign up — dessert on us on your birthday.
+              </p>
+              <span className="material-symbols-outlined text-gold-luxe text-lg mt-auto group-hover:translate-x-2 transition-transform">
+                east
+              </span>
+            </Link>
+            <Link
+              href="/group-events/"
+              className="group bg-navy-deep border border-white/5 hover:border-gold-luxe/40 rounded-3xl p-8 flex flex-col gap-5 transition-all hover:-translate-y-1"
+            >
+              <span className="material-symbols-outlined text-gold-luxe text-3xl">groups</span>
+              <h3 className="font-headline text-2xl font-bold text-white tracking-tight">
+                Group Events
+              </h3>
+              <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
+                Private room for up to 45 with a big-screen TV.
+              </p>
+              <span className="material-symbols-outlined text-gold-luxe text-lg mt-auto group-hover:translate-x-2 transition-transform">
+                east
+              </span>
+            </Link>
+            <Link
+              href="/contact-us/"
+              className="group bg-navy-deep border border-white/5 hover:border-gold-luxe/40 rounded-3xl p-8 flex flex-col gap-5 transition-all hover:-translate-y-1"
+            >
+              <span className="material-symbols-outlined text-gold-luxe text-3xl">mail</span>
+              <h3 className="font-headline text-2xl font-bold text-white tracking-tight">
+                Contact Us
+              </h3>
+              <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
+                Reach the team at info@elevensixty.ca.
+              </p>
+              <span className="material-symbols-outlined text-gold-luxe text-lg mt-auto group-hover:translate-x-2 transition-transform">
+                east
+              </span>
+            </Link>
           </div>
         </div>
       </section>
