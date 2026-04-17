@@ -25,7 +25,7 @@ const PILLARS = [
   {
     title: 'Editorial, not corporate.',
     body:
-      'Italic gold accents on headlines. Dotted-leader pricing on menus. Mixed-case titles. Magazine asymmetry on the field notes index. Quiet details that add up.'
+      'Italic gold accents on headlines. Dotted-leader pricing on menus. Mixed-case titles. Quiet details that add up.'
   },
   {
     title: 'Live status everywhere.',
@@ -77,8 +77,7 @@ const PAGES = [
   { path: '/daily-features/', label: 'Daily features' },
   { path: '/group-events/', label: 'Group events' },
   { path: '/birthday-club/', label: 'Birthday Club' },
-  { path: '/contact-us/', label: 'Contact' },
-  { path: '/articles/', label: 'Field Notes' }
+  { path: '/contact-us/', label: 'Contact' }
 ];
 
 const MOTION = [
@@ -101,11 +100,6 @@ const MOTION = [
     title: 'Nav underline sweep',
     body:
       'Hover scales a 2px gold underline from the left edge. Active page gets the same bar solid.'
-  },
-  {
-    title: 'Reading progress',
-    body:
-      'Article pages render a 2px gold strip at the top that tracks scroll position.'
   },
   {
     title: 'Scroll-to-top',
@@ -215,15 +209,14 @@ export default function PreviewPage() {
             <span>05 · Feature cards</span>
             <span>06 · Menu</span>
             <span>07 · Group events</span>
-            <span>08 · Field Notes</span>
-            <span>09 · Birthday Club</span>
-            <span>10 · Contact</span>
-            <span>11 · Locations</span>
-            <span>12 · Reservations</span>
-            <span>13 · Mobile</span>
-            <span>14 · Motion</span>
-            <span>15 · Sitemap</span>
-            <span>16 · Next steps</span>
+            <span>08 · Birthday Club</span>
+            <span>09 · Contact</span>
+            <span>10 · Locations</span>
+            <span>11 · Reservations</span>
+            <span>12 · Mobile</span>
+            <span>13 · Motion</span>
+            <span>14 · Sitemap</span>
+            <span>15 · Next steps</span>
           </div>
         </div>
       </section>
@@ -619,93 +612,8 @@ export default function PreviewPage() {
         </Annotation>
       </Section>
 
-      {/* 03 Field Notes */}
-      <Section index="08" label="Field Notes" title="Magazine asymmetry for the blog.">
-        <PagePreview src="/articles/" path="/articles/" />
-        <p className="font-body text-sm text-on-surface-variant italic font-medium text-center">
-          Live preview of the Field Notes index. Below, a walkthrough of the card system.
-        </p>
-        <div className="flex flex-col gap-4">
-          <div className="relative overflow-hidden rounded-3xl aspect-[16/9] md:aspect-[21/9]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/bbq-ribs.jpg"
-              alt="Featured article"
-              loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover opacity-60"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/40 to-transparent" />
-            <div className="absolute bottom-12 left-12 right-12">
-              <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold block mb-4">
-                Menu
-              </span>
-              <h3 className="font-headline text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight">
-                The slow-smoke method behind our ribs
-              </h3>
-              <p className="font-body text-base text-white/80 max-w-xl font-medium leading-relaxed mt-4 line-clamp-2">
-                Here is how we cook them, why it takes most of the day, and what we learned to
-                leave alone.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-3xl min-h-[500px]">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/interior-bar.jpg"
-                alt="Tall article"
-                loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover opacity-70"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/40 to-transparent" />
-              <div className="absolute bottom-10 left-10 right-10">
-                <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold block mb-3">
-                  Locations
-                </span>
-                <h4 className="font-headline text-3xl font-bold text-white tracking-tight leading-tight">
-                  1160 Wellington Road: the short history
-                </h4>
-              </div>
-            </div>
-            {['grilled-steak', 'family-dining'].map((img, i) => (
-              <div
-                key={img}
-                className="bg-navy-deep/40 border border-white/5 rounded-3xl overflow-hidden"
-              >
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={`/images/${img}.jpg`}
-                    alt="Article"
-                    loading="lazy"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="px-6 pb-8 flex flex-col gap-3 mt-6">
-                  <h4 className="font-headline text-xl font-bold text-white tracking-tight">
-                    {i === 0 ? 'Why we source Ontario beef' : 'How we think about family dining'}
-                  </h4>
-                  <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed line-clamp-2">
-                    {i === 0
-                      ? 'A short essay on the decision we made in our second year.'
-                      : 'Families are the backbone of both locations.'}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <Annotation>
-          Hero featured article spans full width with a 16/9 (21/9 on md+) frame. Below: a tall
-          card that spans 2×2 pairs with two standard cards stacked beside it. Remaining
-          articles fall into a standard 3-col grid under this pattern.
-        </Annotation>
-      </Section>
-
-      {/* 03 Birthday Club */}
-      <Section index="09" label="Birthday Club" title="Benefits up front, form below.">
+      {/* 08 Birthday Club */}
+      <Section index="08" label="Birthday Club" title="Benefits up front, form below.">
         <PagePreview src="/birthday-club/" path="/birthday-club/" />
         <p className="font-body text-sm text-on-surface-variant italic font-medium text-center">
           Live preview of Birthday Club. Detail on the 3-benefit block below.
@@ -745,7 +653,7 @@ export default function PreviewPage() {
       </Section>
 
       {/* 10 Contact */}
-      <Section index="10" label="Contact" title="Form, dropdowns, focus ring.">
+      <Section index="09" label="Contact" title="Form, dropdowns, focus ring.">
         <PagePreview src="/contact-us/" path="/contact-us/" />
         <p className="font-body text-sm text-on-surface-variant italic font-medium text-center">
           Live preview of the contact page — the two live-map location cards visible below the
@@ -800,7 +708,7 @@ export default function PreviewPage() {
       </Section>
 
       {/* 11 Locations — live maps as background */}
-      <Section index="11" label="Locations" title="Map as background, info floats on top.">
+      <Section index="10" label="Locations" title="Map as background, info floats on top.">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {[
             {
@@ -849,7 +757,7 @@ export default function PreviewPage() {
       </Section>
 
       {/* 03 Reservations */}
-      <Section index="12" label="Reservations" title="Two clicks to OpenTable.">
+      <Section index="11" label="Reservations" title="Two clicks to OpenTable.">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="bg-navy-deep border border-white/10 rounded-3xl overflow-hidden shadow-2xl shadow-black/40">
             <div className="px-5 py-4 border-b border-white/5">
@@ -914,7 +822,7 @@ export default function PreviewPage() {
 
       {/* 13 Mobile */}
       <Section
-        index="13"
+        index="12"
         label="Mobile"
         title="A full-screen overlay, not a cramped pill."
       >
@@ -1000,7 +908,7 @@ export default function PreviewPage() {
 
       {/* 14 Motion */}
       <Section
-        index="14"
+        index="13"
         label="Motion"
         title="Nothing gimmicky. A handful of subtle moves."
       >
@@ -1022,7 +930,7 @@ export default function PreviewPage() {
       </Section>
 
       {/* 03 Sitemap */}
-      <Section index="15" label="Sitemap" title="Every page at a glance.">
+      <Section index="14" label="Sitemap" title="Every page at a glance.">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           {PAGES.map((p) => (
             <div
@@ -1045,11 +953,11 @@ export default function PreviewPage() {
         </p>
       </Section>
 
-      {/* 16 Next steps */}
+      {/* 15 Next steps */}
       <section className="px-6 md:px-12 py-24 md:py-32 border-t border-white/10">
         <div className="max-w-6xl mx-auto bg-navy-deep border border-white/10 rounded-3xl p-10 md:p-16 flex flex-col gap-8">
           <span className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
-            16 · Next steps
+            15 · Next steps
           </span>
           <h2 className="font-headline text-4xl md:text-6xl font-bold text-white tracking-tight leading-[1.02] max-w-3xl">
             If the direction feels right, we move to{' '}
