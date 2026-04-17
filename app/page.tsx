@@ -9,21 +9,21 @@ export default function HomePage() {
       <Nav />
 
       <header className="relative h-screen w-full flex flex-col md:flex-row overflow-hidden pt-32 md:pt-0">
-        <div className="w-full md:w-2/5 h-2/3 md:h-full bg-navy-deep flex flex-col items-center justify-center p-8 md:p-14 relative z-20 border-r border-white/5">
-          <div className="max-w-md text-center md:text-left">
+        <div className="w-full md:w-1/2 h-2/3 md:h-full bg-navy-deep flex flex-col items-center justify-center p-8 md:p-16 relative z-20 border-r border-white/5">
+          <div className="max-w-lg text-center md:text-left">
             <div className="inline-flex items-center gap-3 mb-6">
               <div className="h-[1px] w-8 bg-white/40" />
               <span className="font-label uppercase tracking-[0.4em] text-white/70 text-[11px] font-bold">
                 London &amp; St Thomas
               </span>
             </div>
-            <h1 className="font-headline font-bold text-5xl md:text-7xl mb-8 leading-[0.95] text-white tracking-tight">
-              YOUR<br />NEIGHBOURHOOD<br />
-              <span className="italic text-gold-luxe">bar &amp; grill.</span>
+            <h1 className="font-headline font-bold text-6xl md:text-8xl mb-8 leading-[0.95] text-white tracking-tight">
+              PREMIER<br />BAR &amp;<br />
+              <span className="italic text-gold-luxe">grill.</span>
             </h1>
-            <p className="font-body text-base text-on-surface-variant max-w-xs mb-10 leading-relaxed font-medium">
-              Two Ontario rooms, one kind of welcome. A casual bar &amp; grill built for
-              families, date nights, big tables, and quiet ones. Open daily from 11:30am.
+            <p className="font-body text-base text-on-surface-variant max-w-sm mb-10 leading-relaxed font-medium">
+              Known for sizzling steaks and tender, fall-off-the-bone ribs. Casual dining with
+              family and friends at our London and St Thomas rooms. Open daily from 11:30am.
             </p>
             <a
               href="tel:+15196812669"
@@ -36,7 +36,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="w-full md:w-3/5 h-full overflow-y-auto no-scrollbar bg-background border-t md:border-t-0 border-white/5">
+        <div className="w-full md:w-1/2 h-full overflow-y-auto no-scrollbar bg-background border-t md:border-t-0 border-white/5">
           <div className="flex flex-col gap-1 p-1">
             <div className="relative h-[819px] w-full overflow-hidden rounded-xl">
               {/* eslint-disable-next-line @next/next/no-img-element */}
