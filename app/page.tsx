@@ -3,6 +3,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import LocationMap from '@/components/LocationMap';
 import FadeIn from '@/components/FadeIn';
+import TonightSection from '@/components/TonightSection';
 import { OPENTABLE_LONDON, OPENTABLE_ST_THOMAS } from '@/lib/booking';
 
 export default function HomePage() {
@@ -206,74 +207,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-24 px-6 md:px-12 bg-navy-deep/20">
-        <div className="max-w-7xl mx-auto">
-          <FadeIn className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div className="max-w-xl">
-              <span className="font-label text-white/60 tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
-                Our Kitchen
-              </span>
-              <h2 className="font-headline text-5xl md:text-6xl font-bold text-white tracking-tight leading-[1.02]">
-                Slow-cooked. <span className="italic text-gold-luxe">Hand-finished.</span>
-              </h2>
-            </div>
-            <p className="font-body text-sm text-on-surface-variant uppercase tracking-widest max-w-[250px] leading-loose font-bold">
-              Fall-off-the-bone ribs. Steaks off the grill. A menu for the table that stays late.
-            </p>
-          </FadeIn>
-          <FadeIn delay={100} className="grid grid-cols-1 md:grid-cols-12 gap-6">
-            <div className="md:col-span-8 group relative overflow-hidden h-[600px] rounded-3xl">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                alt="Slow-smoked ribs, hand-cut steaks"
-                loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:scale-110 transition-transform duration-1000"
-                src="/images/bbq-ribs.jpg"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-deep to-transparent opacity-80" />
-              <div className="absolute bottom-12 left-12">
-                <h3 className="font-headline text-4xl font-bold mb-4 text-white tracking-tight">
-                  Ribs &amp; <span className="italic text-gold-luxe">steaks.</span>
-                </h3>
-                <p className="font-body text-base text-white/80 max-w-md font-medium">
-                  Slow-smoked ribs, hand-cut steaks, and a lunch menu that runs from 11:30 to 3:30.
-                </p>
-              </div>
-            </div>
-            <div className="relative md:col-span-4 bg-navy-deep border border-white/5 p-12 flex flex-col justify-between h-[600px] rounded-3xl shadow-xl overflow-hidden">
-              <span
-                aria-hidden="true"
-                className="absolute top-8 right-8 font-label text-[10px] uppercase tracking-[0.3em] text-white/20 font-bold"
-              >
-                01 · 02
-              </span>
-              <div className="flex flex-col gap-5">
-                <span className="font-label text-[10px] uppercase tracking-[0.35em] text-white/50 font-bold">
-                  Our Name
-                </span>
-                <div className="flex flex-col gap-3">
-                  <span className="font-headline text-7xl font-extrabold text-gold-luxe tracking-tighter leading-none">
-                    1160
-                  </span>
-                  <span className="block h-[2px] w-16 bg-gold-luxe/60 rounded-full" />
-                </div>
-                <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium">
-                  The address and the name. 1160 Wellington Road in London, and a second room on
-                  Talbot Street in St Thomas.
-                </p>
-              </div>
-              <div className="flex flex-col gap-2 border-t border-white/10 pt-8">
-                <span className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold">
-                  Open Daily
-                </span>
-                <span className="font-body text-sm text-white/80 font-semibold tracking-wide">
-                  11:30am — 9pm · Fri &amp; Sat until 10pm
-                </span>
-              </div>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
+      <TonightSection />
 
       <section className="py-24 px-6 md:px-12 bg-navy-deep/20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end md:justify-between gap-10">
