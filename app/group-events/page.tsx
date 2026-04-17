@@ -36,8 +36,8 @@ export default function GroupEventsPage() {
       <Nav />
 
       <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 bg-background">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-end">
-          <div className="flex flex-col gap-6 max-w-xl">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-12 items-center">
+          <div className="lg:col-span-3 flex flex-col gap-6 max-w-xl">
             <div className="inline-flex items-center gap-3">
               <div className="h-[1px] w-8 bg-gold-luxe" />
               <span className="font-label uppercase tracking-[0.4em] text-gold-luxe text-[11px] font-bold">
@@ -55,14 +55,14 @@ export default function GroupEventsPage() {
               ensure your next event is one you will remember.
             </p>
           </div>
-          <div className="relative aspect-[4/5] md:aspect-[3/2] lg:aspect-[4/5] rounded-3xl overflow-hidden">
+          <div className="lg:col-span-2 relative aspect-[4/3] rounded-3xl overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               alt="A private dining room set for a group"
               src="/images/private-event.jpg"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/60 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/50 via-transparent to-transparent" />
           </div>
         </div>
       </section>
