@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { OPENTABLE_LONDON, OPENTABLE_ST_THOMAS } from '@/lib/booking';
+import LocationMap from '@/components/LocationMap';
 
 export const metadata: Metadata = {
   title: 'Design Concept — Eleven Sixty',
@@ -64,24 +65,6 @@ const COLORS: { name: string; hex: string; use: string }[] = [
   },
   { name: 'Muted body', hex: '#CFC8B6', use: 'Paragraph copy on dark surfaces.' },
   { name: 'Error / Required', hex: '#FFB4AB', use: 'Required-field asterisks, form validation.' }
-];
-
-const PHOTOGRAPHY = [
-  { src: '/images/interior-bar.jpg', label: 'Interior hero' },
-  { src: '/images/grilled-steak.jpg', label: 'Steak' },
-  { src: '/images/bbq-ribs.jpg', label: 'Ribs' },
-  { src: '/images/pub-food.jpg', label: 'Guests dining' },
-  { src: '/images/lunch-sandwich.jpg', label: 'Lunch' },
-  { src: '/images/dessert.jpg', label: 'Dessert' },
-  { src: '/images/cocktail.jpg', label: 'Cocktail' },
-  { src: '/images/burger-fries.jpg', label: 'Burger' },
-  { src: '/images/family-dining.jpg', label: 'Family' },
-  { src: '/images/private-event.jpg', label: 'Private event' },
-  { src: '/images/birthday-cake.jpg', label: 'Birthday' },
-  { src: '/images/happy-hour.jpg', label: 'Happy hour' },
-  { src: '/images/restaurant-exterior.jpg', label: 'Exterior' },
-  { src: '/images/corporate-dinner.jpg', label: 'Corporate' },
-  { src: '/images/sports-watch.jpg', label: 'Game day' }
 ];
 
 const PAGES = [
@@ -227,21 +210,20 @@ export default function PreviewPage() {
           <div className="flex flex-wrap gap-x-6 gap-y-3 text-[11px] uppercase tracking-widest font-bold text-white/50 pt-6 border-t border-white/10">
             <span>01 · Direction</span>
             <span>02 · Brand system</span>
-            <span>03 · Photography</span>
-            <span>04 · Homepage</span>
-            <span>05 · Tonight</span>
-            <span>06 · Feature cards</span>
-            <span>07 · Menu</span>
-            <span>08 · Group events</span>
-            <span>09 · Field Notes</span>
-            <span>10 · Birthday Club</span>
-            <span>11 · Contact</span>
-            <span>12 · Locations</span>
-            <span>13 · Reservations</span>
-            <span>14 · Mobile</span>
-            <span>15 · Motion</span>
-            <span>16 · Sitemap</span>
-            <span>17 · Next steps</span>
+            <span>03 · Homepage</span>
+            <span>04 · Tonight</span>
+            <span>05 · Feature cards</span>
+            <span>06 · Menu</span>
+            <span>07 · Group events</span>
+            <span>08 · Field Notes</span>
+            <span>09 · Birthday Club</span>
+            <span>10 · Contact</span>
+            <span>11 · Locations</span>
+            <span>12 · Reservations</span>
+            <span>13 · Mobile</span>
+            <span>14 · Motion</span>
+            <span>15 · Sitemap</span>
+            <span>16 · Next steps</span>
           </div>
         </div>
       </section>
@@ -323,41 +305,8 @@ export default function PreviewPage() {
         </div>
       </Section>
 
-      {/* 03 Photography */}
-      <Section
-        index="03"
-        label="Photography"
-        title="The visual library."
-      >
-        <p className="font-body text-base text-on-surface-variant font-medium leading-relaxed max-w-2xl -mt-4">
-          Stock placeholders sit here until real brand photography arrives. Every image below is
-          used on at least one page. Filenames match the variables in code, so swapping them for
-          final shots is a drop-in.
-        </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-4">
-          {PHOTOGRAPHY.map((p) => (
-            <div
-              key={p.src}
-              className="group relative aspect-square overflow-hidden rounded-2xl border border-white/5"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={p.src}
-                alt={p.label}
-                loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-transparent to-transparent" />
-              <span className="absolute bottom-2 left-3 font-label text-[10px] uppercase tracking-widest text-white/80 font-bold">
-                {p.label}
-              </span>
-            </div>
-          ))}
-        </div>
-      </Section>
-
-      {/* 04 Homepage */}
-      <Section index="04" label="Homepage" title="Hero, rail, and the night.">
+      {/* 03 Homepage */}
+      <Section index="03" label="Homepage" title="Hero, rail, and the night.">
         <div className="relative overflow-hidden rounded-3xl border border-white/10 shadow-2xl shadow-black/40 flex flex-col md:flex-row min-h-[480px]">
           <div className="md:w-1/2 bg-navy-deep p-8 md:p-14 flex flex-col justify-center gap-6">
             <div className="inline-flex items-center gap-3">
@@ -409,8 +358,8 @@ export default function PreviewPage() {
         </Annotation>
       </Section>
 
-      {/* 05 Tonight */}
-      <Section index="05" label="Tonight" title="A live card that knows what day it is.">
+      {/* 03 Tonight */}
+      <Section index="04" label="Tonight" title="A live card that knows what day it is.">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           <div className="md:col-span-8 relative overflow-hidden h-[420px] rounded-3xl">
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -472,8 +421,8 @@ export default function PreviewPage() {
         </Annotation>
       </Section>
 
-      {/* 06 Feature cards */}
-      <Section index="06" label="Feature cards" title="Photo tiles, topic-specific labels.">
+      {/* 03 Feature cards */}
+      <Section index="05" label="Feature cards" title="Photo tiles, topic-specific labels.">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
             {
@@ -529,8 +478,12 @@ export default function PreviewPage() {
         </div>
       </Section>
 
-      {/* 07 Menu */}
-      <Section index="07" label="Menu" title="Editorial, not a spreadsheet.">
+      {/* 03 Menu */}
+      <Section index="06" label="Menu" title="Editorial, not a spreadsheet.">
+        <PagePreview src="/dinner-menus/" path="/dinner-menus/" />
+        <p className="font-body text-sm text-on-surface-variant italic font-medium text-center">
+          Live preview of the dinner menu. Close-up of the pattern below.
+        </p>
         <div className="bg-background border border-white/10 rounded-3xl p-8 md:p-12 flex flex-col gap-10">
           <div className="border-b border-white/10 pb-4">
             <nav className="flex gap-6 md:gap-10 min-w-max">
@@ -615,8 +568,12 @@ export default function PreviewPage() {
         </Annotation>
       </Section>
 
-      {/* 08 Group events */}
-      <Section index="08" label="Group events" title="One hero stat, two supporting tiles.">
+      {/* 03 Group events */}
+      <Section index="07" label="Group events" title="One hero stat, two supporting tiles.">
+        <PagePreview src="/group-events/" path="/group-events/" />
+        <p className="font-body text-sm text-on-surface-variant italic font-medium text-center">
+          Live preview of the group-events page. Below, the supporting component treatment.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="md:col-span-2 md:row-span-2 bg-navy-deep border border-white/5 rounded-3xl p-10 md:p-14 flex flex-col gap-6 justify-between min-h-[320px]">
             <div className="flex flex-col gap-4">
@@ -662,8 +619,12 @@ export default function PreviewPage() {
         </Annotation>
       </Section>
 
-      {/* 09 Field Notes */}
-      <Section index="09" label="Field Notes" title="Magazine asymmetry for the blog.">
+      {/* 03 Field Notes */}
+      <Section index="08" label="Field Notes" title="Magazine asymmetry for the blog.">
+        <PagePreview src="/articles/" path="/articles/" />
+        <p className="font-body text-sm text-on-surface-variant italic font-medium text-center">
+          Live preview of the Field Notes index. Below, a walkthrough of the card system.
+        </p>
         <div className="flex flex-col gap-4">
           <div className="relative overflow-hidden rounded-3xl aspect-[16/9] md:aspect-[21/9]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -743,8 +704,12 @@ export default function PreviewPage() {
         </Annotation>
       </Section>
 
-      {/* 10 Birthday Club */}
-      <Section index="10" label="Birthday Club" title="Benefits up front, form below.">
+      {/* 03 Birthday Club */}
+      <Section index="09" label="Birthday Club" title="Benefits up front, form below.">
+        <PagePreview src="/birthday-club/" path="/birthday-club/" />
+        <p className="font-body text-sm text-on-surface-variant italic font-medium text-center">
+          Live preview of Birthday Club. Detail on the 3-benefit block below.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
             {
@@ -779,8 +744,13 @@ export default function PreviewPage() {
         </div>
       </Section>
 
-      {/* 11 Contact */}
-      <Section index="11" label="Contact" title="Form, dropdowns, focus ring.">
+      {/* 10 Contact */}
+      <Section index="10" label="Contact" title="Form, dropdowns, focus ring.">
+        <PagePreview src="/contact-us/" path="/contact-us/" />
+        <p className="font-body text-sm text-on-surface-variant italic font-medium text-center">
+          Live preview of the contact page — the two live-map location cards visible below the
+          reservation strip.
+        </p>
         <div className="bg-navy-deep border border-white/5 rounded-3xl p-8 md:p-12 max-w-3xl">
           <span className="font-label text-[11px] uppercase tracking-[0.25em] text-white/60 font-bold mb-4 block">
             Send us a message
@@ -829,29 +799,34 @@ export default function PreviewPage() {
         </Annotation>
       </Section>
 
-      {/* 12 Locations — map as background */}
-      <Section index="12" label="Locations" title="Map as background, info floats on top.">
+      {/* 11 Locations — live maps as background */}
+      <Section index="11" label="Locations" title="Map as background, info floats on top.">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {[
-            { city: 'London', addr: '1160 Wellington Road', phone: '(519) 681-2669' },
-            { city: 'St Thomas', addr: '1093 Talbot St', phone: '519-631-8282' }
+            {
+              city: 'London',
+              kicker: 'Wellington Rd',
+              query: '1160 Wellington Road London ON N6E 1M3',
+              addr: '1160 Wellington Road',
+              phone: '(519) 681-2669'
+            },
+            {
+              city: 'St Thomas',
+              kicker: 'Talbot St',
+              query: '1093 Talbot St St Thomas ON N5P 1G4',
+              addr: '1093 Talbot St',
+              phone: '519-631-8282'
+            }
           ].map((l) => (
             <div
               key={l.city}
               className="relative rounded-3xl overflow-hidden aspect-[16/10] border border-white/5"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/restaurant-exterior.jpg"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover grayscale opacity-60"
-              />
-              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-navy-deep via-navy-deep/85 to-transparent" />
+              <LocationMap query={l.query} label={l.city} />
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-navy-deep via-navy-deep/85 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-7 md:p-9 flex flex-col gap-3">
                 <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold">
-                  {l.city === 'London' ? 'Wellington Rd' : 'Talbot St'}
+                  {l.kicker}
                 </span>
                 <h3 className="font-headline text-3xl md:text-4xl font-bold text-white tracking-tight">
                   {l.city}
@@ -866,15 +841,15 @@ export default function PreviewPage() {
         </div>
 
         <Annotation>
-          On the real site these are live Google Maps iframes — the placeholder above is a
-          grayscale photo for presentation purposes. Address, phone, email, and a get-directions
-          link layer on top of a navy gradient so the text stays legible no matter what the map
-          shows.
+          The maps above are live Google Maps iframes — each one loads the real street tiles
+          for its respective address, so London and St Thomas render distinctly even when the
+          address panel styling matches. A navy gradient rises from the bottom so the address,
+          phone, and email copy stay legible regardless of map colours.
         </Annotation>
       </Section>
 
-      {/* 13 Reservations */}
-      <Section index="13" label="Reservations" title="Two clicks to OpenTable.">
+      {/* 03 Reservations */}
+      <Section index="12" label="Reservations" title="Two clicks to OpenTable.">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="bg-navy-deep border border-white/10 rounded-3xl overflow-hidden shadow-2xl shadow-black/40">
             <div className="px-5 py-4 border-b border-white/5">
@@ -937,9 +912,9 @@ export default function PreviewPage() {
         </div>
       </Section>
 
-      {/* 14 Mobile */}
+      {/* 13 Mobile */}
       <Section
-        index="14"
+        index="13"
         label="Mobile"
         title="A full-screen overlay, not a cramped pill."
       >
@@ -1023,9 +998,9 @@ export default function PreviewPage() {
         </div>
       </Section>
 
-      {/* 15 Motion */}
+      {/* 14 Motion */}
       <Section
-        index="15"
+        index="14"
         label="Motion"
         title="Nothing gimmicky. A handful of subtle moves."
       >
@@ -1046,8 +1021,8 @@ export default function PreviewPage() {
         </div>
       </Section>
 
-      {/* 16 Sitemap */}
-      <Section index="16" label="Sitemap" title="Every page at a glance.">
+      {/* 03 Sitemap */}
+      <Section index="15" label="Sitemap" title="Every page at a glance.">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           {PAGES.map((p) => (
             <div
@@ -1070,11 +1045,11 @@ export default function PreviewPage() {
         </p>
       </Section>
 
-      {/* 17 Next steps */}
+      {/* 16 Next steps */}
       <section className="px-6 md:px-12 py-24 md:py-32 border-t border-white/10">
         <div className="max-w-6xl mx-auto bg-navy-deep border border-white/10 rounded-3xl p-10 md:p-16 flex flex-col gap-8">
           <span className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
-            17 · Next steps
+            16 · Next steps
           </span>
           <h2 className="font-headline text-4xl md:text-6xl font-bold text-white tracking-tight leading-[1.02] max-w-3xl">
             If the direction feels right, we move to{' '}
@@ -1173,6 +1148,50 @@ function ListRow({ children }: { children: React.ReactNode }) {
         {children}
       </span>
     </li>
+  );
+}
+
+function PagePreview({
+  src,
+  path,
+  heightClass = 'h-[360px] sm:h-[480px] md:h-[560px] lg:h-[630px]'
+}: {
+  src: string;
+  path: string;
+  heightClass?: string;
+}) {
+  return (
+    <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/60 bg-navy-deep">
+      <div className="flex items-center gap-3 px-5 py-3 border-b border-white/5 bg-navy-deep/80">
+        <div className="flex gap-1.5">
+          <span className="w-3 h-3 rounded-full bg-white/15" aria-hidden="true" />
+          <span className="w-3 h-3 rounded-full bg-white/15" aria-hidden="true" />
+          <span className="w-3 h-3 rounded-full bg-white/15" aria-hidden="true" />
+        </div>
+        <div className="flex-1 bg-background rounded-md border border-white/10 px-3 py-1.5 font-label text-[10px] text-white/40 text-center font-bold tracking-widest truncate">
+          ELEVENSIXTY.CA{path}
+        </div>
+        <span className="material-symbols-outlined text-white/30 text-base hidden sm:inline">
+          open_in_new
+        </span>
+      </div>
+      <div className={`relative w-full overflow-hidden bg-background ${heightClass}`}>
+        <iframe
+          src={src}
+          title={`Preview — ${path}`}
+          aria-label={`Zoomed-out preview of ${path}`}
+          loading="lazy"
+          className="absolute top-0 left-0 origin-top-left pointer-events-none border-0"
+          style={{
+            width: '1440px',
+            height: '900px',
+            transform: 'scale(0.70)',
+            transformOrigin: 'top left'
+          }}
+        />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-navy-deep/70 via-navy-deep/20 to-transparent" />
+      </div>
+    </div>
   );
 }
 
