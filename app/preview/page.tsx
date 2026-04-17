@@ -276,7 +276,7 @@ export default function PreviewPage() {
               A gold bar marks the page they&apos;re on so they don&apos;t lose track.
             </Bullet>
           </ul>
-          <div className="relative mx-auto w-full max-w-[320px] aspect-[9/19] rounded-[3rem] border border-white/10 bg-navy-deep overflow-hidden shadow-2xl shadow-black/50">
+          <div className="relative mx-auto w-full max-w-[340px] aspect-[9/20] rounded-[3rem] border border-white/10 bg-navy-deep overflow-hidden shadow-2xl shadow-black/50">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/interior-bar.jpg"
@@ -285,7 +285,7 @@ export default function PreviewPage() {
               className="absolute inset-0 w-full h-full object-cover opacity-20"
             />
             <div className="absolute inset-0 bg-navy-deep/90 backdrop-blur-xl" />
-            <div className="relative h-full p-5 flex flex-col gap-4">
+            <div className="relative h-full px-4 pt-4 pb-3 flex flex-col gap-3">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="w-6 h-6 rounded-full bg-gold-luxe text-navy-deep text-[8px] font-black flex items-center justify-center">
@@ -297,24 +297,32 @@ export default function PreviewPage() {
                 </div>
                 <span className="material-symbols-outlined text-white/80 text-xl">close</span>
               </div>
+
               <div className="inline-flex items-center gap-2 font-label text-[9px] uppercase tracking-[0.2em] font-bold text-white">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                <span className="relative inline-flex w-1.5 h-1.5 rounded-full bg-emerald-400">
+                  <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping opacity-70" />
+                </span>
                 Open · closes 9pm
               </div>
-              <div className="flex flex-col gap-1.5">
+
+              <div className="flex flex-col gap-1">
+                <span className="font-label text-[8px] uppercase tracking-[0.25em] text-gold-luxe font-bold mb-0.5">
+                  Menus
+                </span>
                 {[
                   { l: 'Lunch', active: false },
                   { l: 'Dinner', active: true },
                   { l: 'Desserts', active: false },
+                  { l: 'Kids', active: false },
                   { l: 'Drinks', active: false },
-                  { l: 'Features', active: false }
+                  { l: 'Daily Features', active: false }
                 ].map((m) => (
-                  <div key={m.l} className="relative pl-3">
+                  <div key={m.l} className="relative pl-2.5">
                     {m.active && (
-                      <span className="absolute left-0 top-1 w-[3px] h-4 rounded-full bg-gold-luxe" />
+                      <span className="absolute left-0 top-[3px] w-[3px] h-3.5 rounded-full bg-gold-luxe" />
                     )}
                     <span
-                      className={`font-headline text-base font-bold tracking-tight ${
+                      className={`font-headline text-[13px] font-bold tracking-tight leading-tight ${
                         m.active ? 'text-gold-luxe' : 'text-white'
                       }`}
                     >
@@ -323,16 +331,44 @@ export default function PreviewPage() {
                   </div>
                 ))}
               </div>
-              <div className="mt-auto flex flex-col gap-2">
-                <span className="font-label text-[9px] uppercase tracking-[0.25em] text-white/60 font-bold">
+
+              <div className="flex flex-col gap-1">
+                <span className="font-label text-[8px] uppercase tracking-[0.25em] text-gold-luxe font-bold mb-0.5">
+                  Visit
+                </span>
+                {['Birthday Club', 'Group Events', 'Contact Us', 'Locations'].map((v) => (
+                  <span
+                    key={v}
+                    className="pl-2.5 font-headline text-[13px] font-bold tracking-tight text-white leading-tight"
+                  >
+                    {v}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-auto flex flex-col gap-2 pt-2 border-t border-white/10">
+                <span className="font-label text-[8px] uppercase tracking-[0.25em] text-white/60 font-bold">
                   Reserve on OpenTable
                 </span>
-                <span className="bg-gold-luxe text-navy-deep font-label text-[9px] uppercase tracking-widest font-bold px-3 py-2 rounded-full text-center">
-                  Reserve London ↗
+                <div className="grid grid-cols-2 gap-1.5">
+                  <span className="bg-gold-luxe text-navy-deep font-label text-[8px] uppercase tracking-wider font-bold px-1 py-1.5 rounded-full text-center">
+                    London ↗
+                  </span>
+                  <span className="border border-white/20 text-white font-label text-[8px] uppercase tracking-wider font-bold px-1 py-1.5 rounded-full text-center">
+                    St Thomas ↗
+                  </span>
+                </div>
+                <span className="font-label text-[8px] uppercase tracking-[0.25em] text-white/60 font-bold mt-1">
+                  Or call directly
                 </span>
-                <span className="border border-white/20 text-white font-label text-[9px] uppercase tracking-widest font-bold px-3 py-2 rounded-full text-center">
-                  Reserve St Thomas ↗
-                </span>
+                <div className="grid grid-cols-2 gap-1.5">
+                  <span className="border border-white/10 text-white font-label text-[8px] uppercase tracking-wider font-bold px-1 py-1.5 rounded-full text-center">
+                    519-681-2669
+                  </span>
+                  <span className="border border-white/10 text-white font-label text-[8px] uppercase tracking-wider font-bold px-1 py-1.5 rounded-full text-center">
+                    519-631-8282
+                  </span>
+                </div>
               </div>
             </div>
           </div>
