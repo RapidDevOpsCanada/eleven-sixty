@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { OPENTABLE_LONDON, OPENTABLE_ST_THOMAS } from '@/lib/booking';
 import OpenStatus from './OpenStatus';
 
@@ -37,6 +38,9 @@ const SECTIONS: { heading: string; links: { label: string; href: string }[] }[] 
 
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     if (open) document.body.style.overflow = 'hidden';
@@ -45,6 +49,113 @@ export default function MobileMenu() {
       document.body.style.overflow = '';
     };
   }, [open]);
+
+  const overlay = open ? (
+    <div className="fixed inset-0 z-[100] overflow-y-auto">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        alt=""
+        aria-hidden="true"
+        src="/images/interior-bar.jpg"
+        className="fixed inset-0 w-full h-full object-cover opacity-20 pointer-events-none"
+      />
+      <div className="fixed inset-0 bg-navy-deep/90 backdrop-blur-xl pointer-events-none" />
+      <div className="relative max-w-5xl mx-auto px-6 md:px-12 py-8">
+        <div className="flex items-center justify-between mb-10">
+          <Link
+            href="/"
+            onClick={() => setOpen(false)}
+            className="text-xl font-headline font-bold tracking-tight text-white flex items-center gap-2"
+          >
+            <span className="w-8 h-8 rounded-full bg-gold-luxe flex items-center justify-center text-navy-deep text-xs font-black">
+              11
+            </span>
+            ELEVEN <span className="text-gold-luxe">SIXTY</span>
+          </Link>
+          <button
+            aria-label="Close menu"
+            onClick={() => setOpen(false)}
+            className="text-white/80 material-symbols-outlined text-3xl hover:text-gold-luxe transition-colors"
+          >
+            close
+          </button>
+        </div>
+
+        <div className="mb-12">
+          <OpenStatus />
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-16">
+          {SECTIONS.map((s) => (
+            <div key={s.heading} className="flex flex-col gap-6">
+              <h3 className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold">
+                {s.heading}
+              </h3>
+              <div className="flex flex-col gap-4">
+                {s.links.map((l) => (
+                  <Link
+                    key={l.href}
+                    href={l.href}
+                    onClick={() => setOpen(false)}
+                    className="font-headline text-2xl md:text-3xl font-bold text-white hover:text-gold-luxe transition-colors tracking-tight"
+                  >
+                    {l.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="pt-10 border-t border-white/10 flex flex-col gap-6">
+          <div>
+            <span className="font-label text-[11px] uppercase tracking-[0.25em] text-white/60 font-bold mb-4 block">
+              Reserve on OpenTable
+            </span>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <a
+                href={OPENTABLE_LONDON}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gold-luxe hover:bg-white text-navy-deep font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-full transition-all text-center inline-flex items-center justify-center gap-2"
+              >
+                Reserve London
+                <span className="material-symbols-outlined text-base">open_in_new</span>
+              </a>
+              <a
+                href={OPENTABLE_ST_THOMAS}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-transparent border border-white/20 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-full transition-all text-center inline-flex items-center justify-center gap-2"
+              >
+                Reserve St Thomas
+                <span className="material-symbols-outlined text-base">open_in_new</span>
+              </a>
+            </div>
+          </div>
+          <div>
+            <span className="font-label text-[11px] uppercase tracking-[0.25em] text-white/60 font-bold mb-4 block">
+              Or call directly
+            </span>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <a
+                href="tel:+15196812669"
+                className="bg-transparent border border-white/10 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-full transition-all text-center"
+              >
+                London · 519-681-2669
+              </a>
+              <a
+                href="tel:+15196318282"
+                className="bg-transparent border border-white/10 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-full transition-all text-center"
+              >
+                St Thomas · 519-631-8282
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  ) : null;
 
   return (
     <>
@@ -57,115 +168,7 @@ export default function MobileMenu() {
         menu
       </button>
 
-      {open && (
-        <>
-          <div className="fixed inset-0 z-[100] pointer-events-none">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              alt=""
-              aria-hidden="true"
-              src="/images/interior-bar.jpg"
-              className="absolute inset-0 w-full h-full object-cover opacity-20"
-            />
-            <div className="absolute inset-0 bg-navy-deep/90 backdrop-blur-xl" />
-          </div>
-          <div className="fixed inset-0 z-[101] overflow-y-auto pointer-events-auto">
-            <div className="relative max-w-5xl mx-auto px-6 md:px-12 py-8">
-            <div className="flex items-center justify-between mb-10">
-              <Link
-                href="/"
-                onClick={() => setOpen(false)}
-                className="text-xl font-headline font-bold tracking-tight text-white flex items-center gap-2"
-              >
-                <span className="w-8 h-8 rounded-full bg-gold-luxe flex items-center justify-center text-navy-deep text-xs font-black">
-                  11
-                </span>
-                ELEVEN <span className="text-gold-luxe">SIXTY</span>
-              </Link>
-              <button
-                aria-label="Close menu"
-                onClick={() => setOpen(false)}
-                className="text-white/80 material-symbols-outlined text-3xl hover:text-gold-luxe transition-colors"
-              >
-                close
-              </button>
-            </div>
-            <div className="mb-12">
-              <OpenStatus />
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-16">
-              {SECTIONS.map((s) => (
-                <div key={s.heading} className="flex flex-col gap-6">
-                  <h3 className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold">
-                    {s.heading}
-                  </h3>
-                  <div className="flex flex-col gap-4">
-                    {s.links.map((l) => (
-                      <Link
-                        key={l.href}
-                        href={l.href}
-                        onClick={() => setOpen(false)}
-                        className="font-headline text-2xl md:text-3xl font-bold text-white hover:text-gold-luxe transition-colors tracking-tight"
-                      >
-                        {l.label}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="pt-10 border-t border-white/10 flex flex-col gap-6">
-              <div>
-                <span className="font-label text-[11px] uppercase tracking-[0.25em] text-white/60 font-bold mb-4 block">
-                  Reserve on OpenTable
-                </span>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  <a
-                    href={OPENTABLE_LONDON}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-gold-luxe hover:bg-white text-navy-deep font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-full transition-all text-center inline-flex items-center justify-center gap-2"
-                  >
-                    Reserve London
-                    <span className="material-symbols-outlined text-base">open_in_new</span>
-                  </a>
-                  <a
-                    href={OPENTABLE_ST_THOMAS}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-transparent border border-white/20 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-full transition-all text-center inline-flex items-center justify-center gap-2"
-                  >
-                    Reserve St Thomas
-                    <span className="material-symbols-outlined text-base">open_in_new</span>
-                  </a>
-                </div>
-              </div>
-              <div>
-                <span className="font-label text-[11px] uppercase tracking-[0.25em] text-white/60 font-bold mb-4 block">
-                  Or call directly
-                </span>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  <a
-                    href="tel:+15196812669"
-                    className="bg-transparent border border-white/10 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-full transition-all text-center"
-                  >
-                    London · 519-681-2669
-                  </a>
-                  <a
-                    href="tel:+15196318282"
-                    className="bg-transparent border border-white/10 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-full transition-all text-center"
-                  >
-                    St Thomas · 519-631-8282
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </>
-      )}
+      {mounted && overlay ? createPortal(overlay, document.body) : null}
     </>
   );
 }
