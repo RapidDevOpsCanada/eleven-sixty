@@ -73,8 +73,8 @@ export default function PreviewPage() {
       </section>
 
       {/* Cover line */}
-      <section className="px-6 md:px-12 pt-10 pb-16 md:pb-24 border-b border-white/5">
-        <div className="max-w-5xl mx-auto flex flex-col gap-6">
+      <section className="px-6 md:px-12 pt-10 pb-16 md:pb-20">
+        <div className="max-w-5xl mx-auto flex flex-col gap-8">
           <span className="font-label text-[11px] uppercase tracking-[0.4em] text-white/50 font-bold">
             For Eleven Sixty Bar &amp; Grill
           </span>
@@ -87,6 +87,89 @@ export default function PreviewPage() {
             themselves, and how the private space fills up. Then how it feels on a phone — where
             most of your guests are.
           </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-4 pt-6 border-t border-white/10">
+            {[
+              { stat: '11', label: 'Pages built' },
+              { stat: '6', label: 'Menus' },
+              { stat: '2', label: 'Locations' },
+              { stat: 'Live', label: 'Daily specials' },
+              { stat: 'Mobile', label: 'First' }
+            ].map((s) => (
+              <div
+                key={s.label}
+                className="bg-navy-deep/60 border border-white/5 rounded-2xl px-4 py-5 flex flex-col gap-1"
+              >
+                <span className="font-headline text-3xl md:text-4xl font-extrabold text-gold-luxe tracking-tight leading-none">
+                  {s.stat}
+                </span>
+                <span className="font-label text-[10px] uppercase tracking-[0.2em] text-white/70 font-bold mt-2">
+                  {s.label}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* All designed, all built — page thumbnails */}
+      <section className="px-6 md:px-12 pb-20 md:pb-24 border-b border-white/5">
+        <div className="max-w-5xl mx-auto flex flex-col gap-8">
+          <div className="flex items-baseline gap-4">
+            <span className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
+              All designed, all built
+            </span>
+            <span className="h-[1px] flex-1 bg-white/10" />
+          </div>
+          <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium max-w-2xl">
+            The homepage above is one of eleven pages. Here&apos;s a glance at the others — menus,
+            events, birthday club, and contact — all using the same design system.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {[
+              { src: '/dinner-menus/', title: 'Dinner menu', sub: 'Plus five other menus' },
+              { src: '/group-events/', title: 'Group events', sub: 'Private-space inquiries' },
+              { src: '/birthday-club/', title: 'Birthday Club', sub: 'Member signups' },
+              { src: '/contact-us/', title: 'Contact', sub: 'Both locations + form' }
+            ].map((p) => (
+              <div
+                key={p.src}
+                className="relative rounded-2xl overflow-hidden border border-white/10 shadow-xl shadow-black/40 bg-navy-deep"
+              >
+                <div className="flex items-center gap-2 px-4 py-2 border-b border-white/5 bg-navy-deep/80">
+                  <div className="flex gap-1">
+                    <span className="w-2 h-2 rounded-full bg-white/15" aria-hidden="true" />
+                    <span className="w-2 h-2 rounded-full bg-white/15" aria-hidden="true" />
+                    <span className="w-2 h-2 rounded-full bg-white/15" aria-hidden="true" />
+                  </div>
+                  <div className="flex-1 font-label text-[9px] text-white/40 text-center font-bold tracking-widest truncate">
+                    ELEVENSIXTY.CA{p.src}
+                  </div>
+                </div>
+                <div className="relative w-full overflow-hidden h-[240px] sm:h-[280px] bg-background">
+                  <iframe
+                    src={p.src}
+                    title={`Preview — ${p.title}`}
+                    loading="lazy"
+                    className="absolute top-0 left-0 origin-top-left pointer-events-none border-0"
+                    style={{
+                      width: '1440px',
+                      height: '900px',
+                      transform: 'scale(0.38)',
+                      transformOrigin: 'top left'
+                    }}
+                  />
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-navy-deep/70 via-navy-deep/20 to-transparent" />
+                </div>
+                <div className="px-5 py-4 border-t border-white/5 flex items-baseline justify-between gap-3">
+                  <h3 className="font-headline text-base font-bold text-white tracking-tight">
+                    {p.title}
+                  </h3>
+                  <span className="font-body text-xs text-white/50 font-medium">{p.sub}</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -160,7 +243,7 @@ export default function PreviewPage() {
         title="Tonight's specials, running themselves."
         lead="Your weekly lineup is set once. The homepage then shows tonight's feature automatically — Mule Tuesday, Martini Wednesday, the Thursday prix-fixe — and flips to the next one at midnight. Change the list once and every page updates."
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <DayCard
             day="Tuesday"
             feature="Mules"
@@ -180,32 +263,60 @@ export default function PreviewPage() {
             detail="Peller Chardonnay or Cab/Merlot ½ price on bottles."
             price="$42"
           />
+          <DayCard
+            day="Fri · Sat"
+            feature="Happy hour steps up"
+            detail="No weekly feature needed. The weekend fills itself."
+            price="—"
+          />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
-          <div className="bg-navy-deep border border-white/10 rounded-3xl p-8 md:p-10 flex flex-col gap-4">
+        <div className="bg-navy-deep/40 border border-white/5 rounded-2xl p-5 md:p-6 flex items-start gap-4 mt-2">
+          <span className="material-symbols-outlined text-gold-luxe text-2xl shrink-0">
+            edit
+          </span>
+          <p className="font-body text-base text-on-surface-variant font-medium leading-relaxed">
+            <span className="text-white font-bold">Update specials in one place.</span>{' '}
+            One short list — change it and every page updates. We&apos;ll walk you through it in
+            10 minutes at handoff, and write it down so you never need us for it again.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-6">
+          <div className="bg-navy-deep border border-white/10 rounded-3xl p-7 flex flex-col gap-3">
             <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-luxe font-bold">
               Happy hour · every day
             </span>
-            <h3 className="font-headline text-2xl md:text-3xl font-bold text-white tracking-tight">
+            <h3 className="font-headline text-xl md:text-2xl font-bold text-white tracking-tight">
               3–5pm &amp; 8pm–close
             </h3>
-            <p className="font-body text-base text-on-surface-variant font-medium leading-relaxed">
-              Half-priced apps, $6 domestic pints, $10 off wine bottles, half-price tequila
-              shots. Sits beside tonight&apos;s feature on the homepage — always visible.
+            <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
+              Half-priced apps, $6 domestic pints, $10 off wine bottles, half-price tequila.
+              Always visible on the homepage.
             </p>
           </div>
-          <div className="bg-navy-deep border border-white/10 rounded-3xl p-8 md:p-10 flex flex-col gap-4">
+          <div className="bg-navy-deep border border-white/10 rounded-3xl p-7 flex flex-col gap-3">
             <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-luxe font-bold">
               Open / closed · live
             </span>
-            <h3 className="font-headline text-2xl md:text-3xl font-bold text-white tracking-tight">
+            <h3 className="font-headline text-xl md:text-2xl font-bold text-white tracking-tight">
               Your site knows your hours.
             </h3>
-            <p className="font-body text-base text-on-surface-variant font-medium leading-relaxed">
-              A green dot says &ldquo;Open · closes 9pm&rdquo; when you&apos;re open, and
-              &ldquo;Closed · opens 11:30am tomorrow&rdquo; when you&apos;re not. Guests never
-              guess.
+            <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
+              A green dot says &ldquo;Open · closes 9pm&rdquo; when you are, and the right
+              re-open time when you aren&apos;t. Guests never guess.
+            </p>
+          </div>
+          <div className="bg-navy-deep border border-white/10 rounded-3xl p-7 flex flex-col gap-3">
+            <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-luxe font-bold">
+              Built to be found
+            </span>
+            <h3 className="font-headline text-xl md:text-2xl font-bold text-white tracking-tight">
+              When someone searches Eleven Sixty, you show up.
+            </h3>
+            <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
+              Proper hours, addresses, menu schema, review links, and share previews — wired in
+              so Google and social show your site, not the competition&apos;s.
             </p>
           </div>
         </div>
@@ -375,45 +486,93 @@ export default function PreviewPage() {
         </div>
       </Section>
 
-      {/* Ready to launch */}
-      <section className="px-6 md:px-12 py-24 md:py-32">
-        <div className="max-w-5xl mx-auto bg-navy-deep border border-white/10 rounded-3xl p-10 md:p-16 flex flex-col gap-6">
-          <span className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
-            Ready when you are
-          </span>
-          <h2 className="font-headline text-4xl md:text-5xl font-bold text-white tracking-tight leading-[1.02] max-w-3xl">
-            If the direction feels right,{' '}
-            <span className="italic text-gold-luxe">we go live.</span>
-          </h2>
-          <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium max-w-2xl">
-            Say the word and we wire in the real OpenTable accounts, load your current weekly
-            features, confirm your hours, and walk you through updating specials. We can be live
-            in about a week.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 pt-3">
-            <a
-              href="mailto:grizzlyagencyhello@gmail.com?subject=Eleven%20Sixty%20%E2%80%94%20let%27s%20launch"
-              className="bg-gold-luxe hover:bg-white text-navy-deep font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center inline-flex items-center justify-center gap-2"
-            >
-              Let&apos;s launch
-            </a>
-            <a
-              href="mailto:grizzlyagencyhello@gmail.com?subject=Eleven%20Sixty%20%E2%80%94%20questions"
-              className="bg-transparent border border-white/20 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center inline-flex items-center justify-center gap-2"
-            >
-              I have questions
-            </a>
+      {/* What happens next */}
+      <section className="px-6 md:px-12 py-24 md:py-28">
+        <div className="max-w-5xl mx-auto flex flex-col gap-10">
+          <div className="flex items-baseline gap-4">
+            <span className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
+              What happens next
+            </span>
+            <span className="h-[1px] flex-1 bg-white/10" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+            {[
+              {
+                n: '01',
+                title: 'You approve',
+                body: 'The direction feels right. Green light the concept.'
+              },
+              {
+                n: '02',
+                title: 'We wire it in',
+                body:
+                  'Real OpenTable accounts, your current weekly features, confirmed hours, your domain.'
+              },
+              {
+                n: '03',
+                title: 'Live in about a week',
+                body:
+                  'The site goes public. We walk your team through updating specials — 10 minutes at handoff.'
+              }
+            ].map((s, i) => (
+              <div
+                key={s.n}
+                className="relative bg-navy-deep border border-white/10 rounded-3xl p-8 flex flex-col gap-3"
+              >
+                <span className="font-headline text-4xl font-extrabold text-gold-luxe tracking-tight leading-none">
+                  {s.n}
+                </span>
+                <h3 className="font-headline text-xl md:text-2xl font-bold text-white tracking-tight mt-2">
+                  {s.title}
+                </h3>
+                <p className="font-body text-base text-on-surface-variant font-medium leading-relaxed">
+                  {s.body}
+                </p>
+                {i < 2 && (
+                  <span
+                    aria-hidden="true"
+                    className="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-background border border-white/10 items-center justify-center z-10"
+                  >
+                    <span className="material-symbols-outlined text-gold-luxe text-sm">
+                      east
+                    </span>
+                  </span>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <footer className="px-6 md:px-12 py-10 border-t border-white/5">
-        <div className="max-w-5xl mx-auto flex items-center justify-between font-label text-[10px] uppercase tracking-[0.2em] text-white/30 font-bold">
-          <span>Confidential · Concept for Eleven Sixty Bar &amp; Grill</span>
-          <Link href="/" className="hover:text-gold-luxe transition-colors">
-            Open the site →
-          </Link>
-        </div>
+      <footer className="px-6 md:px-12 py-14 border-t border-white/5">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+          <div className="flex flex-col gap-3 max-w-md">
+            <div className="flex items-center gap-3">
+              <span className="w-9 h-9 rounded-full bg-gold-luxe flex items-center justify-center text-navy-deep text-xs font-black">
+                G
+              </span>
+              <span className="font-headline text-lg font-bold text-white tracking-tight">
+                Grizzly <span className="text-gold-luxe">Agency</span>
+              </span>
+            </div>
+            <p className="font-body text-sm text-white/60 font-medium leading-relaxed">
+              Design &amp; build for independent restaurants and bars. Concept presented to
+              Eleven Sixty on {TODAY}.
+            </p>
+            <a
+              href="mailto:grizzlyagencyhello@gmail.com"
+              className="font-label text-xs uppercase tracking-[0.2em] text-white hover:text-gold-luxe transition-colors font-bold"
+            >
+              grizzlyagencyhello@gmail.com
+            </a>
+          </div>
+          <div className="flex items-center gap-5 font-label text-[10px] uppercase tracking-[0.2em] text-white/30 font-bold">
+            <span>Confidential</span>
+            <span className="h-3 w-px bg-white/15" />
+            <Link href="/" className="hover:text-gold-luxe transition-colors">
+              Open the site →
+            </Link>
+          </div>
       </footer>
     </main>
   );
