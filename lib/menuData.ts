@@ -462,9 +462,9 @@ export const MENUS: Menu[] = [
     title: 'Kids Menu',
     navLabel: 'Kids',
     kicker: 'For the Little Ones',
-    tagline: 'Kids Eat Free Wednesdays',
+    tagline: 'For the Whole Table',
     subtitle:
-      'One free kids\u2019 meal for every adult entrée on Wednesdays. Every dish is cooked the way we\u2019d cook it for the adult menu — no shortcuts, no frozen nuggets.',
+      'Six named mains for the little ones, cooked the way we\u2019d cook them for the adult menu — no shortcuts, no frozen nuggets.',
     sections: [
       {
         title: 'Mains',
@@ -506,7 +506,7 @@ export const MENUS: Menu[] = [
         ]
       }
     ],
-    pricingNote: 'Prices available in-room. Kids Eat Free every Wednesday with an adult entrée.'
+    pricingNote: 'Prices available in-room.'
   },
   {
     slug: 'drinks-menu',
@@ -814,7 +814,7 @@ export const MENUS: Menu[] = [
       },
       {
         title: 'Wednesday',
-        note: 'Martini night — and Kids Eat Free with any adult entrée.',
+        note: 'Martini night.',
         items: [
           {
             name: 'Martinis',

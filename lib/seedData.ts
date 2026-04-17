@@ -40,14 +40,14 @@ export const SEED_ARTICLES: SeedArticle[] = [
     share_count: 267
   },
   {
-    slug: 'kids-eat-free-wednesdays-how-we-think-about-family-dining',
-    title: 'Kids Eat Free Wednesdays: How We Think About Family Dining',
+    slug: 'how-we-think-about-family-dining',
+    title: 'How We Think About Family Dining',
     excerpt:
-      'The Wednesday program is our most popular night of the week in both rooms. Here is the thinking behind it, and the small rules we built around it.',
-    body: `<p>Kids Eat Free Wednesday started as a small experiment in the London room and grew, within a season, into the busiest night of our week. The idea is simple — one free kids&apos; meal for every adult entrée — and the mechanics are unchanged since we began. What has changed, over the years, is how carefully we plan around it.</p>
-<p>We learned early that family nights need a different rhythm than a Saturday date service. Families arrive earlier, usually between five and six-thirty. They want their drinks before the menus land and their food out within twenty minutes of ordering. They want crayons — ours come in a small linen pouch so they do not roll off the table. They want the bill a few minutes before they actually need it.</p>
-<p>Our kids&apos; menu is short on purpose. Four mains, three sides, a small dessert list. Everything is cooked the way we would cook it for the adult menu — no heat-lamp shortcuts, no frozen nuggets. The grilled cheese is made on the same sourdough we use at lunch. The chicken fingers are hand-breaded. The math tells us this costs us money on the free meals. The math is not the whole math.</p>
-<p>What the program has given us, over the years, is a generation of regulars who grew up at our tables and are now arriving with dates, with friends, with families of their own. The first time a guest asks for the same booth they sat at as a ten-year-old is a small kind of heartbreak, and a large kind of validation. Wednesdays are how we earned that.</p>`,
+      'Families are the backbone of both rooms. A short essay on the small rules we built around cooking for the whole table.',
+    body: `<p>Families are the backbone of both rooms. On any given early evening, between five and six-thirty, the majority of our tables are people who arrived together and want to eat together. We have spent years tuning the service and the kitchen around that rhythm, and it has changed how the whole restaurant runs.</p>
+<p>We learned early that family tables need a different pace than a Saturday date service. Drinks come before the menus land. Food goes out within twenty minutes of ordering, not thirty. Crayons live in a small linen pouch so they do not roll off the table. The bill arrives a few minutes before it is actually needed.</p>
+<p>Our kids&apos; menu is short on purpose: six named mains, a small dessert list. Everything is cooked the way we would cook it for the adult menu — no heat-lamp shortcuts, no frozen nuggets. The grilled cheese is made on the same sourdough we use at lunch. The chicken boneless bites are hand-breaded. The math of cooking that way is not the best math. It is the right math.</p>
+<p>What this approach has given us, over the years, is a generation of regulars who grew up at our tables and are now arriving with dates, with friends, with families of their own. The first time a guest asks for the same booth they sat at as a ten-year-old is a small kind of heartbreak, and a large kind of validation. Family dining is how we earned that.</p>`,
     category: 'Events',
     author: 'Imani Okafor',
     read_time: 4,
