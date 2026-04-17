@@ -11,19 +11,23 @@ const config: Config = {
       colors: {
         'navy-deep': '#0A1128',
         'gold-luxe': '#C5A059',
+        amber: '#D9AE5E',
+        cream: '#F2E4C4',
+        ember: '#E07A3B',
         'outline-variant': '#44474c',
         outline: '#8e9197',
-        'on-background': '#e4e2e3',
+        'on-background': '#ece6d6',
         error: '#ffb4ab',
         tertiary: '#C5A059',
-        background: '#050810',
+        background: '#07090f',
         surface: '#0A1128',
-        'on-surface': '#e4e2e3',
-        'on-surface-variant': '#c4c6cd',
+        'on-surface': '#ece6d6',
+        'on-surface-variant': '#cfc8b6',
         primary: '#b7c8de'
       },
       fontFamily: {
         headline: ['Outfit', 'sans-serif'],
+        display: ['Fraunces', 'Playfair Display', 'serif'],
         body: ['Plus Jakarta Sans', 'sans-serif'],
         label: ['Plus Jakarta Sans', 'sans-serif']
       }

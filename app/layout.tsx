@@ -1,10 +1,33 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import RestaurantJsonLd from '@/components/RestaurantJsonLd';
+
+const SITE_URL = 'https://elevensixty.ca';
+const TITLE = 'Eleven Sixty Bar & Grill — London & St Thomas';
+const DESCRIPTION =
+  'Premier bar & grill in London and St Thomas, Ontario. Known for sizzling steaks and fall-off-the-bone ribs. Open daily from 11:30am.';
 
 export const metadata: Metadata = {
-  title: 'Eleven Sixty Bar & Grill — London & St Thomas',
-  description:
-    'Premier bar & grill in London and St Thomas, Ontario. Known for sizzling steaks and fall-off-the-bone ribs. Open daily from 11:30am.'
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: TITLE,
+    template: '%s'
+  },
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: SITE_URL,
+    siteName: 'Eleven Sixty Bar & Grill',
+    locale: 'en_CA',
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: TITLE,
+    description: DESCRIPTION
+  },
+  alternates: { canonical: SITE_URL }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -14,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600;1,9..144,700&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
         <link
@@ -22,7 +45,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body className="bg-background text-on-surface antialiased">{children}</body>
+      <body className="bg-background text-on-surface antialiased">
+        <RestaurantJsonLd />
+        {children}
+      </body>
     </html>
   );
 }

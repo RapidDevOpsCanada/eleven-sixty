@@ -34,7 +34,7 @@ export default async function ArticlesPage() {
               </span>
             </div>
             <h1 className="font-headline font-bold text-5xl md:text-7xl text-white tracking-tight leading-[0.95]">
-              Stories from <span className="text-gold-luxe italic">the grill</span>
+              Stories from <span className="font-display italic font-normal text-amber">the grill</span>
             </h1>
             <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium max-w-xl">
               Dispatches on the ribs, the steaks, the rooms in London and St Thomas, and the

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import LocationMap from '@/components/LocationMap';
 
 export default function HomePage() {
   return (
@@ -18,7 +19,7 @@ export default function HomePage() {
             </div>
             <h1 className="font-headline font-bold text-5xl md:text-8xl mb-8 leading-[0.95] text-white tracking-tight">
               SIZZLING<br />STEAKS<br />
-              <span className="text-gold-luxe italic">&amp; RIBS</span>
+              <span className="font-display italic font-normal text-amber">&amp; ribs</span>
             </h1>
             <p className="font-body text-base text-on-surface-variant max-w-xs mb-10 leading-relaxed font-medium">
               Known for sizzling steaks and fall-off-the-bone ribs. Casual dining with family and
@@ -104,7 +105,7 @@ export default function HomePage() {
               </span>
               <h2 className="font-headline font-bold text-5xl md:text-7xl text-white leading-tight">
                 Bar &amp; Grill, <br />
-                <span className="text-gold-luxe">Done Right</span>
+                <span className="font-display italic font-normal text-amber">done right</span>
               </h2>
             </div>
             <div className="w-20 h-1 bg-gold-luxe rounded-full" />
@@ -206,6 +207,47 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="py-24 px-6 md:px-12 bg-navy-deep/20">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end md:justify-between gap-10">
+          <div className="max-w-xl flex flex-col gap-5">
+            <span className="font-label text-gold-luxe tracking-[0.3em] uppercase text-[11px] font-bold">
+              From the Neighbourhood
+            </span>
+            <h2 className="font-headline text-4xl md:text-5xl font-bold text-white tracking-tight">
+              Read what guests are <span className="font-display italic font-normal text-amber">saying</span>
+            </h2>
+            <p className="font-body text-base text-on-surface-variant leading-relaxed font-medium">
+              Real reviews live on Google and TripAdvisor. If you&apos;ve eaten with us, we&apos;d
+              love to hear from you there.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a
+              href="https://www.google.com/maps/place/?q=place_id:ChIJUTIz35rzLogRgHFVt2HXDbk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-label text-white bg-navy-deep px-6 py-4 rounded-full tracking-widest uppercase text-xs font-bold flex items-center gap-3 group border border-white/10 hover:border-gold-luxe transition-all"
+            >
+              Read on Google
+              <span className="material-symbols-outlined text-base text-gold-luxe group-hover:translate-x-1 transition-transform">
+                open_in_new
+              </span>
+            </a>
+            <a
+              href="https://www.tripadvisor.ca/Restaurant_Review-g154995-d21053259-Reviews-Eleven_Sixty_Bar_Grill-London_Ontario.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-label text-white bg-navy-deep px-6 py-4 rounded-full tracking-widest uppercase text-xs font-bold flex items-center gap-3 group border border-white/10 hover:border-gold-luxe transition-all"
+            >
+              TripAdvisor
+              <span className="material-symbols-outlined text-base text-gold-luxe group-hover:translate-x-1 transition-transform">
+                open_in_new
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 px-6 md:px-12 bg-background">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 max-w-xl">
@@ -300,8 +342,12 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-navy-deep border border-white/5 rounded-3xl p-10 md:p-12 flex flex-col gap-8 hover:border-gold-luxe/40 transition-colors">
-              <div className="flex items-start justify-between">
+            <div className="bg-navy-deep border border-white/5 rounded-3xl p-6 md:p-8 flex flex-col gap-6 hover:border-gold-luxe/40 transition-colors">
+              <LocationMap
+                query="1160 Wellington Road London ON N6E 1M3"
+                label="London"
+              />
+              <div className="flex items-start justify-between px-2">
                 <div>
                   <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold mb-3 block">
                     Location 01
@@ -354,8 +400,12 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="bg-navy-deep border border-white/5 rounded-3xl p-10 md:p-12 flex flex-col gap-8 hover:border-gold-luxe/40 transition-colors">
-              <div className="flex items-start justify-between">
+            <div className="bg-navy-deep border border-white/5 rounded-3xl p-6 md:p-8 flex flex-col gap-6 hover:border-gold-luxe/40 transition-colors">
+              <LocationMap
+                query="1093 Talbot St St Thomas ON N5P 1G4"
+                label="St Thomas"
+              />
+              <div className="flex items-start justify-between px-2">
                 <div>
                   <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold mb-3 block">
                     Location 02

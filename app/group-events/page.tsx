@@ -44,9 +44,9 @@ export default function GroupEventsPage() {
             </span>
           </div>
           <h1 className="font-headline font-bold text-5xl md:text-7xl text-white tracking-tight leading-[0.95]">
-            Private <span className="text-gold-luxe italic">Room.</span>
+            Private <span className="font-display italic font-normal text-amber">room.</span>
             <br />
-            Big <span className="text-gold-luxe italic">Screen.</span>
+            Big <span className="font-display italic font-normal text-amber">screen.</span>
           </h1>
           <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium max-w-xl">
             Eleven Sixty Bar &amp; Grill is the perfect venue for your next corporate function,

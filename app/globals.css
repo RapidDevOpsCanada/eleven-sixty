@@ -3,13 +3,18 @@
 @tailwind utilities;
 
 body {
-  background-color: #050810;
-  color: #e4e2e3;
+  background-color: #07090f;
+  color: #ece6d6;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .font-headline {
   font-family: 'Outfit', sans-serif;
+}
+
+.font-display {
+  font-family: 'Fraunces', 'Playfair Display', serif;
+  font-optical-sizing: auto;
 }
 
 .material-symbols-outlined {

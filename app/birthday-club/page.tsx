@@ -22,7 +22,7 @@ export default function BirthdayClubPage() {
             </span>
           </div>
           <h1 className="font-headline font-bold text-5xl md:text-7xl text-white tracking-tight leading-[0.95]">
-            Birthday <span className="text-gold-luxe italic">Club</span>
+            Birthday <span className="font-display italic font-normal text-amber">Club</span>
           </h1>
           <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium max-w-xl">
             Get special offers from Eleven Sixty on your birthday and throughout the year. A

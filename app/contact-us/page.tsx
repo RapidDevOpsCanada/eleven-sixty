@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import LocationMap from '@/components/LocationMap';
 
 export const metadata = {
   title: 'Contact Us — Eleven Sixty Bar & Grill',
@@ -21,7 +22,7 @@ export default function ContactPage() {
             </span>
           </div>
           <h1 className="font-headline font-bold text-5xl md:text-7xl text-white tracking-tight leading-[0.95]">
-            Contact <span className="text-gold-luxe italic">Us</span>
+            Contact <span className="font-display italic font-normal text-amber">Us</span>
           </h1>
           <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium max-w-xl">
             Please feel free to contact us with any questions or feedback that you may have. We
@@ -33,8 +34,12 @@ export default function ContactPage() {
       <section className="px-6 md:px-12 pb-24">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="flex flex-col gap-6">
-            <div className="bg-navy-deep border border-white/5 rounded-3xl p-10 flex flex-col gap-6">
-              <div className="flex items-start justify-between">
+            <div className="bg-navy-deep border border-white/5 rounded-3xl p-6 md:p-8 flex flex-col gap-6">
+              <LocationMap
+                query="1160 Wellington Road London ON N6E 1M3"
+                label="London"
+              />
+              <div className="flex items-start justify-between px-2">
                 <div>
                   <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold mb-3 block">
                     Location 01
@@ -47,7 +52,7 @@ export default function ContactPage() {
                   location_on
                 </span>
               </div>
-              <div className="flex flex-col gap-3 font-body text-base text-on-surface-variant font-medium leading-relaxed">
+              <div className="flex flex-col gap-3 font-body text-base text-on-surface-variant font-medium leading-relaxed px-2">
                 <a
                   href="https://maps.google.com/?q=1160+Wellington+Road+London+ON+N6E+1M3"
                   target="_blank"
@@ -70,8 +75,12 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="bg-navy-deep border border-white/5 rounded-3xl p-10 flex flex-col gap-6">
-              <div className="flex items-start justify-between">
+            <div className="bg-navy-deep border border-white/5 rounded-3xl p-6 md:p-8 flex flex-col gap-6">
+              <LocationMap
+                query="1093 Talbot St St Thomas ON N5P 1G4"
+                label="St Thomas"
+              />
+              <div className="flex items-start justify-between px-2">
                 <div>
                   <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold mb-3 block">
                     Location 02
@@ -84,7 +93,7 @@ export default function ContactPage() {
                   location_on
                 </span>
               </div>
-              <div className="flex flex-col gap-3 font-body text-base text-on-surface-variant font-medium leading-relaxed">
+              <div className="flex flex-col gap-3 font-body text-base text-on-surface-variant font-medium leading-relaxed px-2">
                 <a
                   href="https://maps.google.com/?q=1093+Talbot+St+St+Thomas+ON+N5P+1G4"
                   target="_blank"

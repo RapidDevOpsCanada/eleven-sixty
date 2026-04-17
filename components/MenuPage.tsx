@@ -84,6 +84,24 @@ export default function MenuPage({ menu }: { menu: Menu }) {
         </div>
       </section>
 
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-navy-deep/95 backdrop-blur-xl border-t border-white/10 px-4 py-3 flex gap-2 safe-bottom">
+        <a
+          href="tel:+15196812669"
+          className="flex-1 bg-gold-luxe text-navy-deep font-label text-[11px] uppercase tracking-widest font-bold px-4 py-3 rounded-full text-center flex items-center justify-center gap-2"
+        >
+          <span className="material-symbols-outlined text-base">call</span>
+          London
+        </a>
+        <a
+          href="tel:+15196318282"
+          className="flex-1 bg-transparent border border-white/20 text-white font-label text-[11px] uppercase tracking-widest font-bold px-4 py-3 rounded-full text-center flex items-center justify-center gap-2"
+        >
+          <span className="material-symbols-outlined text-base">call</span>
+          St Thomas
+        </a>
+      </div>
+      <div className="md:hidden h-20" aria-hidden="true" />
+
       <Footer />
     </>
   );

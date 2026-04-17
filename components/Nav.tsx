@@ -51,53 +51,36 @@ export default function Nav({ showCommandBar = true }: { showCommandBar?: boolea
         </div>
 
         {showCommandBar && (
-          <div className="pointer-events-auto command-bar-blur rounded-2xl md:rounded-full p-2 flex flex-col md:flex-row items-center gap-2 max-w-4xl mx-auto w-full shadow-2xl">
-            <div className="flex-1 w-full grid grid-cols-2 gap-2 md:flex md:items-center">
-              <Link
-                href="/dinner-menus/"
-                className="flex items-center gap-3 px-4 py-2 hover:bg-white/5 rounded-full transition-colors cursor-pointer group flex-1"
-              >
-                <span className="material-symbols-outlined text-gold-luxe">restaurant_menu</span>
-                <div className="flex flex-col">
-                  <span className="text-[9px] uppercase tracking-tighter text-white/40 font-bold">
-                    Discover
-                  </span>
-                  <span className="text-xs font-bold text-white whitespace-nowrap">
-                    View the Menu
-                  </span>
-                </div>
-              </Link>
-              <Link
-                href="/group-events/"
-                className="flex items-center gap-3 px-4 py-2 hover:bg-white/5 rounded-full transition-colors cursor-pointer group flex-1"
-              >
-                <span className="material-symbols-outlined text-gold-luxe">calendar_today</span>
-                <div className="flex flex-col">
-                  <span className="text-[9px] uppercase tracking-tighter text-white/40 font-bold">
-                    Private Room
-                  </span>
-                  <span className="text-xs font-bold text-white whitespace-nowrap">
-                    Book an Event
-                  </span>
-                </div>
-              </Link>
-            </div>
-            <div className="hidden md:block w-px h-8 bg-white/10 mx-2" />
-            <div className="w-full md:w-auto flex items-center gap-2">
-              <a
-                href="tel:+15196812669"
-                className="flex-1 md:w-48 bg-navy-deep/50 rounded-full px-4 py-2 flex items-center justify-between border border-white/10 hover:border-gold-luxe/50 transition-colors"
-              >
-                <span className="text-xs text-white/70 font-medium">Call London</span>
-                <span className="material-symbols-outlined text-sm text-gold-luxe">call</span>
-              </a>
-              <a
-                href="tel:+15196812669"
-                className="bg-gold-luxe hover:bg-white text-navy-deep font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full transition-all shadow-lg shadow-gold-luxe/10"
-              >
-                Quick Book
-              </a>
-            </div>
+          <div className="pointer-events-auto command-bar-blur rounded-full p-2 flex items-center gap-1 md:gap-2 max-w-2xl mx-auto w-full shadow-2xl">
+            <Link
+              href="/dinner-menus/"
+              className="flex items-center justify-center gap-2 md:gap-3 px-4 md:px-6 py-3 hover:bg-white/5 rounded-full transition-colors group flex-1"
+            >
+              <span className="material-symbols-outlined text-amber text-xl">restaurant_menu</span>
+              <span className="font-label text-[10px] md:text-xs font-bold text-white uppercase tracking-widest">
+                Menu
+              </span>
+            </Link>
+            <div className="w-px h-8 bg-white/10" />
+            <a
+              href="tel:+15196812669"
+              className="flex items-center justify-center gap-2 md:gap-3 px-4 md:px-6 py-3 hover:bg-white/5 rounded-full transition-colors group flex-1"
+            >
+              <span className="material-symbols-outlined text-amber text-xl">call</span>
+              <span className="font-label text-[10px] md:text-xs font-bold text-white uppercase tracking-widest">
+                Book
+              </span>
+            </a>
+            <div className="w-px h-8 bg-white/10" />
+            <Link
+              href="/#locations"
+              className="flex items-center justify-center gap-2 md:gap-3 px-4 md:px-6 py-3 hover:bg-white/5 rounded-full transition-colors group flex-1"
+            >
+              <span className="material-symbols-outlined text-amber text-xl">near_me</span>
+              <span className="font-label text-[10px] md:text-xs font-bold text-white uppercase tracking-widest">
+                Directions
+              </span>
+            </Link>
           </div>
         )}
       </div>
