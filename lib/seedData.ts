@@ -11,107 +11,102 @@ export type SeedArticle = {
 
 export const SEED_ARTICLES: SeedArticle[] = [
   {
-    slug: 'the-art-of-the-slow-curation',
-    title: 'The Art of the Slow Curation',
+    slug: 'fall-off-the-bone-the-slow-smoke-method-behind-our-ribs',
+    title: 'Fall-Off-The-Bone: The Slow-Smoke Method Behind Our Ribs',
     excerpt:
-      'Inside the nightly ritual that transforms our deep navy room into a choreographed evening — and why we refuse to rush it.',
-    body: `<p>There is a specific quality of attention that we call curation, and it cannot be hurried. Every evening at Eleven Sixty begins with the same ninety-minute ritual: lights lowered in quarter-stops, vinyl pulled from a shortlist of four records, glassware polished by hand while the kitchen plates the first amuse. None of it is performance. It is preparation for a room that will, by eight o&#39;clock, hold about forty people who arrived expecting something different from their Tuesday.</p>
-<p>The phrase &quot;slow curation&quot; first appeared in our staff notebook during our second summer, when we noticed that the nights which felt most alive were also the nights we had prepared most deliberately. The pattern held. A curated night is not a planned night — a plan is a list of events, whereas a curation is a sequence of attentions. The difference is felt in the body more than the itinerary.</p>
-<p>We borrow from the hospitality vocabulary of hotels, the patience of a record-shop clerk, and a stubborn belief that neighborhood rooms deserve the same care as destination ones. Our rule of thumb: nothing enters the evening that we cannot defend with a sentence. Why this playlist, why this candle, why this second Negroni variation alongside the first. The answers are almost always emotional, not technical.</p>
-<p>For the guest, the work is invisible. That is the point. What they notice is that the room somehow already knew how they wanted to arrive — quieter at the bar tonight, warmer in the back corner, the second song on side B exactly when the entrée lands. What they do not notice is the forty small decisions behind each of those moments, which is how we know the curation landed.</p>
-<p>We are often asked if the model scales. It does not, and that is the argument. A curated evening is a local good, produced by a small team for a small room, consumed in real time, and gone by the time the chairs go up. What remains is a neighborhood that trusts the night will be worth walking to. That trust, compounded over months, is the only metric we track.</p>`,
-    category: 'Curations',
-    author: 'Lena Marquez',
-    read_time: 6,
-    share_count: 284
-  },
-  {
-    slug: 'five-signature-cocktails-that-define-11-60',
-    title: 'Five Signature Cocktails That Define 11:60',
-    excerpt:
-      'A field guide to the drinks our bar team returns to, the ideas behind them, and how to order the one that will suit your evening.',
-    body: `<p>Our cocktail list is short by design. Eighteen drinks, rotated four times a year, with a core of five that never leave. Those five are the ones this guide is about — not because they are our most photographed, but because they are the ones our bartenders reach for when a regular says &quot;something for tonight&quot; and nothing else.</p>
-<p>The <strong>Gold Room</strong> is our most ordered drink and also our most misunderstood. It reads like a Manhattan on paper — rye, vermouth, bitters — but a barrel-aged honey syrup and a whisper of saline pull it into warmer territory. We serve it in a heavy coupe that holds the cold for longer than it should. It is the drink to order when you have not decided what kind of night you are having.</p>
-<p>The <strong>Velvet Session</strong> is built around oolong tea cold-brewed for fourteen hours, combined with gin, lemon, and a house-made sesame orgeat. It is the drink that convinced our regulars we were serious about the bar program. It tastes like a long conversation.</p>
-<p>The <strong>Neighborhood Spritz</strong> is our concession to apéritif hour and our favorite low-ABV option. Dry vermouth, grapefruit cordial, a splash of sparkling, a single green olive. We serve more of them between five and seven than anything else on the list. If you are arriving first and waiting, this is the drink.</p>
-<p>The <strong>Deep Navy</strong> is the one people ask about. Dark rum, black walnut bitters, a cold-pressed cherry shrub, and — because our bar lead insists — a single drop of smoke extracted in the kitchen each morning. It is a dessert drink in all but name. It is also the drink most likely to end your evening in the best possible way.</p>
-<p>The <strong>11:60</strong> is the house drink, and we guard the recipe. What we will say is that it is the only clear cocktail on the list, it is stirred for exactly sixty seconds, and it is garnished with a piece of fruit you will not expect. It is designed to be ordered once per visit, no more. The restraint is the point.</p>`,
-    category: 'Cocktails',
-    author: 'Rohan Patel',
+      'Our ribs are the thing people drive across London for. Here is how we cook them, why it takes most of the day, and what we learned to leave alone.',
+    body: `<p>The ribs are the dish we get asked about most, and the dish we are most protective of. If you have eaten them at our Wellington Road or Talbot Street rooms, you already know the moment when the meat lets go of the bone without resistance. What you might not know is that the dish starts the day before you arrive, in a kitchen that smells like brown sugar and black pepper at seven in the morning.</p>
+<p>Every rack gets a dry rub applied by hand the night before service. The rub is simple — paprika, brown sugar, salt, pepper, garlic, a handful of private additions — and it does most of its work overnight, drawing moisture out and pulling flavour in. We tried shortcuts in our first year. None of them held up. The rub goes on the night before, and it rests until morning.</p>
+<p>The slow cook takes between four and five hours, depending on the rack, at a temperature low enough that you could hold your hand inside the smoker without flinching. We finish over live flame at the end, for the char and the colour, and we baste the last coat of sauce on only in the final minutes. Sauce applied too early burns. Sauce applied too late beads. We learned that the hard way.</p>
+<p>The sauce itself is ours, and the recipe stays in-house. What we will say is that it is less sweet than most Ontario rib sauces, that it carries a small back-note of smoke that comes from the cook itself, and that it is designed to be noticed for a second and then disappear. A good rib sauce is a partner to the meat, not a replacement for it.</p>
+<p>We serve them two ways: full rack and half rack, with a side of fries that we cut in-house every morning and a coleslaw we make without mayonnaise. On Tuesdays and Thursdays, we run all-you-can-eat specials — a tradition we began in London and brought to St Thomas the year after. The ribs have not changed. Neither has the pace. Good cooking is patience, plated.</p>`,
+    category: 'Menu',
+    author: 'Chef Aya Vance',
     read_time: 5,
     share_count: 412
   },
   {
-    slug: 'inside-the-velvet-sessions-inaugural-night',
-    title: 'Inside the Velvet Sessions: Our Inaugural Night',
+    slug: 'why-our-steak-program-sources-local-ontario-beef',
+    title: 'Why Our Steak Program Sources Local Ontario Beef',
     excerpt:
-      'A recap of the opening of our monthly listening series — what we got right, what surprised us, and why the format is staying.',
-    body: `<p>The first Velvet Session happened on a Thursday in February, in the second half of a winter that had been unkind to the block. We had spent six weeks preparing a room that, for ninety minutes, would be devoted entirely to listening — to music, to food, to the person across the table. We did not know whether forty people would show up.</p>
-<p>Fifty-two did. The overflow list became its own story. By seven-fifteen the room was at capacity and we had quietly promised a dozen regulars that we would run a second seating at nine. The kitchen adjusted. The bar adjusted. The DJ adjusted. The night became, without anyone naming it, twice what we had designed.</p>
-<p>The format, for those who missed it: a curated forty-five minute vinyl set by a rotating guest, built around a theme shared in advance. Our inaugural guest chose &quot;rooms you leave reluctantly&quot; — a soul, jazz, and ambient selection that asked the room to sit with long-form tracks rather than dance to them. Between sides, our kitchen sent out small coursed plates paired to the mood, not the music.</p>
-<p>What surprised us: the quiet. We had braced for the first session to feel like a party with better lighting. Instead, conversation dropped to a register we had never heard in the room before. People leaned closer. The bar slowed. Several tables stayed well past eleven, long after the set ended, simply because no one wanted to be the one to break the spell.</p>
-<p>The Velvet Sessions now happen the third Thursday of every month, capped at fifty seats, with the theme announced two weeks in advance. We keep a waitlist, and we keep the format deliberately simple. It is, we think, the clearest expression of what this room is supposed to be.</p>`,
-    category: 'Culture',
+      'A short essay on the decision we made in our second year — and why we have never regretted spending more per ounce for beef that travels less.',
+    body: `<p>When we opened the London room, our steaks came from a national distributor. The beef was fine. The cuts were consistent. The margin was friendly. And yet, at the end of every service, we had the same nagging feeling — that the steak was the one thing on the menu we could not speak about with pride. It tasted like a steak. It did not taste like ours.</p>
+<p>In our second year we began working with a small group of Ontario ranchers, all within a few hours&apos; drive. The cuts arrive whole and are broken down in our kitchens by our own team. The aging happens on our racks, not in a warehouse. We pay more. We trim more. We lose a percentage point or two on food cost. We gained, in return, a steak program that we are happy to defend sentence by sentence.</p>
+<p>The cuts we feature are the ones that reward careful cooking — ribeye, striploin, a six-ounce filet for guests who want a quieter plate. Each is served with a pan sauce we build to order: a peppercorn, a red wine, a mushroom-and-thyme when the mushrooms are good. Sides are chosen at the table. The garnish is a single branch of rosemary, crisped in the pan, nothing more.</p>
+<p>Steak is an emotional dish. People order it for a reason — a promotion, an anniversary, a Tuesday they needed to become a Friday. We take that seriously. The goal of the program is not to impress. It is to give you the plate you came in hoping for, cooked to the temperature you asked for, the first time.</p>`,
+    category: 'Menu',
+    author: 'Marcus Halloran',
+    read_time: 5,
+    share_count: 267
+  },
+  {
+    slug: 'kids-eat-free-wednesdays-how-we-think-about-family-dining',
+    title: 'Kids Eat Free Wednesdays: How We Think About Family Dining',
+    excerpt:
+      'The Wednesday program is our most popular night of the week in both rooms. Here is the thinking behind it, and the small rules we built around it.',
+    body: `<p>Kids Eat Free Wednesday started as a small experiment in the London room and grew, within a season, into the busiest night of our week. The idea is simple — one free kids&apos; meal for every adult entrée — and the mechanics are unchanged since we began. What has changed, over the years, is how carefully we plan around it.</p>
+<p>We learned early that family nights need a different rhythm than a Saturday date service. Families arrive earlier, usually between five and six-thirty. They want their drinks before the menus land and their food out within twenty minutes of ordering. They want crayons — ours come in a small linen pouch so they do not roll off the table. They want the bill a few minutes before they actually need it.</p>
+<p>Our kids&apos; menu is short on purpose. Four mains, three sides, a small dessert list. Everything is cooked the way we would cook it for the adult menu — no heat-lamp shortcuts, no frozen nuggets. The grilled cheese is made on the same sourdough we use at lunch. The chicken fingers are hand-breaded. The math tells us this costs us money on the free meals. The math is not the whole math.</p>
+<p>What the program has given us, over the years, is a generation of regulars who grew up at our tables and are now arriving with dates, with friends, with families of their own. The first time a guest asks for the same booth they sat at as a ten-year-old is a small kind of heartbreak, and a large kind of validation. Wednesdays are how we earned that.</p>`,
+    category: 'Events',
     author: 'Imani Okafor',
     read_time: 4,
     share_count: 198
   },
   {
-    slug: 'neighborhood-rituals-what-a-local-actually-means',
-    title: 'Neighborhood Rituals: What a Local Actually Means',
+    slug: 'the-birthday-club-why-we-celebrate-our-regulars',
+    title: 'The Birthday Club: Why We Celebrate Our Regulars',
     excerpt:
-      'The word &quot;local&quot; gets used casually. We took the question seriously and rebuilt our weeknight programming around the answer.',
-    body: `<p>A neighborhood bar is not defined by its address. It is defined by the number of people who walk in, unplanned, on a Monday night. By that definition, most bars are not neighborhood bars — they are destinations that happen to sit on residential blocks. We wanted to know what the difference was, and whether we could engineer ourselves toward the former.</p>
-<p>The research, such as it was, took about a year of careful watching. The patterns we noticed: regulars arrived earlier than we expected, often before six. They did not want a full evening — they wanted thirty minutes of good lighting, a drink they did not need to explain, and a greeting that used their name. They came on Monday and Tuesday more than Friday and Saturday. They came alone more often than in pairs.</p>
-<p>We redesigned the early evening around this. Apéritif hour starts at five, with four low-ABV drinks and two small plates at a friendlier price. The music is quieter, the lights are warmer, and the bar is never more than two seats deep. We trained the team to greet by name when possible and to leave regulars alone when they wanted to be left alone. That second skill took longer to learn than the first.</p>
-<p>What we learned: being a local is a quiet commitment, not a loud one. It is about being the same room tonight that you were last Tuesday. It is about recognizing that somebody walked three blocks in the cold to be here and that the walk matters. The rituals we built — the early hour, the named greeting, the protected seats — are our attempt to honor that walk.</p>`,
-    category: 'Neighborhood',
-    author: 'Marcus Halloran',
-    read_time: 5,
+      'A short guide to the program that has sent more than three thousand desserts to tables across our two rooms — and why we still think it matters.',
+    body: `<p>The Birthday Club is the oldest program in the restaurant. It predates the kids menu, it predates the St Thomas expansion, and it predates our current sauce. The premise is unchanged: sign up, and we send a dessert to your table on your birthday, on the house, no questions asked.</p>
+<p>What we did not expect, when we started it, was how much the program would teach us about our guests. We now know that most birthdays in London fall on a Saturday in the summer, that our St Thomas guests prefer the chocolate cake over the cheesecake almost two to one, and that the average birthday table stays forty percent longer than a non-birthday table. These are the kinds of numbers that only accumulate over years.</p>
+<p>The dessert itself is finished with a single sparkler and walked to the table by the server who took the order. We tried a bigger production — the whole team, clapping, singing — and the guests found it too much. The quiet walk, the single candle, the small moment of recognition: that is what people told us they wanted. We listened.</p>
+<p>Sign-ups happen at the host stand or online. The only fields we collect are your name, your birthday, and the location you consider your home room. We do not email you otherwise. We do not sell your data. The program exists because birthdays in a neighbourhood restaurant are one of the few moments left where showing up on purpose for someone is noticed. We think that is worth protecting.</p>`,
+    category: 'Events',
+    author: 'Lena Marquez',
+    read_time: 4,
     share_count: 156
   },
   {
-    slug: 'sound-design-philosophy-why-our-playlist-changes-at-9pm',
-    title: 'Sound Design Philosophy: Why Our Playlist Changes at 9pm',
+    slug: '1160-wellington-road-a-short-history-of-our-london-room',
+    title: '1160 Wellington Road: A Short History of Our London Room',
     excerpt:
-      'The music in a room is the emotional floorboard everyone stands on. Here is how we think about ours — and what happens at nine.',
-    body: `<p>Most bars treat music as background. We treat it as architecture. The song playing when you walk in tells you what kind of evening is possible — slow, social, celebratory, focused. Get it wrong and the room pushes guests toward the exit without anyone knowing why. Get it right and they stay an hour longer than they planned.</p>
-<p>Our playlists are built in three arcs. From five to seven, the music is quiet, textured, and mostly instrumental — jazz, bossa, early electronic. The goal is to make conversation easy without making it the only thing happening. From seven to nine, we introduce vocals and rhythm, matching the rising volume of a filling room. The arc is designed to feel inevitable, never abrupt.</p>
-<p>At nine o&#39;clock, the room flips. The playlist moves into what we call the &quot;deep register&quot; — soul, funk, disco edits, occasional house — and the volume comes up by a measured three decibels. We do this because by nine, the early crowd has settled into a new register: they are no longer arriving, they are staying. The music shifts to match them.</p>
-<p>The transition is handled by one person, live, every night. We tried automating it and hated the result. A human hand reads the room — the specific people in it, how the bar is holding, whether the back corner is laughing or whispering — and chooses the next song accordingly. It is not an algorithm. It is a conversation between the DJ and the night.</p>
-<p>We think about the playlist the way a restaurant thinks about the menu: it is the single most controllable variable that shapes how guests feel. We would no more outsource it than we would outsource the cooking.</p>`,
-    category: 'Culture',
-    author: 'Saskia Lind',
-    read_time: 5,
-    share_count: 267
-  },
-  {
-    slug: 'the-gold-accented-bar-notes-from-the-build',
-    title: 'The Gold-Accented Bar: Notes From the Build',
-    excerpt:
-      'A year of decisions, three cabinet-maker rejections, and the single detail that held up construction for six weeks.',
-    body: `<p>The bar is the first thing you see when you walk in, and it was the last thing we finalized. The delay was not accidental. We wanted the room to tell us what kind of bar it needed before we built one. It took a full year of temporary furniture and a lot of arguing before we knew.</p>
-<p>The final design is ten meters of walnut, hand-rubbed, with brushed-gold inlays at the lip and the footrest. It looks simple in photographs and is, in fact, the most over-engineered element in the room. The gold inlay alone went through three cabinet-makers and six weeks of delay because we refused to accept a version that looked like decoration. We wanted it to look like a structural choice — a line the room needed, not a line the room was given.</p>
-<p>The choice of walnut was ours. The choice of inlay depth — two millimeters, no more — was the fourth cabinet-maker&#39;s insistence. She was right. Deeper would have read as ornamental; shallower would have disappeared. Two millimeters catches the light only when the person standing at the bar moves, which is exactly the effect we wanted.</p>
-<p>Height was another argument. We settled on forty-two inches, slightly higher than the standard, so that a guest leaning in to order is in direct eye contact with the bartender across. Small decision, felt by everyone, remarked upon by no one. That is the ideal kind.</p>
-<p>The footrest, which no guest will ever photograph, is solid brass. We chose it because it develops a patina over the course of a year that tells you how much the room has been used. One year in, the brass is starting to tell the story. We do not polish it.</p>`,
-    category: 'Neighborhood',
+      'Our London address is our name. Here is the short story of the room itself, the renovation, and the block we have called home for over a decade.',
+    body: `<p>The address became the name because the address came first. When we took over the space at 1160 Wellington Road, we spent six months trying out prettier, more imaginative names, and every one of them felt like it was trying to be something the building was not. The building was a working room on a working block. We named the restaurant after the door number and never looked back.</p>
+<p>The renovation, that first winter, was the kind of build where you find out what the bones of the room actually are. We stripped three previous layers of wall treatment, uncovered the original brick on the north wall, and kept it. The bar runs along the west side because that is where the plumbing was, and we did not have the budget to move it. Constraints become features, given enough time.</p>
+<p>The booths along the front windows are original to our build and have been reupholstered twice since. We know which table sits in which booth by the small nicks in the wood along the edges — every booth has a history, mostly invisible to guests, mostly remembered by the team. The two-top in the back corner by the kitchen pass is the table we send to regulars who come in alone on a Tuesday. It is the warmest seat in the room.</p>
+<p>The block has changed around us over the years. Businesses have come and gone. We have stayed because the room works, because the neighbourhood has supported us, and because we never quite figured out how to move a kitchen this good. If you live in southeast London, you have probably walked past our windows on a winter evening and seen the lights. That is the thing we are trying to keep alive.</p>`,
+    category: 'Locations',
     author: 'Daniel Ó Cinnéide',
-    read_time: 6,
+    read_time: 5,
     share_count: 143
   },
   {
-    slug: 'late-night-menu-secrets',
-    title: 'Late Night Menu Secrets',
+    slug: 'our-st-thomas-home-on-talbot-street',
+    title: 'Our St Thomas Home on Talbot Street',
     excerpt:
-      'Six plates that only appear after ten, the reasoning behind each, and why the late menu is the best menu we write.',
-    body: `<p>The late menu is the menu we write for ourselves. It appears at ten every night, runs for six plates, and is designed around the specific hunger of people who have already had two drinks and are not yet ready to go home. It is also the menu our kitchen looks forward to most.</p>
-<p>The philosophy is straightforward: late food should be warmer, saltier, and more generous than the dinner menu. It should be eaten with hands more often than with cutlery. It should not apologize for being comforting. The early menu is composed; the late menu is honest.</p>
-<p>Our signature late plate is a plate of hand-cut fries finished with whipped bone marrow and a shower of grated horseradish. It arrives at the table too hot to eat, which is the point — it buys the table two minutes of anticipation. We have sold it every single night since we opened. We have no plans to ever take it off.</p>
-<p>Two other favorites: a short-rib grilled cheese on house sourdough, cut into quarters, served with a pickled-shallot condiment nobody needs explained. And a dish we call &quot;the midnight egg&quot; — a soft-yolked egg poached in brown butter, set on a disc of potato, finished with black truffle in season and burnt leek ash out of season. It is a dish for people who have decided to stay.</p>
-<p>The late menu closes at one. It is the last thing the kitchen makes before they clean down, and it is almost always the food the team eats as family meal after service. We think you can taste that. We think it is why the late menu, more than any other part of the program, keeps people returning.</p>`,
-    category: 'Cocktails',
-    author: 'Chef Aya Vance',
+      'The second room opened because St Thomas asked for it. A few notes on what we found when we got there, and what makes Talbot Street feel like home.',
+    body: `<p>We opened 1093 Talbot Street four years after we opened in London, and only because enough St Thomas guests had made the drive north often enough to convince us there was a room waiting to be filled. The space we took over had been a casual restaurant before us, and one before that. The bones were good. The work was in making them ours.</p>
+<p>The St Thomas kitchen is a close sibling of the London kitchen, not a copy. The rib program is identical — same rub, same slow cook, same final char. The steak program runs the same cuts and the same sauces. What differs are the small things: a Talbot-only special on Thursdays, a dessert the St Thomas pastry lead added last summer, the way the Sunday roast is plated. A sister room, not a branch.</p>
+<p>Talbot Street is a main street in the truest sense. The block runs with small businesses, weekend foot traffic, and a mix of regulars who know each other by name. We have tried to be a good citizen of that block — our patio is set back by design, our music stays inside the room, our team knows to greet the coffee shop owners across the street by first name. Neighbourhood work.</p>
+<p>If you are new to St Thomas or just visiting for an afternoon, we recommend arriving between five and six for a drink at the bar, staying through dinner, and walking back down Talbot Street afterward. The room is at its best when the light changes outside the windows. We built it that way on purpose.</p>`,
+    category: 'Locations',
+    author: 'Saskia Lind',
+    read_time: 5,
+    share_count: 189
+  },
+  {
+    slug: 'a-field-guide-to-our-drink-specials',
+    title: 'A Field Guide to Our Drink Specials',
+    excerpt:
+      'A short tour of the rotating drink program — beers, ciders, wines, and the weeknight specials that keep the bar honest.',
+    body: `<p>The bar program at Eleven Sixty is built around a simple idea: a wide-enough list to cover any dinner, a short-enough list to cover any budget, and a rotating specials board that gives the team something new to talk about every week. We do not run a cocktail bar. We run a bar &amp; grill, and the drinks are built to live alongside the food.</p>
+<p>The beer list leans local. We keep a handful of London and St Thomas craft options alongside the mainstays, and we rotate the taps seasonally — lighter ales through the summer, heavier stouts and porters once the weather turns. If you are unsure, ask. The team is briefed on every rotation and will send you home with something you would actually order again.</p>
+<p>Our cider program is small but serious. We carry two or three Ontario ciders at any given time, including at least one dry option that pairs surprisingly well with the ribs. The pairing is not obvious and is the most-asked-about recommendation we make. Try it once and you will understand.</p>
+<p>The wine list is short by design. Six or seven reds, the same in whites, a rotating selection by the glass, and a small reserve list for tables who want to mark the night. We do not mark up aggressively. The goal is for a table of four to be able to share a bottle without thinking about whether they should have.</p>
+<p>The weekly specials — printed on a small card at every table — change on Monday mornings. Some are seasonal, some are features from the kitchen, some are just drinks the bar team has been excited about. The card is worth a look. It is the shortest piece of writing we produce and, on any given night, probably the most honest.</p>`,
+    category: 'Menu',
+    author: 'Rohan Patel',
     read_time: 5,
     share_count: 321
   }

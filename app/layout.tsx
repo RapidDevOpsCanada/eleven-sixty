@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Eleven Sixty — The Local Redefined',
+  title: 'Eleven Sixty Bar & Grill — London & St Thomas',
   description:
-    'Where neighborhood warmth meets urban sophistication. Nightly curations of sound and flavor in our deep navy sanctuary.'
+    'Premier bar & grill in London and St Thomas, Ontario. Known for sizzling steaks and fall-off-the-bone ribs. Open daily from 11:30am.'
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

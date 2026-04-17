@@ -13,16 +13,16 @@ export default function HomePage() {
             <div className="inline-flex items-center gap-3 mb-6">
               <div className="h-[1px] w-8 bg-gold-luxe" />
               <span className="font-label uppercase tracking-[0.4em] text-gold-luxe text-[11px] font-bold">
-                The Local Redefined
+                Premier Bar &amp; Grill
               </span>
             </div>
             <h1 className="font-headline font-bold text-5xl md:text-8xl mb-8 leading-[0.95] text-white tracking-tight">
-              ULTRA<br />MODERN<br />
-              <span className="text-gold-luxe italic">PUB</span>
+              SIZZLING<br />STEAKS<br />
+              <span className="text-gold-luxe italic">&amp; RIBS</span>
             </h1>
             <p className="font-body text-base text-on-surface-variant max-w-xs mb-10 leading-relaxed font-medium">
-              Where neighborhood warmth meets urban sophistication. Nightly curations of sound and
-              flavor in our deep navy sanctuary.
+              Known for sizzling steaks and fall-off-the-bone ribs. Casual dining with family and
+              friends at our London and St Thomas locations.
             </p>
             <button className="group relative px-14 py-5 overflow-hidden bg-white text-navy-deep rounded-full transition-all hover:scale-105 active:scale-95 shadow-xl shadow-white/5">
               <span className="relative z-10 font-label font-bold tracking-widest uppercase text-xs">
@@ -50,10 +50,10 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-transparent to-transparent" />
               <div className="absolute bottom-10 left-10">
                 <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe mb-2 block font-bold">
-                  Vibe 01
+                  Location 01
                 </span>
                 <h3 className="text-3xl font-headline font-bold text-white tracking-tight">
-                  The Lounge Hub
+                  London, Ontario
                 </h3>
               </div>
             </div>
@@ -84,10 +84,10 @@ export default function HomePage() {
               />
               <div className="absolute bottom-10 left-10">
                 <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe mb-2 block font-bold">
-                  Curation 02
+                  Location 02
                 </span>
                 <h3 className="text-3xl font-headline font-bold text-white tracking-tight">
-                  Nightly Intimacy
+                  St Thomas, Ontario
                 </h3>
               </div>
             </div>
@@ -100,29 +100,30 @@ export default function HomePage() {
           <div className="lg:col-span-6 flex flex-col gap-10">
             <div>
               <span className="font-label text-gold-luxe tracking-[0.4em] uppercase text-[11px] font-bold mb-4 block">
-                Neighborhood Hub
+                Our Story
               </span>
               <h2 className="font-headline font-bold text-5xl md:text-7xl text-white leading-tight">
-                The Local <br />
-                <span className="text-gold-luxe">Redefined</span>
+                Bar &amp; Grill, <br />
+                <span className="text-gold-luxe">Done Right</span>
               </h2>
             </div>
             <div className="w-20 h-1 bg-gold-luxe rounded-full" />
             <div className="space-y-6">
               <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium">
-                Eleven Sixty is more than a bar; it&apos;s a curated neighborhood anchor. We&apos;ve
-                redesigned the traditional pub experience for the modern urban dweller.
+                Eleven Sixty is the neighborhood bar &amp; grill for London and St Thomas. Known
+                for sizzling steaks and tender, fall-off-the-bone ribs served the way you actually
+                want to eat them.
               </p>
               <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium">
-                From our gold-accented bar to our velvet seating, every detail is engineered for
-                accessibility and urban-chic comfort.
+                Grab social drinks in the lounge, settle in for an intimate dinner, or host a
+                private event for up to fifty. Two Ontario rooms, one table always open.
               </p>
             </div>
             <Link
               className="font-label text-white bg-navy-deep px-8 py-4 rounded-full self-start tracking-widest uppercase text-xs font-bold flex items-center gap-4 group border border-white/10 hover:border-gold-luxe transition-all"
               href="/articles"
             >
-              Explore the Curation
+              View the Menu
               <span className="material-symbols-outlined text-lg text-gold-luxe group-hover:translate-x-2 transition-transform">
                 east
               </span>
@@ -154,14 +155,14 @@ export default function HomePage() {
           <div className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-xl">
               <span className="font-label text-gold-luxe tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
-                Our Ritual
+                Our Kitchen
               </span>
               <h2 className="font-headline text-5xl md:text-6xl font-bold text-white tracking-tight">
-                NIGHTLY CURATIONS
+                SLOW-COOKED, HAND-FINISHED
               </h2>
             </div>
             <p className="font-body text-sm text-on-surface-variant uppercase tracking-widest max-w-[250px] leading-loose font-bold">
-              Sophisticated flavors for an urban audience.
+              Fall-off-the-bone ribs. Steaks off the grill. A menu for the table that stays late.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
@@ -175,21 +176,21 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep to-transparent opacity-80" />
               <div className="absolute bottom-12 left-12">
                 <h3 className="font-headline text-4xl font-bold mb-4 text-white">
-                  THE VELVET SESSIONS
+                  RIBS &amp; STEAKS
                 </h3>
                 <p className="font-body text-base text-white/80 max-w-md font-medium">
-                  A recurring sanctuary for refined auditory and culinary pairings.
+                  Slow-smoked ribs, hand-cut steaks, and a lunch menu that runs from 11:30 to 3:30.
                 </p>
               </div>
             </div>
             <div className="md:col-span-4 bg-navy-deep border border-white/5 p-12 flex flex-col justify-between h-[600px] rounded-3xl shadow-xl">
               <div>
                 <span className="font-headline text-7xl font-extrabold text-gold-luxe tracking-tighter">
-                  11:60
+                  1160
                 </span>
                 <p className="font-body mt-8 text-lg text-on-surface-variant leading-relaxed font-medium">
-                  The precise moment when day gives way to curation. A concept rooted in modern
-                  ritual.
+                  The address and the name. 1160 Wellington Road in London, and a second room on
+                  Talbot Street in St Thomas.
                 </p>
               </div>
               <div className="flex flex-col gap-2 border-t border-white/10 pt-8">
@@ -197,8 +198,136 @@ export default function HomePage() {
                   Open Daily
                 </span>
                 <span className="font-body text-sm text-white/80 font-semibold tracking-wide">
-                  17:00 — Late Night
+                  11:30am — 9pm · Fri &amp; Sat until 10pm
                 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="locations" className="py-32 px-6 md:px-12 bg-background">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div className="max-w-xl">
+              <span className="font-label text-gold-luxe tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
+                Two Rooms
+              </span>
+              <h2 className="font-headline text-5xl md:text-6xl font-bold text-white tracking-tight">
+                FIND US
+              </h2>
+            </div>
+            <p className="font-body text-sm text-on-surface-variant uppercase tracking-widest max-w-[280px] leading-loose font-bold">
+              London &amp; St Thomas, Ontario. Open daily from 11:30am.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-navy-deep border border-white/5 rounded-3xl p-10 md:p-12 flex flex-col gap-8 hover:border-gold-luxe/40 transition-colors">
+              <div className="flex items-start justify-between">
+                <div>
+                  <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold mb-3 block">
+                    Location 01
+                  </span>
+                  <h3 className="font-headline text-4xl font-bold text-white tracking-tight">
+                    London
+                  </h3>
+                </div>
+                <span className="material-symbols-outlined text-gold-luxe text-3xl">
+                  location_on
+                </span>
+              </div>
+              <div className="flex flex-col gap-3 font-body text-base text-on-surface-variant font-medium leading-relaxed">
+                <a
+                  href="https://maps.google.com/?q=1160+Wellington+Road+London+ON+N6E+1M3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  1160 Wellington Road
+                  <br />
+                  London, ON N6E 1M3
+                </a>
+                <a
+                  href="tel:+15196812669"
+                  className="hover:text-white transition-colors"
+                >
+                  519-681-2669
+                </a>
+              </div>
+              <div className="pt-6 border-t border-white/10 flex flex-col gap-2 text-sm text-white/80 font-body">
+                <div className="flex justify-between">
+                  <span className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+                    Mon — Thu
+                  </span>
+                  <span className="font-medium">11:30am — 9pm</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+                    Fri — Sat
+                  </span>
+                  <span className="font-medium">11:30am — 10pm</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+                    Sunday
+                  </span>
+                  <span className="font-medium">11:30am — 9pm</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-navy-deep border border-white/5 rounded-3xl p-10 md:p-12 flex flex-col gap-8 hover:border-gold-luxe/40 transition-colors">
+              <div className="flex items-start justify-between">
+                <div>
+                  <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold mb-3 block">
+                    Location 02
+                  </span>
+                  <h3 className="font-headline text-4xl font-bold text-white tracking-tight">
+                    St Thomas
+                  </h3>
+                </div>
+                <span className="material-symbols-outlined text-gold-luxe text-3xl">
+                  location_on
+                </span>
+              </div>
+              <div className="flex flex-col gap-3 font-body text-base text-on-surface-variant font-medium leading-relaxed">
+                <a
+                  href="https://maps.google.com/?q=1093+Talbot+St+St+Thomas+ON+N5P+1G4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  1093 Talbot St
+                  <br />
+                  St Thomas, ON N5P 1G4
+                </a>
+                <a
+                  href="tel:+15196318282"
+                  className="hover:text-white transition-colors"
+                >
+                  519-631-8282
+                </a>
+              </div>
+              <div className="pt-6 border-t border-white/10 flex flex-col gap-2 text-sm text-white/80 font-body">
+                <div className="flex justify-between">
+                  <span className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+                    Mon — Thu
+                  </span>
+                  <span className="font-medium">11:30am — 9pm</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+                    Fri — Sat
+                  </span>
+                  <span className="font-medium">11:30am — 10pm</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+                    Sunday
+                  </span>
+                  <span className="font-medium">11:30am — 9pm</span>
+                </div>
               </div>
             </div>
           </div>
