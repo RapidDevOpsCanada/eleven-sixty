@@ -150,8 +150,66 @@ export default function PreviewPage() {
         </div>
       </header>
 
+      {/* Homepage overview — zoomed-out browser mockup */}
+      <section className="px-6 md:px-12 pt-10 md:pt-14 pb-6 md:pb-10">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex items-baseline gap-4 mb-5">
+            <span className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
+              Homepage at a glance
+            </span>
+            <span className="h-[1px] flex-1 bg-white/10" />
+            <span className="font-label text-[10px] uppercase tracking-[0.25em] text-white/40 font-bold hidden md:inline">
+              elevensixty.ca
+            </span>
+          </div>
+
+          <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/60 bg-navy-deep">
+            {/* Browser chrome */}
+            <div className="flex items-center gap-3 px-5 py-3 border-b border-white/5 bg-navy-deep/80">
+              <div className="flex gap-1.5">
+                <span className="w-3 h-3 rounded-full bg-white/15" aria-hidden="true" />
+                <span className="w-3 h-3 rounded-full bg-white/15" aria-hidden="true" />
+                <span className="w-3 h-3 rounded-full bg-white/15" aria-hidden="true" />
+              </div>
+              <div className="flex-1 bg-background rounded-md border border-white/10 px-3 py-1.5 font-label text-[10px] text-white/40 text-center font-bold tracking-widest">
+                ELEVENSIXTY.CA
+              </div>
+              <span className="material-symbols-outlined text-white/30 text-base hidden sm:inline">
+                open_in_new
+              </span>
+            </div>
+
+            {/* Scaled iframe viewport — iframe is 1440x900 so h-screen inside
+                renders at a real desktop height, then we scale the whole
+                thing down for the zoomed-out view. */}
+            <div className="relative w-full overflow-hidden h-[360px] sm:h-[480px] md:h-[600px] lg:h-[630px] bg-background">
+              <iframe
+                src="/"
+                title="Eleven Sixty homepage concept"
+                aria-label="Zoomed-out preview of the homepage concept"
+                loading="lazy"
+                className="absolute top-0 left-0 origin-top-left pointer-events-none border-0"
+                style={{
+                  width: '1440px',
+                  height: '900px',
+                  transform: 'scale(0.70)',
+                  transformOrigin: 'top left'
+                }}
+              />
+              {/* Soft vignette at the bottom to suggest the page continues */}
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-navy-deep/70 via-navy-deep/20 to-transparent" />
+            </div>
+          </div>
+
+          <p className="font-body text-sm text-on-surface-variant italic font-medium mt-4 text-center">
+            A live, zoomed-out view of the homepage concept. Detailed breakdowns of each section
+            follow below.
+          </p>
+        </div>
+      </section>
+
       {/* Cover */}
-      <section className="px-6 md:px-12 pt-20 md:pt-32 pb-24 md:pb-40 border-b border-white/5">
+      <section className="px-6 md:px-12 pt-16 md:pt-24 pb-24 md:pb-40 border-b border-white/5">
         <div className="max-w-6xl mx-auto flex flex-col gap-10">
           <span className="font-label text-[11px] uppercase tracking-[0.4em] text-white/50 font-bold">
             For Eleven Sixty Bar &amp; Grill
