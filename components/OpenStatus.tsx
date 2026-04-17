@@ -23,9 +23,37 @@ const formatTime = (mins: number): string => {
   return m === 0 ? `${h12}${period}` : `${h12}:${m.toString().padStart(2, '0')}${period}`;
 };
 
+const RESTAURANT_TZ = 'America/Toronto';
+
+// Get day-of-week (0-6) and minutes-since-midnight as they are in the
+// restaurant's local timezone, regardless of the viewer's clock.
+function getLocalDayAndMins(now: Date): { day: number; mins: number } {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: RESTAURANT_TZ,
+    weekday: 'short',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false
+  }).formatToParts(now);
+  const dayMap: Record<string, number> = {
+    Sun: 0,
+    Mon: 1,
+    Tue: 2,
+    Wed: 3,
+    Thu: 4,
+    Fri: 5,
+    Sat: 6
+  };
+  const weekday = parts.find((p) => p.type === 'weekday')?.value ?? 'Sun';
+  let hour = parseInt(parts.find((p) => p.type === 'hour')?.value ?? '0', 10);
+  const minute = parseInt(parts.find((p) => p.type === 'minute')?.value ?? '0', 10);
+  // en-US hour12:false returns 24 for midnight in some implementations
+  if (hour === 24) hour = 0;
+  return { day: dayMap[weekday] ?? 0, mins: hour * 60 + minute };
+}
+
 function compute(now: Date): { open: boolean; label: string } {
-  const day = now.getDay();
-  const mins = now.getHours() * 60 + now.getMinutes();
+  const { day, mins } = getLocalDayAndMins(now);
   const todays = HOURS[day];
 
   if (todays && mins >= todays.open && mins < todays.close) {
