@@ -573,6 +573,7 @@ export default function PreviewPage() {
               Open the site →
             </Link>
           </div>
+        </div>
       </footer>
     </main>
   );
