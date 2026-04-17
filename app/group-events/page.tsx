@@ -39,8 +39,8 @@ export default function GroupEventsPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-12 items-center">
           <div className="lg:col-span-3 flex flex-col gap-6 max-w-xl">
             <div className="inline-flex items-center gap-3">
-              <div className="h-[1px] w-8 bg-gold-luxe" />
-              <span className="font-label uppercase tracking-[0.4em] text-gold-luxe text-[11px] font-bold">
+              <div className="h-[1px] w-8 bg-white/30" />
+              <span className="font-label uppercase tracking-[0.4em] text-white/60 text-[11px] font-bold">
                 Celebrate Group Events
               </span>
             </div>
@@ -135,7 +135,7 @@ export default function GroupEventsPage() {
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-navy-deep/20 to-navy-deep" />
           </div>
           <div className="p-10 md:p-14 flex flex-col gap-5 justify-center">
-            <span className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
+            <span className="font-label text-[11px] uppercase tracking-[0.3em] text-white/60 font-bold">
               Ready to book?
             </span>
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-white tracking-tight">

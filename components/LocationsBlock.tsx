@@ -4,7 +4,7 @@ export default function LocationsBlock() {
       <div className="bg-navy-deep border border-white/5 rounded-3xl p-10 flex flex-col gap-6">
         <div className="flex items-start justify-between">
           <div>
-            <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold mb-3 block">
+            <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-3 block">
               Location 01
             </span>
             <h3 className="font-headline text-3xl font-bold text-white tracking-tight">London</h3>
@@ -31,7 +31,7 @@ export default function LocationsBlock() {
       <div className="bg-navy-deep border border-white/5 rounded-3xl p-10 flex flex-col gap-6">
         <div className="flex items-start justify-between">
           <div>
-            <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold mb-3 block">
+            <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-3 block">
               Location 02
             </span>
             <h3 className="font-headline text-3xl font-bold text-white tracking-tight">

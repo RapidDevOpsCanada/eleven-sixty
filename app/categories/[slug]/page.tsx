@@ -47,10 +47,10 @@ export default async function CategoryPage({
         <div className="max-w-7xl mx-auto flex flex-col gap-10">
           <div className="flex flex-col gap-6 max-w-3xl">
             <div className="inline-flex items-center gap-3">
-              <div className="h-[1px] w-8 bg-gold-luxe" />
+              <div className="h-[1px] w-8 bg-white/30" />
               <Link
                 href="/articles"
-                className="font-label uppercase tracking-[0.4em] text-gold-luxe text-[11px] font-bold hover:text-white transition-colors"
+                className="font-label uppercase tracking-[0.4em] text-white/60 text-[11px] font-bold hover:text-white transition-colors"
               >
                 All Field Notes
               </Link>

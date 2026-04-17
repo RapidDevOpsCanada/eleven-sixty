@@ -81,7 +81,7 @@ export default function MobileMenu() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-16">
               {SECTIONS.map((s) => (
                 <div key={s.heading} className="flex flex-col gap-6">
-                  <h3 className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+                  <h3 className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold">
                     {s.heading}
                   </h3>
                   <div className="flex flex-col gap-4">

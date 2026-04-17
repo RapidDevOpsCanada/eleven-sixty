@@ -17,8 +17,8 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-12 items-center">
           <div className="lg:col-span-3 flex flex-col gap-6 max-w-xl">
             <div className="inline-flex items-center gap-3">
-              <div className="h-[1px] w-8 bg-gold-luxe" />
-              <span className="font-label uppercase tracking-[0.4em] text-gold-luxe text-[11px] font-bold">
+              <div className="h-[1px] w-8 bg-white/30" />
+              <span className="font-label uppercase tracking-[0.4em] text-white/60 text-[11px] font-bold">
                 Get in Touch
               </span>
             </div>
@@ -52,7 +52,7 @@ export default function ContactPage() {
               />
               <div className="flex items-start justify-between px-2">
                 <div>
-                  <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold mb-3 block">
+                  <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-3 block">
                     Location 01
                   </span>
                   <h3 className="font-headline text-3xl font-bold text-white tracking-tight">
@@ -93,7 +93,7 @@ export default function ContactPage() {
               />
               <div className="flex items-start justify-between px-2">
                 <div>
-                  <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold mb-3 block">
+                  <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-3 block">
                     Location 02
                   </span>
                   <h3 className="font-headline text-3xl font-bold text-white tracking-tight">
@@ -122,7 +122,7 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-navy-deep/40 border border-white/5 rounded-3xl p-10 flex flex-col gap-5">
-              <h3 className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+              <h3 className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold">
                 Hours of Operation
               </h3>
               <div className="flex flex-col gap-3 font-body text-white/80">
@@ -161,7 +161,7 @@ export default function ContactPage() {
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="name"
-                  className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold"
+                  className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold"
                 >
                   Your Name <span className="text-error">*</span>
                 </label>
@@ -177,7 +177,7 @@ export default function ContactPage() {
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="email"
-                  className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold"
+                  className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold"
                 >
                   Your Email <span className="text-error">*</span>
                 </label>
@@ -193,7 +193,7 @@ export default function ContactPage() {
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="location"
-                  className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold"
+                  className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold"
                 >
                   Location <span className="text-error">*</span>
                 </label>
@@ -221,7 +221,7 @@ export default function ContactPage() {
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="subject"
-                  className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold"
+                  className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold"
                 >
                   Subject
                 </label>
@@ -236,7 +236,7 @@ export default function ContactPage() {
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="message"
-                  className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold"
+                  className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold"
                 >
                   Message
                 </label>
@@ -262,7 +262,7 @@ export default function ContactPage() {
       <section className="px-6 md:px-12 pb-32">
         <div className="max-w-7xl mx-auto bg-navy-deep/40 border border-white/5 rounded-3xl p-10 md:p-16 flex flex-col gap-8">
           <div className="max-w-2xl">
-            <span className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold mb-3 block">
+            <span className="font-label text-[11px] uppercase tracking-[0.3em] text-white/60 font-bold mb-3 block">
               Leave a Review
             </span>
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-white tracking-tight mb-4">

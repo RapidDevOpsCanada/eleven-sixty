@@ -35,7 +35,7 @@ export default function ArticleCard({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/40 to-transparent" />
         <div className="absolute bottom-12 left-12 right-12">
-          <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe mb-4 block font-bold">
+          <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 mb-4 block font-bold">
             {article.category}
           </span>
           <h3 className="font-headline text-4xl md:text-5xl font-bold mb-4 text-white tracking-tight leading-tight">
@@ -67,7 +67,7 @@ export default function ArticleCard({
           src={imageSrc}
         />
         <div className="absolute top-4 left-4">
-          <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold bg-navy-deep/80 backdrop-blur-sm px-3 py-1.5 rounded-full">
+          <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold bg-navy-deep/80 backdrop-blur-sm px-3 py-1.5 rounded-full">
             {article.category}
           </span>
         </div>

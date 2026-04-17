@@ -9,15 +9,15 @@ export default function HomePage() {
       <Nav />
 
       <header className="relative h-screen w-full flex flex-col md:flex-row overflow-hidden pt-32 md:pt-0">
-        <div className="w-full md:w-1/2 h-2/3 md:h-full bg-navy-deep flex flex-col items-center justify-center p-8 md:p-16 relative z-20 border-r border-white/5">
+        <div className="w-full md:w-2/5 h-2/3 md:h-full bg-navy-deep flex flex-col items-center justify-center p-8 md:p-14 relative z-20 border-r border-white/5">
           <div className="max-w-md text-center md:text-left">
             <div className="inline-flex items-center gap-3 mb-6">
-              <div className="h-[1px] w-8 bg-gold-luxe" />
-              <span className="font-label uppercase tracking-[0.4em] text-gold-luxe text-[11px] font-bold">
+              <div className="h-[1px] w-8 bg-white/40" />
+              <span className="font-label uppercase tracking-[0.4em] text-white/70 text-[11px] font-bold">
                 London &amp; St Thomas
               </span>
             </div>
-            <h1 className="font-headline font-bold text-5xl md:text-8xl mb-8 leading-[0.95] text-white tracking-tight">
+            <h1 className="font-headline font-bold text-5xl md:text-7xl mb-8 leading-[0.95] text-white tracking-tight">
               YOUR<br />NEIGHBOURHOOD<br />
               <span className="italic text-gold-luxe">bar &amp; grill.</span>
             </h1>
@@ -34,15 +34,9 @@ export default function HomePage() {
               </span>
             </a>
           </div>
-          <div className="absolute bottom-10 left-8 md:left-16 flex items-center gap-4 opacity-40">
-            <span className="font-label text-[10px] uppercase tracking-widest font-bold">
-              Scroll Narrative
-            </span>
-            <div className="w-12 h-[1px] bg-white" />
-          </div>
         </div>
 
-        <div className="w-full md:w-1/2 h-full overflow-y-auto no-scrollbar bg-background border-t md:border-t-0 border-white/5">
+        <div className="w-full md:w-3/5 h-full overflow-y-auto no-scrollbar bg-background border-t md:border-t-0 border-white/5">
           <div className="flex flex-col gap-1 p-1">
             <div className="relative h-[819px] w-full overflow-hidden rounded-xl">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -53,7 +47,7 @@ export default function HomePage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-transparent to-transparent" />
               <div className="absolute bottom-10 left-10">
-                <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe mb-2 block font-bold">
+                <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 mb-2 block font-bold">
                   Location 01
                 </span>
                 <h3 className="text-3xl font-headline font-bold text-white tracking-tight">
@@ -87,7 +81,7 @@ export default function HomePage() {
                 src="/images/pub-food.jpg"
               />
               <div className="absolute bottom-10 left-10">
-                <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe mb-2 block font-bold">
+                <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 mb-2 block font-bold">
                   Location 02
                 </span>
                 <h3 className="text-3xl font-headline font-bold text-white tracking-tight">
@@ -103,7 +97,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center max-w-7xl mx-auto">
           <div className="lg:col-span-6 flex flex-col gap-10">
             <div>
-              <span className="font-label text-gold-luxe tracking-[0.4em] uppercase text-[11px] font-bold mb-4 block">
+              <span className="font-label text-white/60 tracking-[0.4em] uppercase text-[11px] font-bold mb-4 block">
                 Our Story
               </span>
               <h2 className="font-headline font-bold text-5xl md:text-7xl text-white leading-tight">
@@ -154,11 +148,37 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="relative w-full aspect-[21/9] min-h-[320px] md:min-h-[480px] overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          alt="A night at Eleven Sixty"
+          src="/images/happy-hour.jpg"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-transparent to-transparent" />
+        <div className="relative h-full flex items-end md:items-center max-w-7xl mx-auto px-6 md:px-12 pb-14 md:pb-0">
+          <div className="max-w-xl flex flex-col gap-5">
+            <span className="font-label uppercase tracking-[0.4em] text-white/70 text-[11px] font-bold">
+              After 5pm
+            </span>
+            <h2 className="font-headline text-4xl md:text-6xl font-bold text-white tracking-tight leading-[1.02]">
+              The room settles, <br />
+              <span className="italic text-gold-luxe">the bar warms up.</span>
+            </h2>
+            <p className="font-body text-base md:text-lg text-white/80 font-medium leading-relaxed max-w-md">
+              Happy hour every day, 3–5pm and 8pm to close. Half-price apps, $6 pints, and the
+              bar program we&apos;re quietly proud of.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="py-32 px-6 md:px-12 bg-navy-deep/20">
         <div className="max-w-7xl mx-auto">
           <div className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-xl">
-              <span className="font-label text-gold-luxe tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
+              <span className="font-label text-white/60 tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
                 Our Kitchen
               </span>
               <h2 className="font-headline text-5xl md:text-6xl font-bold text-white tracking-tight">
@@ -198,7 +218,7 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 border-t border-white/10 pt-8">
-                <span className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+                <span className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold">
                   Open Daily
                 </span>
                 <span className="font-body text-sm text-white/80 font-semibold tracking-wide">
@@ -213,7 +233,7 @@ export default function HomePage() {
       <section className="py-24 px-6 md:px-12 bg-navy-deep/20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end md:justify-between gap-10">
           <div className="max-w-xl flex flex-col gap-5">
-            <span className="font-label text-gold-luxe tracking-[0.3em] uppercase text-[11px] font-bold">
+            <span className="font-label text-white/60 tracking-[0.3em] uppercase text-[11px] font-bold">
               From the Neighbourhood
             </span>
             <h2 className="font-headline text-4xl md:text-5xl font-bold text-white tracking-tight">
@@ -254,7 +274,7 @@ export default function HomePage() {
       <section className="py-24 px-6 md:px-12 bg-background">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 max-w-xl">
-            <span className="font-label text-gold-luxe tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
+            <span className="font-label text-white/60 tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
               Explore
             </span>
             <h2 className="font-headline text-4xl md:text-5xl font-bold text-white tracking-tight">
@@ -332,7 +352,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-xl">
-              <span className="font-label text-gold-luxe tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
+              <span className="font-label text-white/60 tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
                 Two Rooms
               </span>
               <h2 className="font-headline text-5xl md:text-6xl font-bold text-white tracking-tight">
@@ -352,7 +372,7 @@ export default function HomePage() {
               />
               <div className="flex items-start justify-between px-2">
                 <div>
-                  <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold mb-3 block">
+                  <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-3 block">
                     Location 01
                   </span>
                   <h3 className="font-headline text-4xl font-bold text-white tracking-tight">
@@ -383,19 +403,19 @@ export default function HomePage() {
               </div>
               <div className="pt-6 border-t border-white/10 flex flex-col gap-2 text-sm text-white/80 font-body">
                 <div className="flex justify-between">
-                  <span className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+                  <span className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold">
                     Mon — Thu
                   </span>
                   <span className="font-medium">11:30am — 9pm</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+                  <span className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold">
                     Fri — Sat
                   </span>
                   <span className="font-medium">11:30am — 10pm</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+                  <span className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold">
                     Sunday
                   </span>
                   <span className="font-medium">11:30am — 9pm</span>
@@ -410,7 +430,7 @@ export default function HomePage() {
               />
               <div className="flex items-start justify-between px-2">
                 <div>
-                  <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold mb-3 block">
+                  <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-3 block">
                     Location 02
                   </span>
                   <h3 className="font-headline text-4xl font-bold text-white tracking-tight">
@@ -441,19 +461,19 @@ export default function HomePage() {
               </div>
               <div className="pt-6 border-t border-white/10 flex flex-col gap-2 text-sm text-white/80 font-body">
                 <div className="flex justify-between">
-                  <span className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+                  <span className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold">
                     Mon — Thu
                   </span>
                   <span className="font-medium">11:30am — 9pm</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+                  <span className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold">
                     Fri — Sat
                   </span>
                   <span className="font-medium">11:30am — 10pm</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+                  <span className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold">
                     Sunday
                   </span>
                   <span className="font-medium">11:30am — 9pm</span>

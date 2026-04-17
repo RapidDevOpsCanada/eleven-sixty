@@ -15,10 +15,10 @@ export default function MenuPage({ menu }: { menu: Menu }) {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-12 items-center">
             <div className="lg:col-span-3 flex flex-col gap-6 max-w-xl">
               <div className="inline-flex items-center gap-3">
-                <div className="h-[1px] w-8 bg-gold-luxe" />
+                <div className="h-[1px] w-8 bg-white/30" />
                 <Link
                   href="/"
-                  className="font-label uppercase tracking-[0.4em] text-gold-luxe text-[11px] font-bold hover:text-white transition-colors"
+                  className="font-label uppercase tracking-[0.4em] text-white/60 text-[11px] font-bold hover:text-white transition-colors"
                 >
                   {menu.kicker}
                 </Link>
@@ -26,7 +26,7 @@ export default function MenuPage({ menu }: { menu: Menu }) {
               <h1 className="font-headline font-bold text-5xl md:text-7xl text-white tracking-tight leading-[0.95]">
                 {menu.title}
               </h1>
-              <p className="font-label text-sm md:text-base uppercase tracking-widest text-gold-luxe font-bold">
+              <p className="font-label text-sm md:text-base uppercase tracking-widest text-white/70 font-bold">
                 {menu.tagline}
               </p>
               {menu.subtitle && (
@@ -51,13 +51,13 @@ export default function MenuPage({ menu }: { menu: Menu }) {
       </section>
 
       <section className="px-6 md:px-12 pb-24">
-        <div className="max-w-5xl mx-auto flex flex-col gap-8">
+        <div className="max-w-6xl mx-auto flex flex-col gap-4">
           {menu.sections.map((s) => (
             <MenuSectionBlock key={s.title} section={s} />
           ))}
 
           {menu.pricingNote && (
-            <p className="font-body text-sm text-on-surface-variant italic font-medium text-center mt-4">
+            <p className="font-body text-sm text-on-surface-variant italic font-medium text-center mt-8">
               {menu.pricingNote}
             </p>
           )}
@@ -77,7 +77,7 @@ export default function MenuPage({ menu }: { menu: Menu }) {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-navy-deep/20 to-navy-deep" />
             </div>
             <div className="p-10 md:p-14 flex flex-col gap-5 justify-center">
-              <span className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
+              <span className="font-label text-[11px] uppercase tracking-[0.3em] text-white/60 font-bold">
                 Ready to eat?
               </span>
               <h2 className="font-headline text-3xl md:text-4xl font-bold text-white tracking-tight">

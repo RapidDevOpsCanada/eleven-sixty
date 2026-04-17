@@ -50,7 +50,7 @@ export default async function ArticleDetailPage({
           <div className="flex flex-col gap-8 items-center text-center mb-16">
             <Link
               href={`/categories/${categorySlug}`}
-              className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold hover:text-white transition-colors"
+              className="font-label text-[11px] uppercase tracking-[0.3em] text-white/60 font-bold hover:text-white transition-colors"
             >
               {article.category}
             </Link>
@@ -93,7 +93,7 @@ export default async function ArticleDetailPage({
 
           <div className="mt-20 pt-12 border-t border-white/10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="flex flex-col gap-1">
-              <span className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold">
+              <span className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold">
                 Written by
               </span>
               <span className="font-headline text-2xl font-bold text-white">{article.author}</span>
@@ -115,7 +115,7 @@ export default async function ArticleDetailPage({
         <section className="px-6 md:px-12 pb-32 bg-navy-deep/20 py-24">
           <div className="max-w-7xl mx-auto flex flex-col gap-12">
             <div className="flex flex-col gap-4">
-              <span className="font-label text-gold-luxe tracking-[0.3em] uppercase text-[11px] font-bold">
+              <span className="font-label text-white/60 tracking-[0.3em] uppercase text-[11px] font-bold">
                 Continue Reading
               </span>
               <h2 className="font-headline text-4xl md:text-5xl font-bold text-white tracking-tight">
