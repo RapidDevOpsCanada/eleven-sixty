@@ -3,7 +3,10 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import MenuSectionBlock from '@/components/MenuSectionBlock';
 import MenuTabs from '@/components/MenuTabs';
+import OpenStatus from '@/components/OpenStatus';
+import ScrollToTop from '@/components/ScrollToTop';
 import type { Menu } from '@/lib/menuData';
+import { OPENTABLE_LONDON, OPENTABLE_ST_THOMAS } from '@/lib/booking';
 
 export default function MenuPage({ menu }: { menu: Menu }) {
   return (
@@ -81,29 +84,47 @@ export default function MenuPage({ menu }: { menu: Menu }) {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-navy-deep/20 to-navy-deep" />
             </div>
             <div className="p-10 md:p-14 flex flex-col gap-5 justify-center">
-              <span className="font-label text-[11px] uppercase tracking-[0.3em] text-white/60 font-bold">
-                Ready to eat?
-              </span>
+              <div className="flex items-center gap-4">
+                <span className="font-label text-[11px] uppercase tracking-[0.3em] text-white/60 font-bold">
+                  Ready to eat?
+                </span>
+                <OpenStatus />
+              </div>
               <h2 className="font-headline text-3xl md:text-4xl font-bold text-white tracking-tight">
                 Book a table in London or St Thomas.
               </h2>
               <p className="font-body text-on-surface-variant font-medium leading-relaxed">
-                Open daily from 11:30am. Call your closest room to reserve — private dining for
-                up to 45 available on request.
+                Reserve online through OpenTable, or call your closest room directly. Private
+                dining for up to 45 available on request.
               </p>
               <div className="flex flex-col gap-3 pt-3">
                 <a
-                  href="tel:+15196812669"
-                  className="bg-gold-luxe hover:bg-white text-navy-deep font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center"
+                  href={OPENTABLE_LONDON}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gold-luxe hover:bg-white text-navy-deep font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center inline-flex items-center justify-center gap-2"
                 >
-                  Call London · 519-681-2669
+                  Reserve London
+                  <span className="material-symbols-outlined text-base">open_in_new</span>
                 </a>
                 <a
-                  href="tel:+15196318282"
-                  className="bg-transparent border border-white/20 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center"
+                  href={OPENTABLE_ST_THOMAS}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-transparent border border-white/20 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center inline-flex items-center justify-center gap-2"
                 >
-                  Call St Thomas · 519-631-8282
+                  Reserve St Thomas
+                  <span className="material-symbols-outlined text-base">open_in_new</span>
                 </a>
+                <div className="flex gap-4 pt-1 justify-center text-xs text-white/60">
+                  <a href="tel:+15196812669" className="hover:text-white transition-colors">
+                    Or call London · 519-681-2669
+                  </a>
+                  <span className="text-white/20">·</span>
+                  <a href="tel:+15196318282" className="hover:text-white transition-colors">
+                    St Thomas · 519-631-8282
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -128,6 +149,7 @@ export default function MenuPage({ menu }: { menu: Menu }) {
       </div>
       <div className="md:hidden h-20" aria-hidden="true" />
 
+      <ScrollToTop />
       <Footer />
     </>
   );

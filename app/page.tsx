@@ -3,6 +3,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import LocationMap from '@/components/LocationMap';
 import FadeIn from '@/components/FadeIn';
+import { OPENTABLE_LONDON, OPENTABLE_ST_THOMAS } from '@/lib/booking';
 
 export default function HomePage() {
   return (
@@ -72,11 +73,11 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="relative w-full md:w-1/2 h-full bg-background border-t md:border-t-0 border-white/5">
+        <div className="relative w-full md:w-1/2 h-full bg-background border-t md:border-t-0 border-white/5 overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             alt="The Eleven Sixty dining room"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover animate-slow-zoom"
             src="/images/interior-bar.jpg"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/70 via-transparent to-transparent" />
@@ -422,6 +423,15 @@ export default function HomePage() {
                   <span className="font-medium">11:30am — 9pm</span>
                 </div>
               </div>
+              <a
+                href={OPENTABLE_LONDON}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 bg-gold-luxe hover:bg-white text-navy-deep font-bold text-xs uppercase tracking-widest px-6 py-3.5 rounded-full transition-all text-center inline-flex items-center justify-center gap-2"
+              >
+                Reserve on OpenTable
+                <span className="material-symbols-outlined text-base">open_in_new</span>
+              </a>
             </div>
 
             <div className="bg-navy-deep border border-white/5 rounded-3xl p-6 md:p-8 flex flex-col gap-6 hover:border-gold-luxe/40 transition-colors">
@@ -480,6 +490,15 @@ export default function HomePage() {
                   <span className="font-medium">11:30am — 9pm</span>
                 </div>
               </div>
+              <a
+                href={OPENTABLE_ST_THOMAS}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 bg-gold-luxe hover:bg-white text-navy-deep font-bold text-xs uppercase tracking-widest px-6 py-3.5 rounded-full transition-all text-center inline-flex items-center justify-center gap-2"
+              >
+                Reserve on OpenTable
+                <span className="material-symbols-outlined text-base">open_in_new</span>
+              </a>
             </div>
           </div>
         </div>

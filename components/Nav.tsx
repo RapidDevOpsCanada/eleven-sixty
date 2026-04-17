@@ -2,6 +2,7 @@ import Link from 'next/link';
 import MobileMenu from './MobileMenu';
 import NavLink from './NavLink';
 import OpenStatus from './OpenStatus';
+import BookButton from './BookButton';
 
 export default function Nav() {
   return (
@@ -30,13 +31,9 @@ export default function Nav() {
 
           <div className="flex items-center gap-3">
             <OpenStatus className="hidden lg:inline-flex" />
-            <a
-              href="tel:+15196812669"
-              className="hidden md:inline-flex bg-gold-luxe hover:bg-white text-navy-deep font-bold text-[11px] uppercase tracking-widest px-5 py-2.5 rounded-full transition-all items-center gap-2 shrink-0"
-            >
-              <span className="material-symbols-outlined text-base">call</span>
-              Book
-            </a>
+            <div className="hidden md:block">
+              <BookButton />
+            </div>
             <div className="md:hidden">
               <MobileMenu />
             </div>

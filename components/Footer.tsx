@@ -123,7 +123,8 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center pt-10 border-t border-white/5 gap-6">
           <div className="font-body text-[10px] uppercase tracking-[0.2em] font-bold text-white/30">
-            © 2024 Eleven Sixty Bar &amp; Grill — London &amp; St Thomas, Ontario.
+            © {new Date().getFullYear()} Eleven Sixty Bar &amp; Grill — London &amp; St Thomas,
+            Ontario.
           </div>
           <div className="flex gap-5 items-center">
             <a

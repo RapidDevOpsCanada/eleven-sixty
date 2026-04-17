@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import ArticleCard, { getArticleImage } from '@/components/ArticleCard';
+import ScrollToTop from '@/components/ScrollToTop';
 import { getArticleBySlug, getRelatedArticles } from '@/lib/articles';
 
 export const dynamic = 'force-dynamic';
@@ -140,6 +141,7 @@ export default async function ArticleDetailPage({
         </section>
       )}
 
+      <ScrollToTop />
       <Footer />
     </>
   );

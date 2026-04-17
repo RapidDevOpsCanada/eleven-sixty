@@ -31,6 +31,25 @@ body {
   border: 1px solid rgba(197, 160, 89, 0.2);
 }
 
+@keyframes slowZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-slow-zoom {
+  animation: slowZoom 20s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-slow-zoom {
+    animation: none;
+  }
+}
+
 .article-body p {
   margin-bottom: 1.5rem;
   font-family: 'Plus Jakarta Sans', sans-serif;

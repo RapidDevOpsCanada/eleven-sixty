@@ -9,8 +9,9 @@ export default function CategoryFilter({
 }) {
   const slugify = (c: string) => c.toLowerCase().replace(/\s+/g, '-');
   return (
-    <div className="border-b border-white/10 overflow-x-auto no-scrollbar">
-      <nav className="flex gap-6 md:gap-10 min-w-max">
+    <div className="relative border-b border-white/10">
+      <div className="overflow-x-auto no-scrollbar">
+        <nav className="flex gap-6 md:gap-10 min-w-max">
         <Link
           href="/articles"
           className={`relative pb-4 font-label text-sm uppercase tracking-[0.18em] font-bold transition-colors whitespace-nowrap ${
@@ -40,7 +41,9 @@ export default function CategoryFilter({
             </Link>
           );
         })}
-      </nav>
+        </nav>
+      </div>
+      <div className="pointer-events-none md:hidden absolute right-0 top-0 bottom-0 w-10 bg-gradient-to-l from-background to-transparent" />
     </div>
   );
 }

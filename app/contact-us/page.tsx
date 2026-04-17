@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import LocationMap from '@/components/LocationMap';
+import { OPENTABLE_LONDON, OPENTABLE_ST_THOMAS } from '@/lib/booking';
 
 export const metadata = {
   title: 'Contact Us — Eleven Sixty Bar & Grill',
@@ -38,6 +39,39 @@ export default function ContactPage() {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/50 via-transparent to-transparent" />
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 md:px-12 pb-16">
+        <div className="max-w-7xl mx-auto bg-navy-deep border border-white/10 rounded-3xl p-8 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div className="max-w-xl flex flex-col gap-2">
+            <span className="font-label text-[11px] uppercase tracking-[0.25em] text-white/60 font-bold">
+              Reserve on OpenTable
+            </span>
+            <h2 className="font-headline text-2xl md:text-3xl font-bold text-white tracking-tight">
+              Pick your location. Book in two clicks.
+            </h2>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a
+              href={OPENTABLE_LONDON}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gold-luxe hover:bg-white text-navy-deep font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-full transition-all text-center inline-flex items-center justify-center gap-2"
+            >
+              Reserve London
+              <span className="material-symbols-outlined text-base">open_in_new</span>
+            </a>
+            <a
+              href={OPENTABLE_ST_THOMAS}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-transparent border border-white/20 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-full transition-all text-center inline-flex items-center justify-center gap-2"
+            >
+              Reserve St Thomas
+              <span className="material-symbols-outlined text-base">open_in_new</span>
+            </a>
           </div>
         </div>
       </section>
@@ -222,12 +256,26 @@ export default function ContactPage() {
                 >
                   Subject
                 </label>
-                <input
-                  id="subject"
-                  name="subject"
-                  type="text"
-                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-full px-5 py-3 text-white font-body outline-none transition-colors"
-                />
+                <div className="relative">
+                  <select
+                    id="subject"
+                    name="subject"
+                    defaultValue=""
+                    className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe rounded-full px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
+                  >
+                    <option value="" disabled>
+                      Choose a subject
+                    </option>
+                    <option value="reservation">Reservation inquiry</option>
+                    <option value="feedback">Feedback or compliment</option>
+                    <option value="group-event">Group / private event</option>
+                    <option value="gift-cards">Gift cards</option>
+                    <option value="other">Something else</option>
+                  </select>
+                  <span className="material-symbols-outlined pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gold-luxe">
+                    expand_more
+                  </span>
+                </div>
               </div>
 
               <div className="flex flex-col gap-2">
