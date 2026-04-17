@@ -21,6 +21,8 @@ export type Menu = {
   kicker: string;
   tagline: string;
   subtitle?: string;
+  heroImage: string;
+  heroImageAlt: string;
   sections: MenuSection[];
   pricingNote?: string;
 };
@@ -35,6 +37,9 @@ export const MENUS: Menu[] = [
     tagline: '11:30am — 3:00pm',
     subtitle:
       'Shareables, salads, and handhelds from the same kitchen that cooks dinner. In and out in under an hour — or stay as long as you like.',
+    heroImage:
+      'https://loremflickr.com/cache/resized/65535_54504274646_7f6901ab56_h_1280_720_nofilter.jpg',
+    heroImageAlt: 'Lunch sandwich and sides',
     sections: [
       {
         title: 'Shareables',
@@ -176,6 +181,9 @@ export const MENUS: Menu[] = [
     tagline: 'Ribs, steaks & the full kitchen',
     subtitle:
       'The dinner menu is where the grill hits its stride. Slow-smoked ribs, AAA Canadian steaks, seafood, and the bowl-and-sandwich classics that keep the room full.',
+    heroImage:
+      'https://loremflickr.com/cache/resized/65535_54309918754_aa2345af79_h_1280_720_nofilter.jpg',
+    heroImageAlt: 'Grilled steak on the plate',
     sections: [
       {
         title: 'Shareables',
@@ -447,6 +455,9 @@ export const MENUS: Menu[] = [
     tagline: 'Served tableside',
     subtitle:
       'Our dessert selection rotates seasonally and is presented at the table by your server. Ask about the nightly feature — and remember: on your birthday, dessert is on us.',
+    heroImage:
+      'https://loremflickr.com/cache/resized/65535_54578508315_5090f8bffe_k_1280_720_nofilter.jpg',
+    heroImageAlt: 'Chocolate dessert plate',
     sections: [
       {
         title: 'Ask Your Server',
@@ -465,6 +476,9 @@ export const MENUS: Menu[] = [
     tagline: 'For the Whole Table',
     subtitle:
       'Six named mains for the little ones, cooked the way we\u2019d cook them for the adult menu — no shortcuts, no frozen nuggets.',
+    heroImage:
+      'https://loremflickr.com/cache/resized/65535_54580530898_dbaafc5dc9_h_1280_720_nofilter.jpg',
+    heroImageAlt: 'Family gathered around the table',
     sections: [
       {
         title: 'Mains',
@@ -517,6 +531,9 @@ export const MENUS: Menu[] = [
     tagline: 'Beer · Wine · Cocktails · Caesars',
     subtitle:
       'The bar program at Eleven Sixty is built to live alongside the grill — a wide list for any dinner, a rotating specials board for anyone paying attention.',
+    heroImage:
+      'https://loremflickr.com/cache/resized/65535_54492533079_68a5fbbd92_h_1280_720_nofilter.jpg',
+    heroImageAlt: 'Cocktail on the bar',
     sections: [
       {
         title: 'From the Bar',
@@ -784,6 +801,9 @@ export const MENUS: Menu[] = [
     tagline: 'Monday through Sunday',
     subtitle:
       'A rotating cast of weeknight specials plus our all-day happy hours. The card changes Monday mornings — these are the regulars.',
+    heroImage:
+      'https://loremflickr.com/cache/resized/65535_50822756101_4c0eecb53f_h_1280_720_nofilter.jpg',
+    heroImageAlt: 'Happy hour at the bar',
     sections: [
       {
         title: 'Monday',

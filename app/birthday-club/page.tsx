@@ -13,22 +13,33 @@ export default function BirthdayClubPage() {
     <>
       <Nav />
 
-      <section className="pt-40 md:pt-48 pb-16 px-6 md:px-12 bg-background">
-        <div className="max-w-7xl mx-auto flex flex-col gap-8 max-w-3xl">
-          <div className="inline-flex items-center gap-3">
-            <div className="h-[1px] w-8 bg-gold-luxe" />
-            <span className="font-label uppercase tracking-[0.4em] text-gold-luxe text-[11px] font-bold">
-              On the House
-            </span>
+      <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 bg-background">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-end">
+          <div className="flex flex-col gap-6 max-w-xl">
+            <div className="inline-flex items-center gap-3">
+              <div className="h-[1px] w-8 bg-gold-luxe" />
+              <span className="font-label uppercase tracking-[0.4em] text-gold-luxe text-[11px] font-bold">
+                On the House
+              </span>
+            </div>
+            <h1 className="font-headline font-bold text-5xl md:text-7xl text-white tracking-tight leading-[0.95]">
+              Birthday <span className="italic text-gold-luxe">Club</span>
+            </h1>
+            <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium">
+              Get special offers from Eleven Sixty on your birthday and throughout the year. A
+              complimentary dessert is waiting — show up on your day, tell your server
+              you&apos;re a member, and it arrives quietly with a single candle.
+            </p>
           </div>
-          <h1 className="font-headline font-bold text-5xl md:text-7xl text-white tracking-tight leading-[0.95]">
-            Birthday <span className="font-display italic font-normal text-amber">Club</span>
-          </h1>
-          <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium max-w-xl">
-            Get special offers from Eleven Sixty on your birthday and throughout the year. A
-            complimentary dessert is waiting — show up on your day, tell your server you&apos;re a
-            member, and it arrives quietly with a single candle.
-          </p>
+          <div className="relative aspect-[4/5] md:aspect-[3/2] lg:aspect-[4/5] rounded-3xl overflow-hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              alt="Birthday dessert with a candle"
+              src="https://loremflickr.com/cache/resized/65535_54532538752_99b604c603_k_1280_720_nofilter.jpg"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/60 via-transparent to-transparent" />
+          </div>
         </div>
       </section>
 

@@ -35,24 +35,35 @@ export default function GroupEventsPage() {
     <>
       <Nav />
 
-      <section className="pt-40 md:pt-48 pb-16 px-6 md:px-12 bg-background">
-        <div className="max-w-7xl mx-auto flex flex-col gap-8 max-w-3xl">
-          <div className="inline-flex items-center gap-3">
-            <div className="h-[1px] w-8 bg-gold-luxe" />
-            <span className="font-label uppercase tracking-[0.4em] text-gold-luxe text-[11px] font-bold">
-              Celebrate Group Events
-            </span>
+      <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 bg-background">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-end">
+          <div className="flex flex-col gap-6 max-w-xl">
+            <div className="inline-flex items-center gap-3">
+              <div className="h-[1px] w-8 bg-gold-luxe" />
+              <span className="font-label uppercase tracking-[0.4em] text-gold-luxe text-[11px] font-bold">
+                Celebrate Group Events
+              </span>
+            </div>
+            <h1 className="font-headline font-bold text-5xl md:text-7xl text-white tracking-tight leading-[0.95]">
+              Private <span className="italic text-gold-luxe">room.</span>
+              <br />
+              Big <span className="italic text-gold-luxe">screen.</span>
+            </h1>
+            <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium">
+              Eleven Sixty Bar &amp; Grill is the perfect venue for your next corporate
+              function, fundraiser, private party, or special event. Our private room will
+              ensure your next event is one you will remember.
+            </p>
           </div>
-          <h1 className="font-headline font-bold text-5xl md:text-7xl text-white tracking-tight leading-[0.95]">
-            Private <span className="font-display italic font-normal text-amber">room.</span>
-            <br />
-            Big <span className="font-display italic font-normal text-amber">screen.</span>
-          </h1>
-          <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium max-w-xl">
-            Eleven Sixty Bar &amp; Grill is the perfect venue for your next corporate function,
-            fundraiser, private party, or special event. Our private room will ensure your next
-            event is one you will remember.
-          </p>
+          <div className="relative aspect-[4/5] md:aspect-[3/2] lg:aspect-[4/5] rounded-3xl overflow-hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              alt="A private dining room set for a group"
+              src="https://loremflickr.com/cache/resized/65535_53532575812_43e90bbc3b_h_1280_720_nofilter.jpg"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/60 via-transparent to-transparent" />
+          </div>
         </div>
       </section>
 
@@ -113,8 +124,17 @@ export default function GroupEventsPage() {
       </section>
 
       <section className="px-6 md:px-12 pb-32">
-        <div className="max-w-5xl mx-auto bg-navy-deep border border-white/10 rounded-3xl p-10 md:p-16 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
-          <div className="flex flex-col gap-4 max-w-xl">
+        <div className="max-w-6xl mx-auto bg-navy-deep border border-white/10 rounded-3xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
+          <div className="relative min-h-[260px] md:min-h-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              alt="The dining room at Eleven Sixty"
+              src="https://loremflickr.com/cache/resized/65535_54562342175_1a4b15ec00_k_1280_720_nofilter.jpg"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-navy-deep/20 to-navy-deep" />
+          </div>
+          <div className="p-10 md:p-14 flex flex-col gap-5 justify-center">
             <span className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
               Ready to book?
             </span>
@@ -125,26 +145,26 @@ export default function GroupEventsPage() {
               Tell us the date, the headcount, and the occasion — we&apos;ll walk you through
               available menus and the room.
             </p>
-          </div>
-          <div className="flex flex-col gap-3">
-            <a
-              href="tel:+15196812669"
-              className="bg-gold-luxe hover:bg-white text-navy-deep font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center"
-            >
-              Call London · 519-681-2669
-            </a>
-            <a
-              href="tel:+15196318282"
-              className="bg-transparent border border-white/20 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center"
-            >
-              Call St Thomas · 519-631-8282
-            </a>
-            <a
-              href="mailto:info@elevensixty.ca"
-              className="bg-transparent border border-white/20 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center"
-            >
-              info@elevensixty.ca
-            </a>
+            <div className="flex flex-col gap-3 pt-3">
+              <a
+                href="tel:+15196812669"
+                className="bg-gold-luxe hover:bg-white text-navy-deep font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center"
+              >
+                Call London · 519-681-2669
+              </a>
+              <a
+                href="tel:+15196318282"
+                className="bg-transparent border border-white/20 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center"
+              >
+                Call St Thomas · 519-631-8282
+              </a>
+              <a
+                href="mailto:info@elevensixty.ca"
+                className="bg-transparent border border-white/20 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center"
+              >
+                info@elevensixty.ca
+              </a>
+            </div>
           </div>
         </div>
       </section>

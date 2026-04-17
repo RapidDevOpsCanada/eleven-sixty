@@ -19,7 +19,7 @@ export default function HomePage() {
             </div>
             <h1 className="font-headline font-bold text-5xl md:text-8xl mb-8 leading-[0.95] text-white tracking-tight">
               YOUR<br />NEIGHBOURHOOD<br />
-              <span className="font-display italic font-normal text-amber">bar &amp; grill.</span>
+              <span className="italic text-gold-luxe">bar &amp; grill.</span>
             </h1>
             <p className="font-body text-base text-on-surface-variant max-w-xs mb-10 leading-relaxed font-medium">
               Two Ontario rooms, one kind of welcome. A casual bar &amp; grill built for
@@ -108,7 +108,7 @@ export default function HomePage() {
               </span>
               <h2 className="font-headline font-bold text-5xl md:text-7xl text-white leading-tight">
                 Bar &amp; Grill, <br />
-                <span className="font-display italic font-normal text-amber">done right</span>
+                <span className="italic text-gold-luxe">done right</span>
               </h2>
             </div>
             <div className="w-20 h-1 bg-gold-luxe rounded-full" />
@@ -217,7 +217,7 @@ export default function HomePage() {
               From the Neighbourhood
             </span>
             <h2 className="font-headline text-4xl md:text-5xl font-bold text-white tracking-tight">
-              Read what guests are <span className="font-display italic font-normal text-amber">saying</span>
+              Read what guests are <span className="italic text-gold-luxe">saying</span>
             </h2>
             <p className="font-body text-base text-on-surface-variant leading-relaxed font-medium">
               Real reviews live on Google and TripAdvisor. If you&apos;ve eaten with us, we&apos;d

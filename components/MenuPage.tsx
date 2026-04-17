@@ -10,29 +10,40 @@ export default function MenuPage({ menu }: { menu: Menu }) {
     <>
       <Nav />
 
-      <section className="pt-40 md:pt-48 pb-16 px-6 md:px-12 bg-background">
+      <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 bg-background">
         <div className="max-w-7xl mx-auto flex flex-col gap-10">
-          <div className="flex flex-col gap-6 max-w-3xl">
-            <div className="inline-flex items-center gap-3">
-              <div className="h-[1px] w-8 bg-gold-luxe" />
-              <Link
-                href="/"
-                className="font-label uppercase tracking-[0.4em] text-gold-luxe text-[11px] font-bold hover:text-white transition-colors"
-              >
-                {menu.kicker}
-              </Link>
-            </div>
-            <h1 className="font-headline font-bold text-5xl md:text-7xl text-white tracking-tight leading-[0.95]">
-              {menu.title}
-            </h1>
-            <p className="font-label text-sm md:text-base uppercase tracking-widest text-gold-luxe font-bold">
-              {menu.tagline}
-            </p>
-            {menu.subtitle && (
-              <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium max-w-xl">
-                {menu.subtitle}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-end">
+            <div className="flex flex-col gap-6 max-w-xl">
+              <div className="inline-flex items-center gap-3">
+                <div className="h-[1px] w-8 bg-gold-luxe" />
+                <Link
+                  href="/"
+                  className="font-label uppercase tracking-[0.4em] text-gold-luxe text-[11px] font-bold hover:text-white transition-colors"
+                >
+                  {menu.kicker}
+                </Link>
+              </div>
+              <h1 className="font-headline font-bold text-5xl md:text-7xl text-white tracking-tight leading-[0.95]">
+                {menu.title}
+              </h1>
+              <p className="font-label text-sm md:text-base uppercase tracking-widest text-gold-luxe font-bold">
+                {menu.tagline}
               </p>
-            )}
+              {menu.subtitle && (
+                <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium">
+                  {menu.subtitle}
+                </p>
+              )}
+            </div>
+            <div className="relative aspect-[4/5] md:aspect-[3/2] lg:aspect-[4/5] rounded-3xl overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                alt={menu.heroImageAlt}
+                src={menu.heroImage}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/60 via-transparent to-transparent" />
+            </div>
           </div>
 
           <MenuTabs active={menu.slug} />
@@ -54,32 +65,43 @@ export default function MenuPage({ menu }: { menu: Menu }) {
       </section>
 
       <section className="px-6 md:px-12 pb-32">
-        <div className="max-w-5xl mx-auto bg-navy-deep border border-white/10 rounded-3xl p-10 md:p-16 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
-          <div className="flex flex-col gap-4 max-w-xl">
-            <span className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
-              Ready to eat?
-            </span>
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-white tracking-tight">
-              Book a table in London or St Thomas.
-            </h2>
-            <p className="font-body text-on-surface-variant font-medium leading-relaxed">
-              Open daily from 11:30am. Call your closest room to reserve — private dining for up
-              to 45 available on request.
-            </p>
-          </div>
-          <div className="flex flex-col gap-3">
-            <a
-              href="tel:+15196812669"
-              className="bg-gold-luxe hover:bg-white text-navy-deep font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center"
-            >
-              Call London · 519-681-2669
-            </a>
-            <a
-              href="tel:+15196318282"
-              className="bg-transparent border border-white/20 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center"
-            >
-              Call St Thomas · 519-631-8282
-            </a>
+        <div className="max-w-6xl mx-auto bg-navy-deep border border-white/10 rounded-3xl overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="relative min-h-[260px] md:min-h-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                alt="The Eleven Sixty dining room"
+                src="https://loremflickr.com/cache/resized/65535_54562342175_1a4b15ec00_k_1280_720_nofilter.jpg"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-navy-deep/20 to-navy-deep" />
+            </div>
+            <div className="p-10 md:p-14 flex flex-col gap-5 justify-center">
+              <span className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
+                Ready to eat?
+              </span>
+              <h2 className="font-headline text-3xl md:text-4xl font-bold text-white tracking-tight">
+                Book a table in London or St Thomas.
+              </h2>
+              <p className="font-body text-on-surface-variant font-medium leading-relaxed">
+                Open daily from 11:30am. Call your closest room to reserve — private dining for
+                up to 45 available on request.
+              </p>
+              <div className="flex flex-col gap-3 pt-3">
+                <a
+                  href="tel:+15196812669"
+                  className="bg-gold-luxe hover:bg-white text-navy-deep font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center"
+                >
+                  Call London · 519-681-2669
+                </a>
+                <a
+                  href="tel:+15196318282"
+                  className="bg-transparent border border-white/20 hover:border-gold-luxe text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all text-center"
+                >
+                  Call St Thomas · 519-631-8282
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

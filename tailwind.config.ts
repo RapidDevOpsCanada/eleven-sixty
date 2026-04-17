@@ -27,7 +27,6 @@ const config: Config = {
       },
       fontFamily: {
         headline: ['Outfit', 'sans-serif'],
-        display: ['Fraunces', 'Playfair Display', 'serif'],
         body: ['Plus Jakarta Sans', 'sans-serif'],
         label: ['Plus Jakarta Sans', 'sans-serif']
       }
