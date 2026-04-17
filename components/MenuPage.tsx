@@ -61,6 +61,10 @@ export default function MenuPage({ menu }: { menu: Menu }) {
               {menu.pricingNote}
             </p>
           )}
+          <p className="font-body text-xs md:text-sm text-white/50 italic font-medium text-center mt-6">
+            Please let your server know about allergies or dietary needs — the kitchen is
+            happy to accommodate.
+          </p>
         </div>
       </section>
 

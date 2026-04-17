@@ -2,11 +2,17 @@ import type { MenuItem } from '@/lib/menuData';
 
 export default function MenuItemBlock({ item }: { item: MenuItem }) {
   const hasVariants = item.variants && item.variants.length > 0;
+  const isHouse = /^1160\b/.test(item.name);
 
   return (
     <div className="flex flex-col gap-2 py-5 border-b border-white/5 last:border-b-0 md:last:border-b md:[&:nth-last-child(-n+2)]:border-b-0">
       <div className="flex items-baseline justify-between gap-6 flex-wrap">
         <h3 className="font-headline font-bold text-lg md:text-xl text-white tracking-tight">
+          {isHouse && (
+            <span className="mr-3 inline-block align-middle bg-gold-luxe text-navy-deep font-label text-[9px] uppercase tracking-[0.2em] font-bold px-2 py-0.5 rounded">
+              House
+            </span>
+          )}
           {item.name}
           {item.note && (
             <span className="ml-3 font-label text-[10px] uppercase tracking-widest text-white/50 font-bold align-middle">

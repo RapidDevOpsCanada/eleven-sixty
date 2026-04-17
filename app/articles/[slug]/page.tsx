@@ -47,6 +47,15 @@ export default async function ArticleDetailPage({
 
       <article className="pt-32 md:pt-40 pb-24">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <div className="mb-10">
+            <Link
+              href="/articles/"
+              className="font-label text-[11px] uppercase tracking-[0.25em] text-white/50 hover:text-white font-bold inline-flex items-center gap-2 transition-colors"
+            >
+              <span className="material-symbols-outlined text-base">west</span>
+              All Field Notes
+            </Link>
+          </div>
           <div className="flex flex-col gap-8 items-center text-center mb-16">
             <Link
               href={`/categories/${categorySlug}`}

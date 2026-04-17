@@ -21,7 +21,7 @@ export const SEED_ARTICLES: SeedArticle[] = [
 <p>The sauce itself is ours, and the recipe stays in-house. What we will say is that it is less sweet than most Ontario rib sauces, that it carries a small back-note of smoke that comes from the cook itself, and that it is designed to be noticed for a second and then disappear. A good rib sauce is a partner to the meat, not a replacement for it.</p>
 <p>We serve them two ways: full rack and half rack, with a side of fries that we cut in-house every morning and a coleslaw we make without mayonnaise. On Tuesdays and Thursdays, we run all-you-can-eat specials — a tradition we began in London and brought to St Thomas the year after. The ribs have not changed. Neither has the pace. Good cooking is patience, plated.</p>`,
     category: 'Menu',
-    author: 'Chef Aya Vance',
+    author: 'The Eleven Sixty Team',
     read_time: 5,
     share_count: 412
   },
@@ -35,7 +35,7 @@ export const SEED_ARTICLES: SeedArticle[] = [
 <p>The cuts we feature are the ones that reward careful cooking — ribeye, striploin, a six-ounce filet for guests who want a quieter plate. Each is served with a pan sauce we build to order: a peppercorn, a red wine, a mushroom-and-thyme when the mushrooms are good. Sides are chosen at the table. The garnish is a single branch of rosemary, crisped in the pan, nothing more.</p>
 <p>Steak is an emotional dish. People order it for a reason — a promotion, an anniversary, a Tuesday they needed to become a Friday. We take that seriously. The goal of the program is not to impress. It is to give you the plate you came in hoping for, cooked to the temperature you asked for, the first time.</p>`,
     category: 'Menu',
-    author: 'Marcus Halloran',
+    author: 'The Eleven Sixty Team',
     read_time: 5,
     share_count: 267
   },
@@ -49,7 +49,7 @@ export const SEED_ARTICLES: SeedArticle[] = [
 <p>Our kids&apos; menu is short on purpose: six named mains, a small dessert list. Everything is cooked the way we would cook it for the adult menu — no heat-lamp shortcuts, no frozen nuggets. The grilled cheese is made on the same sourdough we use at lunch. The chicken boneless bites are hand-breaded. The math of cooking that way is not the best math. It is the right math.</p>
 <p>What this approach has given us, over the years, is a generation of regulars who grew up at our tables and are now arriving with dates, with friends, with families of their own. The first time a guest asks for the same booth they sat at as a ten-year-old is a small kind of heartbreak, and a large kind of validation. Family dining is how we earned that.</p>`,
     category: 'Events',
-    author: 'Imani Okafor',
+    author: 'The Eleven Sixty Team',
     read_time: 4,
     share_count: 198
   },
@@ -63,7 +63,7 @@ export const SEED_ARTICLES: SeedArticle[] = [
 <p>The dessert itself is finished with a single sparkler and walked to the table by the server who took the order. We tried a bigger production — the whole team, clapping, singing — and the guests found it too much. The quiet walk, the single candle, the small moment of recognition: that is what people told us they wanted. We listened.</p>
 <p>Sign-ups happen at the host stand or online. The only fields we collect are your name, your birthday, and the location you consider your home room. We do not email you otherwise. We do not sell your data. The program exists because birthdays in a neighbourhood restaurant are one of the few moments left where showing up on purpose for someone is noticed. We think that is worth protecting.</p>`,
     category: 'Events',
-    author: 'Lena Marquez',
+    author: 'The Eleven Sixty Team',
     read_time: 4,
     share_count: 156
   },
@@ -77,7 +77,7 @@ export const SEED_ARTICLES: SeedArticle[] = [
 <p>The booths along the front windows are original to our build and have been reupholstered twice since. We know which table sits in which booth by the small nicks in the wood along the edges — every booth has a history, mostly invisible to guests, mostly remembered by the team. The two-top in the back corner by the kitchen pass is the table we send to regulars who come in alone on a Tuesday. It is the warmest seat in the room.</p>
 <p>The block has changed around us over the years. Businesses have come and gone. We have stayed because the room works, because the neighbourhood has supported us, and because we never quite figured out how to move a kitchen this good. If you live in southeast London, you have probably walked past our windows on a winter evening and seen the lights. That is the thing we are trying to keep alive.</p>`,
     category: 'Locations',
-    author: 'Daniel Ó Cinnéide',
+    author: 'The Eleven Sixty Team',
     read_time: 5,
     share_count: 143
   },
@@ -91,7 +91,7 @@ export const SEED_ARTICLES: SeedArticle[] = [
 <p>Talbot Street is a main street in the truest sense. The block runs with small businesses, weekend foot traffic, and a mix of regulars who know each other by name. We have tried to be a good citizen of that block — our patio is set back by design, our music stays inside the room, our team knows to greet the coffee shop owners across the street by first name. Neighbourhood work.</p>
 <p>If you are new to St Thomas or just visiting for an afternoon, we recommend arriving between five and six for a drink at the bar, staying through dinner, and walking back down Talbot Street afterward. The room is at its best when the light changes outside the windows. We built it that way on purpose.</p>`,
     category: 'Locations',
-    author: 'Saskia Lind',
+    author: 'The Eleven Sixty Team',
     read_time: 5,
     share_count: 189
   },
@@ -106,7 +106,7 @@ export const SEED_ARTICLES: SeedArticle[] = [
 <p>The wine list is short by design. Six or seven reds, the same in whites, a rotating selection by the glass, and a small reserve list for tables who want to mark the night. We do not mark up aggressively. The goal is for a table of four to be able to share a bottle without thinking about whether they should have.</p>
 <p>The weekly specials — printed on a small card at every table — change on Monday mornings. Some are seasonal, some are features from the kitchen, some are just drinks the bar team has been excited about. The card is worth a look. It is the shortest piece of writing we produce and, on any given night, probably the most honest.</p>`,
     category: 'Menu',
-    author: 'Rohan Patel',
+    author: 'The Eleven Sixty Team',
     read_time: 5,
     share_count: 321
   }

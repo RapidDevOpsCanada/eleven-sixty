@@ -43,6 +43,41 @@ export default function BirthdayClubPage() {
         </div>
       </section>
 
+      <section className="px-6 md:px-12 pb-16">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            {
+              icon: 'cake',
+              title: 'Dessert on the house',
+              body: 'Show up on your birthday and tell your server — a complimentary dessert arrives with a single candle.'
+            },
+            {
+              icon: 'local_offer',
+              title: 'Seasonal offers',
+              body: 'A handful of invites each year — quiet perks for members, never the public board.'
+            },
+            {
+              icon: 'event_available',
+              title: 'Easier booking',
+              body: "Birthday-week reservations: mention the Club when you call and we'll find you a table."
+            }
+          ].map((p) => (
+            <div
+              key={p.title}
+              className="bg-navy-deep/60 border border-white/5 rounded-3xl p-7 flex flex-col gap-3"
+            >
+              <span className="material-symbols-outlined text-gold-luxe text-2xl">{p.icon}</span>
+              <h3 className="font-headline text-xl font-bold text-white tracking-tight">
+                {p.title}
+              </h3>
+              <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
+                {p.body}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="px-6 md:px-12 pb-24">
         <div className="max-w-3xl mx-auto bg-navy-deep border border-white/5 rounded-3xl p-8 md:p-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-white tracking-tight mb-2">
