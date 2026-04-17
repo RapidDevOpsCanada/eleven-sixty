@@ -9,15 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'navy-deep': '#0A1128',
+        'navy-deep': '#0F1733',
         'gold-luxe': '#C5A059',
         'outline-variant': '#44474c',
         outline: '#8e9197',
         'on-background': '#ece6d6',
         error: '#ffb4ab',
         tertiary: '#C5A059',
-        background: '#07090f',
-        surface: '#0A1128',
+        background: '#0A0E22',
+        surface: '#0F1733',
         'on-surface': '#ece6d6',
         'on-surface-variant': '#cfc8b6',
         primary: '#b7c8de'

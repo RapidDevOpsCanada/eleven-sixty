@@ -17,7 +17,7 @@ export default async function Image() {
           justifyContent: 'space-between',
           padding: '80px',
           background:
-            'linear-gradient(135deg, #0A1128 0%, #07090f 55%, #1a1208 100%)',
+            'linear-gradient(135deg, #0F1733 0%, #0A0E22 55%, #1a1208 100%)',
           color: '#ece6d6',
           fontFamily: 'sans-serif'
         }}
@@ -29,7 +29,7 @@ export default async function Image() {
               height: '52px',
               borderRadius: '999px',
               background: '#C5A059',
-              color: '#0A1128',
+              color: '#0F1733',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
