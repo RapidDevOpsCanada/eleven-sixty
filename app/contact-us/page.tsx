@@ -192,6 +192,34 @@ export default function ContactPage() {
 
               <div className="flex flex-col gap-2">
                 <label
+                  htmlFor="location"
+                  className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold"
+                >
+                  Location <span className="text-error">*</span>
+                </label>
+                <div className="relative">
+                  <select
+                    id="location"
+                    name="location"
+                    required
+                    defaultValue=""
+                    className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe rounded-full px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
+                  >
+                    <option value="" disabled>
+                      Choose a location
+                    </option>
+                    <option value="london">London — 1160 Wellington Rd</option>
+                    <option value="st-thomas">St Thomas — 1093 Talbot St</option>
+                    <option value="either">Either location</option>
+                  </select>
+                  <span className="material-symbols-outlined pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gold-luxe">
+                    expand_more
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label
                   htmlFor="subject"
                   className="font-label text-[11px] uppercase tracking-widest text-gold-luxe font-bold"
                 >
