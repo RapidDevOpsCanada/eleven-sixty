@@ -225,10 +225,10 @@ export default function HomePage() {
             <div className="md:col-span-8 group relative overflow-hidden h-[600px] rounded-3xl">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                alt="The dining room"
+                alt="Slow-smoked ribs, hand-cut steaks"
                 loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-1000"
-                src="/images/pub-food.jpg"
+                className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:scale-110 transition-transform duration-1000"
+                src="/images/bbq-ribs.jpg"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep to-transparent opacity-80" />
               <div className="absolute bottom-12 left-12">
