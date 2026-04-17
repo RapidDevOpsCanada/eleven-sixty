@@ -81,7 +81,7 @@ export default function GroupEventsPage() {
               </span>
             </div>
             <div className="flex flex-col gap-6">
-              <span className="font-headline text-[10rem] md:text-[14rem] leading-none font-extrabold text-gold-luxe tracking-[-0.05em]">
+              <span className="font-headline text-[7rem] sm:text-[10rem] md:text-[12rem] lg:text-[14rem] leading-none font-extrabold text-gold-luxe tracking-[-0.05em]">
                 45
               </span>
               <p className="font-body text-lg text-on-surface-variant font-medium leading-relaxed max-w-md">
@@ -112,10 +112,19 @@ export default function GroupEventsPage() {
       </section>
 
       <section className="px-6 md:px-12 pb-24">
-        <div className="max-w-7xl mx-auto flex flex-col gap-8">
-          <h2 className="font-headline text-4xl font-bold text-white tracking-tight">
-            Built for any occasion
-          </h2>
+        <div className="max-w-7xl mx-auto flex flex-col gap-10">
+          <div className="flex flex-col gap-4 max-w-xl">
+            <span className="font-label text-[11px] uppercase tracking-[0.3em] text-white/60 font-bold">
+              Events We Host
+            </span>
+            <h2 className="font-headline text-4xl md:text-5xl font-bold text-white tracking-tight leading-[1.05]">
+              Built for any <span className="italic text-gold-luxe">occasion.</span>
+            </h2>
+            <p className="font-body text-base text-on-surface-variant font-medium leading-relaxed">
+              Four common shapes. We&apos;ll tailor the room, the menu, and the tempo to match
+              what you&apos;re planning.
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {eventTypes.map((e) => (
               <div
@@ -177,7 +186,7 @@ export default function GroupEventsPage() {
                   name="contact-name"
                   type="text"
                   required
-                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
+                  className="bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
                 />
               </div>
               <div className="flex flex-col gap-2">
@@ -192,7 +201,7 @@ export default function GroupEventsPage() {
                   name="email"
                   type="email"
                   required
-                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
+                  className="bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
                 />
               </div>
             </div>
@@ -209,7 +218,7 @@ export default function GroupEventsPage() {
                   id="event-date"
                   name="event-date"
                   type="date"
-                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
+                  className="bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
                 />
               </div>
               <div className="flex flex-col gap-2">
@@ -226,7 +235,7 @@ export default function GroupEventsPage() {
                   min={1}
                   max={45}
                   placeholder="1–45"
-                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
+                  className="bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
                 />
               </div>
               <div className="flex flex-col gap-2">
@@ -241,7 +250,7 @@ export default function GroupEventsPage() {
                     id="event-occasion"
                     name="occasion"
                     defaultValue=""
-                    className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
+                    className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
                   >
                     <option value="" disabled>
                       Choose
@@ -271,7 +280,7 @@ export default function GroupEventsPage() {
                   id="event-location"
                   name="location"
                   defaultValue=""
-                  className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
+                  className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
                 >
                   <option value="" disabled>
                     Choose a room
@@ -298,7 +307,7 @@ export default function GroupEventsPage() {
                 name="notes"
                 rows={5}
                 placeholder="Menu preferences, dietary needs, timing, anything else we should know."
-                className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-4 text-white font-body outline-none transition-colors resize-none"
+                className="bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-4 text-white font-body outline-none transition-colors resize-none"
               />
             </div>
 

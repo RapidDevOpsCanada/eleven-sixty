@@ -41,6 +41,23 @@ export default function HomePage() {
                 View the Menu
               </span>
             </Link>
+            <div className="md:hidden mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center justify-center md:justify-start gap-x-5 gap-y-3 font-label text-[11px] uppercase tracking-[0.15em] font-bold">
+              <span className="text-white/80">11:30am – late</span>
+              <span className="h-3 w-px bg-white/20" />
+              <a
+                href="tel:+15196812669"
+                className="text-white/80 hover:text-gold-luxe transition-colors"
+              >
+                Call London
+              </a>
+              <span className="h-3 w-px bg-white/20" />
+              <a
+                href="tel:+15196318282"
+                className="text-white/80 hover:text-gold-luxe transition-colors"
+              >
+                Call St Thomas
+              </a>
+            </div>
           </div>
 
           <div className="hidden md:block absolute bottom-10 left-16 right-16">
@@ -133,8 +150,8 @@ export default function HomePage() {
               </span>
             </Link>
           </FadeIn>
-          <FadeIn delay={150} className="lg:col-span-6 relative flex justify-end">
-            <div className="w-4/5 aspect-[3/4] bg-navy-deep rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-700">
+          <FadeIn delay={150} className="lg:col-span-6 relative flex flex-col md:block gap-4">
+            <div className="w-full md:w-4/5 md:ml-auto aspect-[4/3] md:aspect-[3/4] bg-navy-deep rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-700">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt="From the grill"
@@ -143,7 +160,7 @@ export default function HomePage() {
                 src="/images/grilled-steak.jpg"
               />
             </div>
-            <div className="absolute -bottom-10 left-0 w-2/3 aspect-square bg-navy-deep rounded-2xl border-8 border-background overflow-hidden hidden md:block">
+            <div className="w-3/4 md:w-2/3 self-end md:self-auto md:absolute md:-bottom-10 md:left-0 aspect-square bg-navy-deep rounded-2xl md:border-8 md:border-background overflow-hidden -mt-10 md:mt-0 relative z-10">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt="Guests at the table"

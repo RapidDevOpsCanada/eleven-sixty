@@ -44,7 +44,7 @@ export default function ArticleCard({
           <h3 className="font-headline text-3xl md:text-4xl font-bold mb-3 text-white tracking-tight leading-tight">
             {article.title}
           </h3>
-          <p className="font-body text-base text-white/80 max-w-lg font-medium leading-relaxed">
+          <p className="font-body text-base text-white/80 max-w-lg font-medium leading-relaxed line-clamp-3">
             {article.excerpt}
           </p>
           <div className="mt-6 flex items-center gap-4 text-[11px] uppercase tracking-widest text-white/50 font-bold">
@@ -78,7 +78,7 @@ export default function ArticleCard({
           <h3 className="font-headline text-4xl md:text-5xl font-bold mb-4 text-white tracking-tight leading-tight">
             {article.title}
           </h3>
-          <p className="font-body text-base text-white/80 max-w-xl font-medium leading-relaxed">
+          <p className="font-body text-base text-white/80 max-w-xl font-medium leading-relaxed line-clamp-2">
             {article.excerpt}
           </p>
           <div className="mt-8 flex items-center gap-6 text-[11px] uppercase tracking-widest text-white/50 font-bold">

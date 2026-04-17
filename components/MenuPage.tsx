@@ -15,16 +15,27 @@ export default function MenuPage({ menu }: { menu: Menu }) {
 
       <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 bg-background">
         <div className="max-w-7xl mx-auto flex flex-col gap-10">
+          <nav
+            aria-label="Breadcrumb"
+            className="font-label text-[11px] uppercase tracking-[0.25em] text-white/50 font-bold flex items-center gap-2 flex-wrap"
+          >
+            <Link href="/" className="hover:text-white transition-colors">
+              Home
+            </Link>
+            <span className="text-white/20">/</span>
+            <Link href="/dinner-menus/" className="hover:text-white transition-colors">
+              Menu
+            </Link>
+            <span className="text-white/20">/</span>
+            <span className="text-white/80">{menu.title}</span>
+          </nav>
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-12 items-center">
             <div className="lg:col-span-3 flex flex-col gap-6 max-w-xl">
               <div className="inline-flex items-center gap-3">
                 <div className="h-[1px] w-8 bg-white/30" />
-                <Link
-                  href="/"
-                  className="font-label uppercase tracking-[0.4em] text-white/60 text-[11px] font-bold hover:text-white transition-colors"
-                >
+                <span className="font-label uppercase tracking-[0.4em] text-white/60 text-[11px] font-bold">
                   {menu.kicker}
-                </Link>
+                </span>
               </div>
               <h1 className="font-headline font-bold text-5xl md:text-7xl text-white tracking-tight leading-[0.95]">
                 {menu.title}
@@ -77,8 +88,8 @@ export default function MenuPage({ menu }: { menu: Menu }) {
             <div className="relative min-h-[260px] md:min-h-0">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                alt="The Eleven Sixty dining room"
-                src="/images/interior-bar.jpg"
+                alt={menu.heroImageAlt}
+                src={menu.heroImage}
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
               />

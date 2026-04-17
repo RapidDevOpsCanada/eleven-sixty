@@ -201,7 +201,7 @@ export default function ContactPage() {
                   name="name"
                   type="text"
                   required
-                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
+                  className="bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
                 />
               </div>
 
@@ -217,7 +217,7 @@ export default function ContactPage() {
                   name="email"
                   type="email"
                   required
-                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
+                  className="bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
                 />
               </div>
 
@@ -234,7 +234,7 @@ export default function ContactPage() {
                     name="location"
                     required
                     defaultValue=""
-                    className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
+                    className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
                   >
                     <option value="" disabled>
                       Choose a location
@@ -261,7 +261,7 @@ export default function ContactPage() {
                     id="subject"
                     name="subject"
                     defaultValue=""
-                    className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
+                    className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
                   >
                     <option value="" disabled>
                       Choose a subject
@@ -289,7 +289,7 @@ export default function ContactPage() {
                   id="message"
                   name="message"
                   rows={6}
-                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-4 text-white font-body outline-none transition-colors resize-none"
+                  className="bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-4 text-white font-body outline-none transition-colors resize-none"
                 />
               </div>
 

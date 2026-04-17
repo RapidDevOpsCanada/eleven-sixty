@@ -105,7 +105,7 @@ export default function BirthdayClubPage() {
                 name="email"
                 type="email"
                 required
-                className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
+                className="bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
               />
             </div>
 
@@ -121,7 +121,7 @@ export default function BirthdayClubPage() {
                   id="first-name"
                   name="first-name"
                   type="text"
-                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
+                  className="bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
                 />
               </div>
 
@@ -136,7 +136,7 @@ export default function BirthdayClubPage() {
                   id="last-name"
                   name="last-name"
                   type="text"
-                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
+                  className="bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
                 />
               </div>
             </div>
@@ -154,7 +154,7 @@ export default function BirthdayClubPage() {
                 type="text"
                 placeholder="mm/dd"
                 pattern="[0-1][0-9]/[0-3][0-9]"
-                className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors max-w-xs"
+                className="bg-background border border-white/10 focus:border-gold-luxe focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-luxe/30 rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors max-w-xs"
               />
             </div>
 
