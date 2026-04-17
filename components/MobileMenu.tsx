@@ -3,8 +3,14 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
+import { usePathname } from 'next/navigation';
 import { OPENTABLE_LONDON, OPENTABLE_ST_THOMAS } from '@/lib/booking';
 import OpenStatus from './OpenStatus';
+
+function normalise(path: string): string {
+  if (!path) return '/';
+  return path !== '/' && path.endsWith('/') ? path.slice(0, -1) : path;
+}
 
 const SECTIONS: { heading: string; links: { label: string; href: string }[] }[] = [
   {
@@ -39,6 +45,7 @@ const SECTIONS: { heading: string; links: { label: string; href: string }[] }[] 
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const pathname = normalise(usePathname() ?? '/');
 
   useEffect(() => setMounted(true), []);
 
@@ -92,16 +99,30 @@ export default function MobileMenu() {
                 {s.heading}
               </h3>
               <div className="flex flex-col gap-4">
-                {s.links.map((l) => (
-                  <Link
-                    key={l.href}
-                    href={l.href}
-                    onClick={() => setOpen(false)}
-                    className="font-headline text-2xl md:text-3xl font-bold text-white hover:text-gold-luxe transition-colors tracking-tight"
-                  >
-                    {l.label}
-                  </Link>
-                ))}
+                {s.links.map((l) => {
+                  const target = normalise(l.href.split('#')[0] ?? l.href);
+                  const isActive = target !== '/' && pathname.startsWith(target);
+                  return (
+                    <Link
+                      key={l.href}
+                      href={l.href}
+                      onClick={() => setOpen(false)}
+                      className={`relative pl-4 font-headline text-2xl md:text-3xl font-bold tracking-tight transition-colors ${
+                        isActive
+                          ? 'text-gold-luxe'
+                          : 'text-white hover:text-gold-luxe'
+                      }`}
+                    >
+                      {isActive && (
+                        <span
+                          aria-hidden="true"
+                          className="absolute left-0 top-1/2 -translate-y-1/2 w-1.5 h-6 rounded-full bg-gold-luxe"
+                        />
+                      )}
+                      {l.label}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           ))}

@@ -144,6 +144,174 @@ export default function GroupEventsPage() {
         </div>
       </section>
 
+      <section className="px-6 md:px-12 pb-16">
+        <div className="max-w-4xl mx-auto bg-navy-deep border border-white/5 rounded-3xl p-8 md:p-12">
+          <div className="flex flex-col gap-2 mb-8">
+            <span className="font-label text-[11px] uppercase tracking-[0.25em] text-white/60 font-bold">
+              Start an inquiry
+            </span>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold text-white tracking-tight">
+              Tell us about your event
+            </h2>
+            <p className="font-body text-sm text-on-surface-variant italic font-medium">
+              Submissions go to info@elevensixty.ca — the events team responds within 24 hours.
+            </p>
+          </div>
+
+          <form
+            className="flex flex-col gap-6"
+            action="mailto:info@elevensixty.ca"
+            method="POST"
+            encType="text/plain"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="flex flex-col gap-2">
+                <label
+                  htmlFor="event-contact"
+                  className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold"
+                >
+                  Your Name <span className="text-error">*</span>
+                </label>
+                <input
+                  id="event-contact"
+                  name="contact-name"
+                  type="text"
+                  required
+                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <label
+                  htmlFor="event-email"
+                  className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold"
+                >
+                  Email <span className="text-error">*</span>
+                </label>
+                <input
+                  id="event-email"
+                  name="email"
+                  type="email"
+                  required
+                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="flex flex-col gap-2">
+                <label
+                  htmlFor="event-date"
+                  className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold"
+                >
+                  Event Date
+                </label>
+                <input
+                  id="event-date"
+                  name="event-date"
+                  type="date"
+                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <label
+                  htmlFor="event-headcount"
+                  className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold"
+                >
+                  Headcount
+                </label>
+                <input
+                  id="event-headcount"
+                  name="headcount"
+                  type="number"
+                  min={1}
+                  max={45}
+                  placeholder="1–45"
+                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <label
+                  htmlFor="event-occasion"
+                  className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold"
+                >
+                  Occasion
+                </label>
+                <div className="relative">
+                  <select
+                    id="event-occasion"
+                    name="occasion"
+                    defaultValue=""
+                    className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
+                  >
+                    <option value="" disabled>
+                      Choose
+                    </option>
+                    <option value="corporate">Corporate</option>
+                    <option value="fundraiser">Fundraiser</option>
+                    <option value="private-party">Private party</option>
+                    <option value="special-event">Special event</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span className="material-symbols-outlined pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gold-luxe">
+                    expand_more
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label
+                htmlFor="event-location"
+                className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold"
+              >
+                Preferred Location
+              </label>
+              <div className="relative">
+                <select
+                  id="event-location"
+                  name="location"
+                  defaultValue=""
+                  className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
+                >
+                  <option value="" disabled>
+                    Choose a room
+                  </option>
+                  <option value="london">London — 1160 Wellington Rd</option>
+                  <option value="st-thomas">St Thomas — 1093 Talbot St</option>
+                  <option value="either">Either location</option>
+                </select>
+                <span className="material-symbols-outlined pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gold-luxe">
+                  expand_more
+                </span>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label
+                htmlFor="event-notes"
+                className="font-label text-[11px] uppercase tracking-widest text-white/70 font-bold"
+              >
+                Notes
+              </label>
+              <textarea
+                id="event-notes"
+                name="notes"
+                rows={5}
+                placeholder="Menu preferences, dietary needs, timing, anything else we should know."
+                className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-4 text-white font-body outline-none transition-colors resize-none"
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="bg-gold-luxe hover:bg-white text-navy-deep font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-all self-start"
+            >
+              Send Inquiry
+            </button>
+          </form>
+        </div>
+      </section>
+
       <section className="px-6 md:px-12 pb-32">
         <div className="max-w-6xl mx-auto bg-navy-deep border border-white/10 rounded-3xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
           <div className="relative min-h-[260px] md:min-h-0">

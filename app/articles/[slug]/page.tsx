@@ -4,6 +4,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import ArticleCard, { getArticleImage } from '@/components/ArticleCard';
 import ScrollToTop from '@/components/ScrollToTop';
+import ReadingProgress from '@/components/ReadingProgress';
 import { getArticleBySlug, getRelatedArticles } from '@/lib/articles';
 
 export const dynamic = 'force-dynamic';
@@ -44,6 +45,7 @@ export default async function ArticleDetailPage({
 
   return (
     <>
+      <ReadingProgress />
       <Nav />
 
       <article className="pt-32 md:pt-40 pb-24">

@@ -21,7 +21,13 @@ export default function HomePage() {
             </div>
             <h1 className="font-headline font-bold text-6xl md:text-8xl mb-8 leading-[0.95] text-white tracking-tight">
               PREMIER<br />BAR &amp;<br />
-              <span className="italic text-gold-luxe">grill.</span>
+              <span className="relative inline-block italic text-gold-luxe">
+                grill.
+                <span
+                  aria-hidden="true"
+                  className="absolute left-0 -bottom-2 md:-bottom-3 h-[3px] w-[110%] bg-gold-luxe/60 rounded-full -skew-x-12"
+                />
+              </span>
             </h1>
             <p className="font-body text-base text-on-surface-variant max-w-sm mb-10 leading-relaxed font-medium">
               Known for sizzling steaks and tender, fall-off-the-bone ribs. Casual dining with
@@ -217,12 +223,24 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="md:col-span-4 bg-navy-deep border border-white/5 p-12 flex flex-col justify-between h-[600px] rounded-3xl shadow-xl">
-              <div>
-                <span className="font-headline text-7xl font-extrabold text-gold-luxe tracking-tighter">
-                  1160
+            <div className="relative md:col-span-4 bg-navy-deep border border-white/5 p-12 flex flex-col justify-between h-[600px] rounded-3xl shadow-xl overflow-hidden">
+              <span
+                aria-hidden="true"
+                className="absolute top-8 right-8 font-label text-[10px] uppercase tracking-[0.3em] text-white/20 font-bold"
+              >
+                01 · 02
+              </span>
+              <div className="flex flex-col gap-5">
+                <span className="font-label text-[10px] uppercase tracking-[0.35em] text-white/50 font-bold">
+                  Our Name
                 </span>
-                <p className="font-body mt-8 text-lg text-on-surface-variant leading-relaxed font-medium">
+                <div className="flex flex-col gap-3">
+                  <span className="font-headline text-7xl font-extrabold text-gold-luxe tracking-tighter leading-none">
+                    1160
+                  </span>
+                  <span className="block h-[2px] w-16 bg-gold-luxe/60 rounded-full" />
+                </div>
+                <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium">
                   The address and the name. 1160 Wellington Road in London, and a second room on
                   Talbot Street in St Thomas.
                 </p>
@@ -298,28 +316,32 @@ export default function HomePage() {
                 img: '/images/happy-hour.jpg',
                 alt: 'Happy hour at the bar',
                 title: 'Daily Features',
-                body: 'Weeknight specials plus all-day happy hours.'
+                body: 'Weeknight specials plus all-day happy hours.',
+                cta: 'See the specials'
               },
               {
                 href: '/birthday-club/',
                 img: '/images/birthday-cake.jpg',
                 alt: 'Birthday dessert with a candle',
                 title: 'Birthday Club',
-                body: 'Sign up — dessert on us on your birthday.'
+                body: 'Sign up — dessert on us on your birthday.',
+                cta: 'Sign up'
               },
               {
                 href: '/group-events/',
                 img: '/images/private-event.jpg',
                 alt: 'The private event room',
                 title: 'Group Events',
-                body: 'Private room for up to 45 with a big-screen TV.'
+                body: 'Private room for up to 45 with a big-screen TV.',
+                cta: 'Book the room'
               },
               {
                 href: '/contact-us/',
                 img: '/images/restaurant-exterior.jpg',
                 alt: 'Outside Eleven Sixty',
                 title: 'Contact Us',
-                body: 'Reach the team at info@elevensixty.ca.'
+                body: 'Reach the team at info@elevensixty.ca.',
+                cta: 'Say hello'
               }
             ].map((c, i) => (
               <FadeIn key={c.href} delay={i * 80}>
@@ -343,7 +365,7 @@ export default function HomePage() {
                       {c.body}
                     </p>
                     <span className="mt-2 font-label text-[11px] uppercase tracking-[0.2em] text-gold-luxe font-bold inline-flex items-center gap-2 group-hover:gap-3 transition-all">
-                      Explore
+                      {c.cta}
                       <span className="material-symbols-outlined text-sm">east</span>
                     </span>
                   </div>

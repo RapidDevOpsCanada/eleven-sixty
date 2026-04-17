@@ -22,11 +22,13 @@ export default function NavLink({
   return (
     <Link
       href={href}
-      className="relative font-label text-xs font-bold uppercase tracking-[0.15em] text-white hover:text-gold-luxe transition-colors"
+      className="group relative font-label text-xs font-bold uppercase tracking-[0.15em] text-white hover:text-gold-luxe transition-colors"
     >
       {children}
-      {isActive && (
+      {isActive ? (
         <span className="absolute left-0 right-0 -bottom-1.5 h-[2px] bg-gold-luxe rounded-full" />
+      ) : (
+        <span className="absolute left-0 right-0 -bottom-1.5 h-[2px] bg-gold-luxe rounded-full origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
       )}
     </Link>
   );
