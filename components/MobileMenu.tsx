@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { OPENTABLE_LONDON, OPENTABLE_ST_THOMAS } from '@/lib/booking';
+import OpenStatus from './OpenStatus';
 
 const SECTIONS: { heading: string; links: { label: string; href: string }[] }[] = [
   {
@@ -57,17 +58,20 @@ export default function MobileMenu() {
       </button>
 
       {open && (
-        <div className="fixed inset-0 z-[100] overflow-y-auto pointer-events-auto">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            alt=""
-            aria-hidden="true"
-            src="/images/interior-bar.jpg"
-            className="fixed inset-0 w-full h-full object-cover opacity-25"
-          />
-          <div className="fixed inset-0 bg-navy-deep/85 backdrop-blur-xl" />
-          <div className="relative max-w-5xl mx-auto px-6 md:px-12 py-8">
-            <div className="flex items-center justify-between mb-16">
+        <>
+          <div className="fixed inset-0 z-[100] pointer-events-none">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              alt=""
+              aria-hidden="true"
+              src="/images/interior-bar.jpg"
+              className="absolute inset-0 w-full h-full object-cover opacity-20"
+            />
+            <div className="absolute inset-0 bg-navy-deep/90 backdrop-blur-xl" />
+          </div>
+          <div className="fixed inset-0 z-[101] overflow-y-auto pointer-events-auto">
+            <div className="relative max-w-5xl mx-auto px-6 md:px-12 py-8">
+            <div className="flex items-center justify-between mb-10">
               <Link
                 href="/"
                 onClick={() => setOpen(false)}
@@ -85,6 +89,9 @@ export default function MobileMenu() {
               >
                 close
               </button>
+            </div>
+            <div className="mb-12">
+              <OpenStatus />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-16">
@@ -156,7 +163,8 @@ export default function MobileMenu() {
               </div>
             </div>
           </div>
-        </div>
+          </div>
+        </>
       )}
     </>
   );

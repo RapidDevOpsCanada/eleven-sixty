@@ -32,6 +32,7 @@ export default function ArticleCard({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           alt={article.title}
+          loading="lazy"
           className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:scale-105 group-hover:opacity-90 transition-all duration-1000"
           src={imageSrc}
         />
@@ -60,11 +61,12 @@ export default function ArticleCard({
     return (
       <Link
         href={`/articles/${article.slug}`}
-        className="group relative overflow-hidden rounded-3xl h-[600px] block"
+        className="group relative overflow-hidden rounded-3xl aspect-[16/9] md:aspect-[21/9] block"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           alt={article.title}
+          loading="lazy"
           className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 group-hover:opacity-80 transition-all duration-1000"
           src={imageSrc}
         />
@@ -98,6 +100,7 @@ export default function ArticleCard({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           alt={article.title}
+          loading="lazy"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           src={imageSrc}
         />

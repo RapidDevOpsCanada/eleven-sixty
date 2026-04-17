@@ -87,7 +87,7 @@ export default function ContactPage() {
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-navy-deep via-navy-deep/85 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-7 md:p-9 flex flex-col gap-3">
                 <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold">
-                  Location 01
+                  The London Room
                 </span>
                 <h3 className="font-headline text-3xl md:text-4xl font-bold text-white tracking-tight">
                   London
@@ -128,7 +128,7 @@ export default function ContactPage() {
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-navy-deep via-navy-deep/85 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-7 md:p-9 flex flex-col gap-3">
                 <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold">
-                  Location 02
+                  The St Thomas Room
                 </span>
                 <h3 className="font-headline text-3xl md:text-4xl font-bold text-white tracking-tight">
                   St Thomas
@@ -201,7 +201,7 @@ export default function ContactPage() {
                   name="name"
                   type="text"
                   required
-                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-full px-5 py-3 text-white font-body outline-none transition-colors"
+                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
                 />
               </div>
 
@@ -217,7 +217,7 @@ export default function ContactPage() {
                   name="email"
                   type="email"
                   required
-                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-full px-5 py-3 text-white font-body outline-none transition-colors"
+                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 text-white font-body outline-none transition-colors"
                 />
               </div>
 
@@ -234,7 +234,7 @@ export default function ContactPage() {
                     name="location"
                     required
                     defaultValue=""
-                    className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe rounded-full px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
+                    className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
                   >
                     <option value="" disabled>
                       Choose a location
@@ -261,7 +261,7 @@ export default function ContactPage() {
                     id="subject"
                     name="subject"
                     defaultValue=""
-                    className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe rounded-full px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
+                    className="appearance-none w-full bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-3 pr-12 text-white font-body outline-none transition-colors"
                   >
                     <option value="" disabled>
                       Choose a subject
@@ -289,7 +289,7 @@ export default function ContactPage() {
                   id="message"
                   name="message"
                   rows={6}
-                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-3xl px-5 py-4 text-white font-body outline-none transition-colors resize-none"
+                  className="bg-background border border-white/10 focus:border-gold-luxe rounded-2xl px-5 py-4 text-white font-body outline-none transition-colors resize-none"
                 />
               </div>
 

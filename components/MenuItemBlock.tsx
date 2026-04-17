@@ -6,7 +6,7 @@ export default function MenuItemBlock({ item }: { item: MenuItem }) {
 
   return (
     <div className="flex flex-col gap-2 py-5 border-b border-white/5 last:border-b-0 md:last:border-b md:[&:nth-last-child(-n+2)]:border-b-0">
-      <div className="flex items-baseline justify-between gap-6 flex-wrap">
+      <div className="flex items-baseline gap-3">
         <h3 className="font-headline font-bold text-lg md:text-xl text-white tracking-tight">
           {isHouse && (
             <span className="mr-3 inline-block align-middle bg-gold-luxe text-navy-deep font-label text-[9px] uppercase tracking-[0.2em] font-bold px-2 py-0.5 rounded">
@@ -21,9 +21,15 @@ export default function MenuItemBlock({ item }: { item: MenuItem }) {
           )}
         </h3>
         {item.price && !hasVariants && (
-          <span className="font-headline text-lg font-bold text-gold-luxe tracking-tight">
-            {item.price}
-          </span>
+          <>
+            <span
+              aria-hidden="true"
+              className="flex-1 border-b border-dotted border-white/15 translate-y-[-3px] min-w-[1rem]"
+            />
+            <span className="font-headline text-lg font-bold text-gold-luxe tracking-tight shrink-0">
+              {item.price}
+            </span>
+          </>
         )}
       </div>
 

@@ -30,7 +30,7 @@ export default function Nav() {
           </div>
 
           <div className="flex items-center gap-3">
-            <OpenStatus className="hidden lg:inline-flex" />
+            <OpenStatus className="hidden sm:inline-flex" />
             <div className="hidden md:block">
               <BookButton />
             </div>

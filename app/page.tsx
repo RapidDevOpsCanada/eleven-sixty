@@ -106,7 +106,6 @@ export default function HomePage() {
                 <span className="italic text-gold-luxe">done right</span>
               </h2>
             </div>
-            <div className="w-20 h-1 bg-gold-luxe rounded-full" />
             <div className="space-y-6">
               <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium">
                 Eleven Sixty is the neighborhood bar &amp; grill for London and St Thomas. Known
@@ -133,6 +132,7 @@ export default function HomePage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt="From the grill"
+                loading="lazy"
                 className="w-full h-full object-cover"
                 src="/images/grilled-steak.jpg"
               />
@@ -141,6 +141,7 @@ export default function HomePage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt="Guests at the table"
+                loading="lazy"
                 className="w-full h-full object-cover"
                 src="/images/family-dining.jpg"
               />
@@ -154,6 +155,7 @@ export default function HomePage() {
         <img
           alt="A night at Eleven Sixty"
           src="/images/happy-hour.jpg"
+          loading="lazy"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/60 to-transparent" />
@@ -201,13 +203,14 @@ export default function HomePage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt="The dining room"
+                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-1000"
                 src="/images/pub-food.jpg"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep to-transparent opacity-80" />
               <div className="absolute bottom-12 left-12">
-                <h3 className="font-headline text-4xl font-bold mb-4 text-white">
-                  RIBS &amp; STEAKS
+                <h3 className="font-headline text-4xl font-bold mb-4 text-white tracking-tight">
+                  Ribs &amp; <span className="italic text-gold-luxe">steaks.</span>
                 </h3>
                 <p className="font-body text-base text-white/80 max-w-md font-medium">
                   Slow-smoked ribs, hand-cut steaks, and a lunch menu that runs from 11:30 to 3:30.
@@ -328,6 +331,7 @@ export default function HomePage() {
                   <img
                     alt={c.alt}
                     src={c.img}
+                    loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/70 to-navy-deep/20" />
@@ -357,8 +361,8 @@ export default function HomePage() {
               <span className="font-label text-white/60 tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
                 Two Rooms
               </span>
-              <h2 className="font-headline text-5xl md:text-6xl font-bold text-white tracking-tight">
-                FIND US
+              <h2 className="font-headline text-5xl md:text-6xl font-bold text-white tracking-tight leading-[1.02]">
+                Find <span className="italic text-gold-luxe">us.</span>
               </h2>
             </div>
             <p className="font-body text-sm text-on-surface-variant uppercase tracking-widest max-w-[280px] leading-loose font-bold">
@@ -375,7 +379,7 @@ export default function HomePage() {
               <div className="flex items-start justify-between px-2">
                 <div>
                   <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-3 block">
-                    Location 01
+                    The London Room
                   </span>
                   <h3 className="font-headline text-4xl font-bold text-white tracking-tight">
                     London
@@ -442,7 +446,7 @@ export default function HomePage() {
               <div className="flex items-start justify-between px-2">
                 <div>
                   <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-3 block">
-                    Location 02
+                    The St Thomas Room
                   </span>
                   <h3 className="font-headline text-4xl font-bold text-white tracking-tight">
                     St Thomas
