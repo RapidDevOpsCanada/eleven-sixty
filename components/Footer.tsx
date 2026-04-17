@@ -92,6 +92,12 @@ export default function Footer() {
               Twitter
             </a>
             <Link
+              href="/menu"
+              className="font-body text-sm font-medium text-white/60 hover:text-white transition-colors"
+            >
+              Menu
+            </Link>
+            <Link
               href="/articles"
               className="font-body text-sm font-medium text-white/60 hover:text-white transition-colors"
             >

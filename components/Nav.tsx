@@ -16,7 +16,7 @@ export default function Nav({ showCommandBar = true }: { showCommandBar?: boolea
           </Link>
           <div className="hidden md:flex gap-8 items-center">
             <Link
-              href="/articles"
+              href="/menu"
               className="font-label text-[11px] font-semibold uppercase tracking-wider text-white hover:text-gold-luxe transition-colors"
             >
               Menu
@@ -41,7 +41,7 @@ export default function Nav({ showCommandBar = true }: { showCommandBar?: boolea
           <div className="pointer-events-auto command-bar-blur rounded-2xl md:rounded-full p-2 flex flex-col md:flex-row items-center gap-2 max-w-4xl mx-auto w-full shadow-2xl">
             <div className="flex-1 w-full grid grid-cols-2 gap-2 md:flex md:items-center">
               <Link
-                href="/articles"
+                href="/menu"
                 className="flex items-center gap-3 px-4 py-2 hover:bg-white/5 rounded-full transition-colors cursor-pointer group flex-1"
               >
                 <span className="material-symbols-outlined text-gold-luxe">restaurant_menu</span>

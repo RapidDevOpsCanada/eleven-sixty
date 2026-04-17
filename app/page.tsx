@@ -121,7 +121,7 @@ export default function HomePage() {
             </div>
             <Link
               className="font-label text-white bg-navy-deep px-8 py-4 rounded-full self-start tracking-widest uppercase text-xs font-bold flex items-center gap-4 group border border-white/10 hover:border-gold-luxe transition-all"
-              href="/articles"
+              href="/menu"
             >
               View the Menu
               <span className="material-symbols-outlined text-lg text-gold-luxe group-hover:translate-x-2 transition-transform">
