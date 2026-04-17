@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import LocationMap from '@/components/LocationMap';
+import FadeIn from '@/components/FadeIn';
 
 export default function HomePage() {
   return (
@@ -34,6 +35,41 @@ export default function HomePage() {
               </span>
             </Link>
           </div>
+
+          <div className="hidden md:block absolute bottom-10 left-16 right-16">
+            <div className="grid grid-cols-3 gap-6 pt-6 border-t border-white/10">
+              <div className="flex flex-col gap-1">
+                <span className="font-label text-[10px] uppercase tracking-[0.25em] text-white/50 font-bold">
+                  Open Daily
+                </span>
+                <span className="font-body text-sm text-white/90 font-medium">
+                  11:30am – late
+                </span>
+              </div>
+              <div className="flex flex-col gap-1">
+                <span className="font-label text-[10px] uppercase tracking-[0.25em] text-white/50 font-bold">
+                  London
+                </span>
+                <a
+                  href="tel:+15196812669"
+                  className="font-body text-sm text-white/90 font-medium hover:text-gold-luxe transition-colors"
+                >
+                  519-681-2669
+                </a>
+              </div>
+              <div className="flex flex-col gap-1">
+                <span className="font-label text-[10px] uppercase tracking-[0.25em] text-white/50 font-bold">
+                  St Thomas
+                </span>
+                <a
+                  href="tel:+15196318282"
+                  className="font-body text-sm text-white/90 font-medium hover:text-gold-luxe transition-colors"
+                >
+                  519-631-8282
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="relative w-full md:w-1/2 h-full bg-background border-t md:border-t-0 border-white/5">
@@ -59,7 +95,7 @@ export default function HomePage() {
 
       <section className="py-32 px-6 md:px-24 bg-background">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center max-w-7xl mx-auto">
-          <div className="lg:col-span-6 flex flex-col gap-10">
+          <FadeIn className="lg:col-span-6 flex flex-col gap-10">
             <div>
               <span className="font-label text-white/60 tracking-[0.4em] uppercase text-[11px] font-bold mb-4 block">
                 Our Story
@@ -90,8 +126,8 @@ export default function HomePage() {
                 east
               </span>
             </Link>
-          </div>
-          <div className="lg:col-span-6 relative flex justify-end">
+          </FadeIn>
+          <FadeIn delay={150} className="lg:col-span-6 relative flex justify-end">
             <div className="w-4/5 aspect-[3/4] bg-navy-deep rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-700">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -108,7 +144,7 @@ export default function HomePage() {
                 src="/images/family-dining.jpg"
               />
             </div>
-          </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -122,7 +158,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/60 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-transparent to-transparent" />
         <div className="relative h-full flex items-end md:items-center max-w-7xl mx-auto px-6 md:px-12 pb-14 md:pb-0">
-          <div className="max-w-xl flex flex-col gap-5">
+          <FadeIn className="max-w-xl flex flex-col gap-5">
             <span className="font-label uppercase tracking-[0.4em] text-white/70 text-[11px] font-bold">
               After 5pm
             </span>
@@ -140,13 +176,13 @@ export default function HomePage() {
               See this week&apos;s features
               <span className="material-symbols-outlined text-sm">east</span>
             </Link>
-          </div>
+          </FadeIn>
         </div>
       </section>
 
       <section className="py-24 px-6 md:px-12 bg-navy-deep/20">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <FadeIn className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-xl">
               <span className="font-label text-white/60 tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
                 Our Kitchen
@@ -158,8 +194,8 @@ export default function HomePage() {
             <p className="font-body text-sm text-on-surface-variant uppercase tracking-widest max-w-[250px] leading-loose font-bold">
               Fall-off-the-bone ribs. Steaks off the grill. A menu for the table that stays late.
             </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+          </FadeIn>
+          <FadeIn delay={100} className="grid grid-cols-1 md:grid-cols-12 gap-6">
             <div className="md:col-span-8 group relative overflow-hidden h-[600px] rounded-3xl">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -196,13 +232,13 @@ export default function HomePage() {
                 </span>
               </div>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </section>
 
       <section className="py-24 px-6 md:px-12 bg-navy-deep/20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end md:justify-between gap-10">
-          <div className="max-w-xl flex flex-col gap-5">
+          <FadeIn className="max-w-xl flex flex-col gap-5">
             <span className="font-label text-white/60 tracking-[0.3em] uppercase text-[11px] font-bold">
               From the Neighbourhood
             </span>
@@ -213,8 +249,8 @@ export default function HomePage() {
               Real reviews live on Google and TripAdvisor. If you&apos;ve eaten with us, we&apos;d
               love to hear from you there.
             </p>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-3">
+          </FadeIn>
+          <FadeIn delay={120} className="flex flex-col sm:flex-row gap-3">
             <a
               href="https://www.google.com/maps/place/?q=place_id:ChIJUTIz35rzLogRgHFVt2HXDbk"
               target="_blank"
@@ -237,20 +273,20 @@ export default function HomePage() {
                 open_in_new
               </span>
             </a>
-          </div>
+          </FadeIn>
         </div>
       </section>
 
       <section className="py-24 px-6 md:px-12 bg-background">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-16 max-w-xl">
+          <FadeIn className="mb-16 max-w-xl">
             <span className="font-label text-white/60 tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
               Explore
             </span>
             <h2 className="font-headline text-4xl md:text-5xl font-bold text-white tracking-tight">
               More ways to visit
             </h2>
-          </div>
+          </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               {
@@ -281,32 +317,33 @@ export default function HomePage() {
                 title: 'Contact Us',
                 body: 'Reach the team at info@elevensixty.ca.'
               }
-            ].map((c) => (
-              <Link
-                key={c.href}
-                href={c.href}
-                className="group relative overflow-hidden rounded-3xl aspect-[4/5] block"
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  alt={c.alt}
-                  src={c.img}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/50 to-navy-deep/10" />
-                <div className="absolute inset-0 p-7 flex flex-col justify-end gap-2">
-                  <h3 className="font-headline text-2xl md:text-3xl font-bold text-white tracking-tight leading-tight">
-                    {c.title}
-                  </h3>
-                  <p className="font-body text-sm text-white/75 font-medium leading-relaxed">
-                    {c.body}
-                  </p>
-                  <span className="mt-3 font-label text-[11px] uppercase tracking-[0.2em] text-gold-luxe font-bold inline-flex items-center gap-2 group-hover:gap-3 transition-all">
-                    Explore
-                    <span className="material-symbols-outlined text-sm">east</span>
-                  </span>
-                </div>
-              </Link>
+            ].map((c, i) => (
+              <FadeIn key={c.href} delay={i * 80}>
+                <Link
+                  href={c.href}
+                  className="group relative overflow-hidden rounded-3xl aspect-[4/5] block"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    alt={c.alt}
+                    src={c.img}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/70 to-navy-deep/20" />
+                  <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end gap-3">
+                    <h3 className="font-headline text-2xl md:text-3xl font-bold text-white tracking-tight leading-tight">
+                      {c.title}
+                    </h3>
+                    <p className="font-body text-sm text-white/80 font-medium leading-relaxed">
+                      {c.body}
+                    </p>
+                    <span className="mt-2 font-label text-[11px] uppercase tracking-[0.2em] text-gold-luxe font-bold inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                      Explore
+                      <span className="material-symbols-outlined text-sm">east</span>
+                    </span>
+                  </div>
+                </Link>
+              </FadeIn>
             ))}
           </div>
         </div>
@@ -314,7 +351,7 @@ export default function HomePage() {
 
       <section id="locations" className="py-32 px-6 md:px-12 bg-background">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <FadeIn className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-xl">
               <span className="font-label text-white/60 tracking-[0.3em] uppercase text-[11px] font-bold mb-4 block">
                 Two Rooms
@@ -326,7 +363,7 @@ export default function HomePage() {
             <p className="font-body text-sm text-on-surface-variant uppercase tracking-widest max-w-[280px] leading-loose font-bold">
               London &amp; St Thomas, Ontario. Open daily from 11:30am.
             </p>
-          </div>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-navy-deep border border-white/5 rounded-3xl p-6 md:p-8 flex flex-col gap-6 hover:border-gold-luxe/40 transition-colors">

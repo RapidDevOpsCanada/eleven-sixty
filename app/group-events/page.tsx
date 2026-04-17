@@ -120,12 +120,12 @@ export default function GroupEventsPage() {
                   src={e.image}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/50 to-navy-deep/10" />
-                <div className="absolute inset-0 p-7 flex flex-col justify-end gap-2">
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/70 to-navy-deep/20" />
+                <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end gap-3">
                   <h3 className="font-headline text-2xl font-bold text-white tracking-tight leading-tight">
                     {e.title}
                   </h3>
-                  <p className="font-body text-sm text-white/75 font-medium leading-relaxed">
+                  <p className="font-body text-sm text-white/80 font-medium leading-relaxed">
                     {e.description}
                   </p>
                 </div>

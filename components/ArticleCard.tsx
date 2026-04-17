@@ -14,12 +14,47 @@ export function getArticleImage(a: Pick<Article, 'id'>): string {
 
 export default function ArticleCard({
   article,
-  featured = false
+  featured = false,
+  tall = false
 }: {
   article: Article;
   featured?: boolean;
+  tall?: boolean;
 }) {
   const imageSrc = getArticleImage(article);
+
+  if (tall) {
+    return (
+      <Link
+        href={`/articles/${article.slug}`}
+        className="group relative overflow-hidden rounded-3xl h-full min-h-[500px] block"
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          alt={article.title}
+          className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:scale-105 group-hover:opacity-90 transition-all duration-1000"
+          src={imageSrc}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/40 to-transparent" />
+        <div className="absolute bottom-10 left-10 right-10">
+          <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe mb-3 block font-bold">
+            {article.category}
+          </span>
+          <h3 className="font-headline text-3xl md:text-4xl font-bold mb-3 text-white tracking-tight leading-tight">
+            {article.title}
+          </h3>
+          <p className="font-body text-base text-white/80 max-w-lg font-medium leading-relaxed">
+            {article.excerpt}
+          </p>
+          <div className="mt-6 flex items-center gap-4 text-[11px] uppercase tracking-widest text-white/50 font-bold">
+            <span>{article.author}</span>
+            <span className="h-3 w-px bg-white/20" />
+            <span>{article.read_time} min</span>
+          </div>
+        </div>
+      </Link>
+    );
+  }
 
   if (featured) {
     return (

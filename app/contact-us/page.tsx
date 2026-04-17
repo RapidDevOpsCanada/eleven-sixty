@@ -45,79 +45,76 @@ export default function ContactPage() {
       <section className="px-6 md:px-12 pb-24">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="flex flex-col gap-6">
-            <div className="bg-navy-deep border border-white/5 rounded-3xl p-6 md:p-8 flex flex-col gap-6">
+            <div className="relative rounded-3xl overflow-hidden aspect-[4/3] md:aspect-[16/10] border border-white/5 group">
               <LocationMap
                 query="1160 Wellington Road London ON N6E 1M3"
                 label="London"
               />
-              <div className="flex items-start justify-between px-2">
-                <div>
-                  <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-3 block">
-                    Location 01
-                  </span>
-                  <h3 className="font-headline text-3xl font-bold text-white tracking-tight">
-                    London
-                  </h3>
-                </div>
-                <span className="material-symbols-outlined text-gold-luxe text-3xl">
-                  location_on
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-navy-deep via-navy-deep/85 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-7 md:p-9 flex flex-col gap-3">
+                <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold">
+                  Location 01
                 </span>
-              </div>
-              <div className="flex flex-col gap-3 font-body text-base text-on-surface-variant font-medium leading-relaxed px-2">
-                <a
-                  href="https://maps.google.com/?q=1160+Wellington+Road+London+ON+N6E+1M3"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
-                >
-                  1160 Wellington Road
-                  <br />
-                  London, ON N6E 1M3
-                </a>
-                <a href="tel:+15196812669" className="hover:text-white transition-colors">
-                  (519) 681-2669
-                </a>
-                <a
-                  href="mailto:info@elevensixty.ca"
-                  className="hover:text-white transition-colors"
-                >
-                  info@elevensixty.ca
-                </a>
+                <h3 className="font-headline text-3xl md:text-4xl font-bold text-white tracking-tight">
+                  London
+                </h3>
+                <div className="flex flex-col gap-1 font-body text-base text-white/80 font-medium leading-relaxed">
+                  <a
+                    href="https://maps.google.com/?q=1160+Wellington+Road+London+ON+N6E+1M3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pointer-events-auto hover:text-white transition-colors"
+                  >
+                    1160 Wellington Road, London, ON N6E 1M3
+                  </a>
+                  <div className="flex gap-4 text-white/70">
+                    <a
+                      href="tel:+15196812669"
+                      className="pointer-events-auto hover:text-white transition-colors"
+                    >
+                      (519) 681-2669
+                    </a>
+                    <span className="text-white/30">·</span>
+                    <a
+                      href="mailto:info@elevensixty.ca"
+                      className="pointer-events-auto hover:text-white transition-colors"
+                    >
+                      info@elevensixty.ca
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="bg-navy-deep border border-white/5 rounded-3xl p-6 md:p-8 flex flex-col gap-6">
+            <div className="relative rounded-3xl overflow-hidden aspect-[4/3] md:aspect-[16/10] border border-white/5 group">
               <LocationMap
                 query="1093 Talbot St St Thomas ON N5P 1G4"
                 label="St Thomas"
               />
-              <div className="flex items-start justify-between px-2">
-                <div>
-                  <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-3 block">
-                    Location 02
-                  </span>
-                  <h3 className="font-headline text-3xl font-bold text-white tracking-tight">
-                    St Thomas
-                  </h3>
-                </div>
-                <span className="material-symbols-outlined text-gold-luxe text-3xl">
-                  location_on
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-navy-deep via-navy-deep/85 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-7 md:p-9 flex flex-col gap-3">
+                <span className="font-label text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold">
+                  Location 02
                 </span>
-              </div>
-              <div className="flex flex-col gap-3 font-body text-base text-on-surface-variant font-medium leading-relaxed px-2">
-                <a
-                  href="https://maps.google.com/?q=1093+Talbot+St+St+Thomas+ON+N5P+1G4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
-                >
-                  1093 Talbot St
-                  <br />
-                  St Thomas, ON N5P 1G4
-                </a>
-                <a href="tel:+15196318282" className="hover:text-white transition-colors">
-                  519-631-8282
-                </a>
+                <h3 className="font-headline text-3xl md:text-4xl font-bold text-white tracking-tight">
+                  St Thomas
+                </h3>
+                <div className="flex flex-col gap-1 font-body text-base text-white/80 font-medium leading-relaxed">
+                  <a
+                    href="https://maps.google.com/?q=1093+Talbot+St+St+Thomas+ON+N5P+1G4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pointer-events-auto hover:text-white transition-colors"
+                  >
+                    1093 Talbot St, St Thomas, ON N5P 1G4
+                  </a>
+                  <a
+                    href="tel:+15196318282"
+                    className="pointer-events-auto hover:text-white transition-colors text-white/70"
+                  >
+                    519-631-8282
+                  </a>
+                </div>
               </div>
             </div>
 

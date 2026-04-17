@@ -1,4 +1,10 @@
 import Link from 'next/link';
+import {
+  FacebookIcon,
+  InstagramIcon,
+  TripAdvisorIcon,
+  XIcon
+} from './SocialIcons';
 
 export default function Footer() {
   return (
@@ -119,38 +125,42 @@ export default function Footer() {
           <div className="font-body text-[10px] uppercase tracking-[0.2em] font-bold text-white/30">
             © 2024 Eleven Sixty Bar &amp; Grill — London &amp; St Thomas, Ontario.
           </div>
-          <div className="flex gap-6 items-center">
+          <div className="flex gap-5 items-center">
             <a
               href="https://www.facebook.com/elevensixtylondon"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-label text-[11px] uppercase tracking-widest text-white/50 hover:text-gold-luxe transition-colors font-bold"
+              aria-label="Facebook"
+              className="text-white/50 hover:text-gold-luxe transition-colors"
             >
-              Facebook
+              <FacebookIcon className="w-5 h-5" />
             </a>
             <a
               href="https://twitter.com/sixty_eleven"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-label text-[11px] uppercase tracking-widest text-white/50 hover:text-gold-luxe transition-colors font-bold"
+              aria-label="Twitter / X"
+              className="text-white/50 hover:text-gold-luxe transition-colors"
             >
-              Twitter
+              <XIcon className="w-5 h-5" />
             </a>
             <a
               href="https://www.instagram.com/elevensixtybargrill/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-label text-[11px] uppercase tracking-widest text-white/50 hover:text-gold-luxe transition-colors font-bold"
+              aria-label="Instagram"
+              className="text-white/50 hover:text-gold-luxe transition-colors"
             >
-              Instagram
+              <InstagramIcon className="w-5 h-5" />
             </a>
             <a
               href="https://www.tripadvisor.ca/Restaurant_Review-g154995-d21053259-Reviews-Eleven_Sixty_Bar_Grill-London_Ontario.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-label text-[11px] uppercase tracking-widest text-white/50 hover:text-gold-luxe transition-colors font-bold"
+              aria-label="TripAdvisor"
+              className="text-white/50 hover:text-gold-luxe transition-colors"
             >
-              TripAdvisor
+              <TripAdvisorIcon className="w-5 h-5" />
             </a>
           </div>
         </div>

@@ -78,12 +78,30 @@ export default async function ArticlesPage() {
 
       {rest.length > 0 && (
         <section className="px-6 md:px-12 pb-32">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {rest.map((a) => (
-                <ArticleCard key={a.id} article={a} />
-              ))}
-            </div>
+          <div className="max-w-7xl mx-auto flex flex-col gap-6">
+            {rest.length >= 3 && (
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="md:col-span-2 md:row-span-2">
+                  <ArticleCard article={rest[0]} tall />
+                </div>
+                <ArticleCard article={rest[1]} />
+                <ArticleCard article={rest[2]} />
+              </div>
+            )}
+            {rest.length > 0 && rest.length < 3 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {rest.map((a) => (
+                  <ArticleCard key={a.id} article={a} />
+                ))}
+              </div>
+            )}
+            {rest.length > 3 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {rest.slice(3).map((a) => (
+                  <ArticleCard key={a.id} article={a} />
+                ))}
+              </div>
+            )}
           </div>
         </section>
       )}
