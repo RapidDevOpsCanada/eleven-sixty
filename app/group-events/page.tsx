@@ -15,8 +15,8 @@ const eventTypes = [
     description: 'Off-sites, year-end parties, client dinners, and team lunches.'
   },
   {
-    image: '/images/family-dining.jpg',
-    alt: 'A plated dish',
+    image: '/images/banquet.jpg',
+    alt: 'A banquet table set for a group',
     title: 'Fundraiser',
     description: 'A private space and a shared table designed to help the group focus.'
   },
