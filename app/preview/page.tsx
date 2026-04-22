@@ -53,28 +53,14 @@ export default function PreviewPage() {
                 ELEVENSIXTY.CA
               </div>
             </div>
-            <div className="relative w-full overflow-hidden h-[500px] sm:h-[560px] md:h-[600px] lg:h-[630px] bg-background">
-              {/* Desktop: full-width iframe scaled down to fit */}
+            <div className="relative w-full overflow-hidden h-[220px] sm:h-[360px] md:h-[450px] lg:h-[630px] bg-background">
               <iframe
                 src="/"
                 title="Eleven Sixty homepage concept"
                 loading="lazy"
-                className="hidden md:block absolute top-0 left-0 origin-top-left pointer-events-none border-0"
-                style={{
-                  width: '1440px',
-                  height: '900px',
-                  transform: 'scale(0.70)',
-                  transformOrigin: 'top left'
-                }}
+                className="absolute top-0 left-0 origin-top-left pointer-events-none border-0 w-[1440px] h-[900px] scale-[0.22] sm:scale-[0.4] md:scale-[0.5] lg:scale-[0.7]"
               />
-              {/* Mobile: iframe renders the site's own mobile layout at 1:1 */}
-              <iframe
-                src="/"
-                title="Eleven Sixty homepage concept (mobile)"
-                loading="lazy"
-                className="md:hidden absolute inset-0 w-full h-full pointer-events-none border-0"
-              />
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-navy-deep/70 via-navy-deep/20 to-transparent" />
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-navy-deep/70 via-navy-deep/20 to-transparent" />
             </div>
           </div>
         </div>
@@ -155,24 +141,12 @@ export default function PreviewPage() {
                     ELEVENSIXTY.CA{p.src}
                   </div>
                 </div>
-                <div className="relative w-full overflow-hidden h-[420px] sm:h-[280px] bg-background">
+                <div className="relative w-full overflow-hidden h-[200px] sm:h-[220px] lg:h-[280px] xl:h-[320px] bg-background">
                   <iframe
                     src={p.src}
                     title={`Preview — ${p.title}`}
                     loading="lazy"
-                    className="hidden sm:block absolute top-0 left-0 origin-top-left pointer-events-none border-0"
-                    style={{
-                      width: '1440px',
-                      height: '900px',
-                      transform: 'scale(0.38)',
-                      transformOrigin: 'top left'
-                    }}
-                  />
-                  <iframe
-                    src={p.src}
-                    title={`Preview — ${p.title} (mobile)`}
-                    loading="lazy"
-                    className="sm:hidden absolute inset-0 w-full h-full pointer-events-none border-0"
+                    className="absolute top-0 left-0 origin-top-left pointer-events-none border-0 w-[1440px] h-[900px] scale-[0.22] sm:scale-[0.22] lg:scale-[0.3] xl:scale-[0.35]"
                   />
                   <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-navy-deep/70 via-navy-deep/20 to-transparent" />
                 </div>
