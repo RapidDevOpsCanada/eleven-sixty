@@ -53,18 +53,26 @@ export default function PreviewPage() {
                 ELEVENSIXTY.CA
               </div>
             </div>
-            <div className="relative w-full overflow-hidden h-[360px] sm:h-[480px] md:h-[600px] lg:h-[630px] bg-background">
+            <div className="relative w-full overflow-hidden h-[500px] sm:h-[560px] md:h-[600px] lg:h-[630px] bg-background">
+              {/* Desktop: full-width iframe scaled down to fit */}
               <iframe
                 src="/"
                 title="Eleven Sixty homepage concept"
                 loading="lazy"
-                className="absolute top-0 left-0 origin-top-left pointer-events-none border-0"
+                className="hidden md:block absolute top-0 left-0 origin-top-left pointer-events-none border-0"
                 style={{
                   width: '1440px',
                   height: '900px',
                   transform: 'scale(0.70)',
                   transformOrigin: 'top left'
                 }}
+              />
+              {/* Mobile: iframe renders the site's own mobile layout at 1:1 */}
+              <iframe
+                src="/"
+                title="Eleven Sixty homepage concept (mobile)"
+                loading="lazy"
+                className="md:hidden absolute inset-0 w-full h-full pointer-events-none border-0"
               />
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-navy-deep/70 via-navy-deep/20 to-transparent" />
             </div>
@@ -147,18 +155,24 @@ export default function PreviewPage() {
                     ELEVENSIXTY.CA{p.src}
                   </div>
                 </div>
-                <div className="relative w-full overflow-hidden h-[240px] sm:h-[280px] bg-background">
+                <div className="relative w-full overflow-hidden h-[420px] sm:h-[280px] bg-background">
                   <iframe
                     src={p.src}
                     title={`Preview — ${p.title}`}
                     loading="lazy"
-                    className="absolute top-0 left-0 origin-top-left pointer-events-none border-0"
+                    className="hidden sm:block absolute top-0 left-0 origin-top-left pointer-events-none border-0"
                     style={{
                       width: '1440px',
                       height: '900px',
                       transform: 'scale(0.38)',
                       transformOrigin: 'top left'
                     }}
+                  />
+                  <iframe
+                    src={p.src}
+                    title={`Preview — ${p.title} (mobile)`}
+                    loading="lazy"
+                    className="sm:hidden absolute inset-0 w-full h-full pointer-events-none border-0"
                   />
                   <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-navy-deep/70 via-navy-deep/20 to-transparent" />
                 </div>
