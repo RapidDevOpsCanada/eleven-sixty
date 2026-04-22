@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: undefined }
 };
 
-const TODAY = '2026-04-17';
+const TODAY = 'April 22, 2026';
 
 export default function PreviewPage() {
   return (
