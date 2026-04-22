@@ -403,7 +403,7 @@ export default function PreviewPage() {
                     1160
                   </span>
                   <span className="text-sm font-headline font-bold text-white tracking-tight">
-                    Eleven<span className="text-gold-luxe">Sixty</span>
+                    ELEVEN<span className="text-gold-luxe">SIXTY</span>
                   </span>
                 </div>
                 <span className="material-symbols-outlined text-white/80 text-xl">close</span>

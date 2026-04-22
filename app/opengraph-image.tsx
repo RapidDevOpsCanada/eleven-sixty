@@ -47,7 +47,7 @@ export default async function Image() {
               color: '#ffffff'
             }}
           >
-            Eleven<span style={{ color: '#D9AE5E' }}>Sixty</span>
+            ELEVEN<span style={{ color: '#D9AE5E' }}>SIXTY</span>
           </div>
         </div>
 

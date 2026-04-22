@@ -16,7 +16,7 @@ export default function Nav() {
             <span className="px-2.5 py-1.5 rounded-full bg-gold-luxe flex items-center justify-center text-navy-deep text-[11px] font-black tracking-tight">
               1160
             </span>
-            Eleven<span className="text-gold-luxe">Sixty</span>
+            ELEVEN<span className="text-gold-luxe">SIXTY</span>
           </Link>
 
           <div className="hidden md:flex gap-8 items-center">

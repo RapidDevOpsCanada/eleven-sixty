@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-16 mb-20">
           <div>
             <div className="text-3xl font-headline font-bold text-white mb-6 tracking-tight">
-              Eleven<span className="text-gold-luxe">Sixty</span>
+              ELEVEN<span className="text-gold-luxe">SIXTY</span>
             </div>
             <p className="font-body text-base text-on-surface-variant max-w-sm leading-relaxed font-medium">
               Premier bar &amp; grill. Known for sizzling steaks and fall-off-the-bone ribs. Open
