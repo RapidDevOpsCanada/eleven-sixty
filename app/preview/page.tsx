@@ -126,7 +126,7 @@ export default function PreviewPage() {
               {
                 icon: 'trending_down',
                 body:
-                  "Your current site is 8 years old. Google's ranking signals, Core Web Vitals, and mobile-first indexing have all changed — older sites get quietly pushed down."
+                  "Your current site is 6 years old. Google's ranking signals, Core Web Vitals, and mobile-first indexing have all changed — older sites get quietly pushed down."
               },
               {
                 icon: 'smartphone',
