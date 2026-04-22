@@ -16,6 +16,21 @@ const DAY_NAMES = [
   'Saturday'
 ];
 
+// Pick a hero image per day so the featured photo matches whatever
+// the kitchen or bar is running tonight. Fri / Sat fall through to
+// the Happy Hour image.
+const DAY_IMAGES: Record<string, { src: string; alt: string }> = {
+  Sunday: { src: '/images/family-meal.jpg', alt: 'Family Meal Night' },
+  Monday: { src: '/images/beer-pint.jpg', alt: '1160 IPA pint' },
+  Tuesday: { src: '/images/mule.jpg', alt: 'Tuesday Mules' },
+  Wednesday: { src: '/images/martini.jpg', alt: 'Wednesday Martinis' },
+  Thursday: { src: '/images/prix-fixe.jpg', alt: 'Three-course prix fixe' },
+  Friday: { src: '/images/happy-hour.jpg', alt: 'Happy hour at the bar' },
+  Saturday: { src: '/images/happy-hour.jpg', alt: 'Happy hour at the bar' }
+};
+
+const DEFAULT_IMAGE = { src: '/images/happy-hour.jpg', alt: 'The bar at Eleven Sixty' };
+
 export default function TonightSection() {
   const [day, setDay] = useState<string | null>(null);
 
@@ -33,6 +48,7 @@ export default function TonightSection() {
 
   const eyebrow = day ? `${day} night` : 'Tonight';
   const topItems = todaysSection?.items.slice(0, 3) ?? [];
+  const heroImage = (day && DAY_IMAGES[day]) || DEFAULT_IMAGE;
 
   return (
     <section className="py-24 px-6 md:px-12 bg-navy-deep/20">
@@ -53,8 +69,8 @@ export default function TonightSection() {
           <div className="md:col-span-8 relative overflow-hidden h-[520px] md:h-[600px] rounded-3xl">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="The bar at Eleven Sixty tonight"
-              src="/images/happy-hour.jpg"
+              alt={heroImage.alt}
+              src={heroImage.src}
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover opacity-60"
             />
