@@ -70,7 +70,7 @@ export default function MobileMenu() {
             <span className="px-2 py-1 rounded-full bg-gold-luxe flex items-center justify-center text-navy-deep text-[11px] font-black tracking-tight">
               1160
             </span>
-            ELEVEN<span className="text-gold-luxe">SIXTY</span>
+            <span>ELEVEN<span className="text-gold-luxe">SIXTY</span></span>
           </Link>
           <button
             aria-label="Close menu"
