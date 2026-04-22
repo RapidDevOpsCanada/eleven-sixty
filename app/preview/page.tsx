@@ -20,7 +20,7 @@ export default function PreviewPage() {
               1160
             </span>
             <span className="font-label text-[11px] uppercase tracking-[0.25em] text-white/60 font-bold">
-              Design Concept · Confidential
+              Design Concept
             </span>
           </div>
           <div className="font-label text-[11px] uppercase tracking-[0.2em] text-white/40 font-bold hidden md:block">
@@ -73,14 +73,19 @@ export default function PreviewPage() {
             For Eleven Sixty Bar &amp; Grill
           </span>
           <h1 className="font-headline font-bold text-4xl md:text-6xl text-white tracking-tight leading-[1.02] max-w-3xl">
-            A website designed to reserve tables, run your nightly specials, and{' '}
-            <span className="italic text-gold-luxe">fill the private space.</span>
+            A website that reserves tables, runs your nightly specials, and fills the private
+            space —{' '}
+            <span className="italic text-gold-luxe">while you run the restaurant.</span>
           </h1>
           <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium max-w-2xl">
             What follows is what we&apos;re proposing to build. Four things to walk through: how
             guests would book, how tonight&apos;s specials would run themselves, how the private
             space would fill up, and how the whole thing would feel on a phone — where most of
             your guests are.
+          </p>
+          <p className="font-body text-sm text-white/50 font-medium italic leading-relaxed max-w-2xl">
+            Grizzly Agency has been building and maintaining independent restaurant and trades
+            websites in Western Canada since 2017.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-4 pt-6 border-t border-white/10">
@@ -101,6 +106,49 @@ export default function PreviewPage() {
                 <span className="font-label text-[10px] uppercase tracking-[0.2em] text-white/70 font-bold mt-2">
                   {s.label}
                 </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why redesign now */}
+      <section className="px-6 md:px-12 pb-20 md:pb-24 border-b border-white/5">
+        <div className="max-w-5xl mx-auto flex flex-col gap-8">
+          <div className="flex items-baseline gap-4">
+            <span className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
+              Why redesign now
+            </span>
+            <span className="h-[1px] flex-1 bg-white/10" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {[
+              {
+                icon: 'trending_down',
+                body:
+                  "Your current site is 8 years old. Google's ranking signals, Core Web Vitals, and mobile-first indexing have all changed — older sites get quietly pushed down."
+              },
+              {
+                icon: 'smartphone',
+                body:
+                  "70%+ of restaurant traffic is now mobile. A site built pre-2020 wasn't designed for how guests actually browse today."
+              },
+              {
+                icon: 'verified',
+                body:
+                  'OpenTable, schema, and review integrations weren\u2019t baked in before. Wiring them in properly means you show up in Google with stars, hours, and a reserve button right in search.'
+              }
+            ].map((p) => (
+              <div
+                key={p.icon}
+                className="bg-navy-deep/60 border border-white/5 rounded-3xl p-7 flex flex-col gap-4"
+              >
+                <span className="material-symbols-outlined text-gold-luxe text-3xl">
+                  {p.icon}
+                </span>
+                <p className="font-body text-base text-on-surface-variant font-medium leading-relaxed">
+                  {p.body}
+                </p>
               </div>
             ))}
           </div>
@@ -378,7 +426,7 @@ export default function PreviewPage() {
               A gold bar would mark the page they&apos;re on so they don&apos;t lose track.
             </Bullet>
           </ul>
-          <div className="relative mx-auto w-full max-w-[340px] aspect-[9/20] rounded-[3rem] border border-white/10 bg-navy-deep overflow-hidden shadow-2xl shadow-black/50">
+          <div className="relative mx-auto w-full max-w-[260px] md:max-w-[340px] aspect-[9/20] rounded-[3rem] border border-white/10 bg-navy-deep overflow-hidden shadow-2xl shadow-black/50">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/interior-bar.jpg"
@@ -531,6 +579,29 @@ export default function PreviewPage() {
                 )}
               </div>
             ))}
+          </div>
+
+          <div className="bg-navy-deep/60 border border-white/10 rounded-3xl p-7 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div className="flex flex-col gap-2">
+              <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-luxe font-bold">
+                Investment
+              </span>
+              <div className="flex items-baseline gap-3 flex-wrap">
+                <span className="font-headline text-3xl md:text-4xl font-extrabold text-white tracking-tight leading-none">
+                  $1,500
+                </span>
+                <span className="font-body text-sm text-white/60 font-medium">
+                  one-time redesign build
+                </span>
+              </div>
+            </div>
+            <div className="flex flex-col gap-1 md:text-right font-body text-sm text-on-surface-variant font-medium leading-relaxed">
+              <span>
+                Hosting continues at <span className="text-white font-bold">$600/year</span> —
+                next renewal June 2026.
+              </span>
+              <span className="text-white/60">50% to start, 50% at launch.</span>
+            </div>
           </div>
         </div>
       </section>
