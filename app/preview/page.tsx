@@ -34,7 +34,7 @@ export default function PreviewPage() {
         <div className="max-w-5xl mx-auto">
           <div className="flex items-baseline gap-4 mb-5">
             <span className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
-              Your new homepage
+              Proposed homepage
             </span>
             <span className="h-[1px] flex-1 bg-white/10" />
             <span className="font-label text-[10px] uppercase tracking-[0.25em] text-white/40 font-bold hidden md:inline">
@@ -79,18 +79,19 @@ export default function PreviewPage() {
             For Eleven Sixty Bar &amp; Grill
           </span>
           <h1 className="font-headline font-bold text-4xl md:text-6xl text-white tracking-tight leading-[1.02] max-w-3xl">
-            A website that reserves tables, runs your nightly specials, and{' '}
-            <span className="italic text-gold-luxe">fills the private space.</span>
+            A website designed to reserve tables, run your nightly specials, and{' '}
+            <span className="italic text-gold-luxe">fill the private space.</span>
           </h1>
           <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium max-w-2xl">
-            Three things to show you below: how guests book, how tonight&apos;s specials run
-            themselves, and how the private space fills up. Then how it feels on a phone — where
-            most of your guests are.
+            What follows is what we&apos;re proposing to build. Four things to walk through: how
+            guests would book, how tonight&apos;s specials would run themselves, how the private
+            space would fill up, and how the whole thing would feel on a phone — where most of
+            your guests are.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-4 pt-6 border-t border-white/10">
             {[
-              { stat: '11', label: 'Pages built' },
+              { stat: '11', label: 'Pages in scope' },
               { stat: '6', label: 'Menus' },
               { stat: '2', label: 'Locations' },
               { stat: 'Live', label: 'Daily specials' },
@@ -112,18 +113,18 @@ export default function PreviewPage() {
         </div>
       </section>
 
-      {/* All designed, all built — page thumbnails */}
+      {/* Every page in scope — page thumbnails */}
       <section className="px-6 md:px-12 pb-20 md:pb-24 border-b border-white/5">
         <div className="max-w-5xl mx-auto flex flex-col gap-8">
           <div className="flex items-baseline gap-4">
             <span className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
-              All designed, all built
+              Every page in scope
             </span>
             <span className="h-[1px] flex-1 bg-white/10" />
           </div>
           <p className="font-body text-lg text-on-surface-variant leading-relaxed font-medium max-w-2xl">
-            The homepage above is one of eleven pages. Here&apos;s a glance at the others — menus,
-            events, birthday club, and contact — all using the same design system.
+            Eleven pages in the full scope. The homepage is up top — below is how the rest would
+            look: menus, events, birthday club, and contact — all using the same design system.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {[
@@ -176,8 +177,8 @@ export default function PreviewPage() {
       {/* 01 Reservations */}
       <Section
         kicker="01 · Reservations"
-        title="Every page has a one-click reserve button."
-        lead="Up top in the navigation bar, always visible. One tap opens a panel to pick London or St Thomas — then OpenTable takes over from there."
+        title="Every page would have a one-click reserve button."
+        lead="Up top in the navigation bar, always visible. One tap would open a panel to pick London or St Thomas — then OpenTable takes over from there."
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
           <div className="bg-navy-deep border border-white/10 rounded-3xl overflow-hidden shadow-2xl shadow-black/40">
@@ -221,17 +222,19 @@ export default function PreviewPage() {
           </div>
 
           <ul className="flex flex-col gap-4">
-            <Bullet>Reserve button is in the top right of every page.</Bullet>
+            <Bullet>Reserve button would sit in the top right of every page.</Bullet>
             <Bullet>
-              On a phone, the hamburger menu has the same two locations — Reserve London and
-              Reserve St Thomas — plus both direct phone numbers.
+              On a phone, the hamburger menu would carry the same two locations — Reserve London
+              and Reserve St Thomas — plus both direct phone numbers.
             </Bullet>
             <Bullet>
-              Both links go straight to your real OpenTable availability — the site doesn&apos;t
-              hold any booking logic, so you run reservations exactly the way you do today.
+              Both links would go straight to your real OpenTable availability — the site
+              wouldn&apos;t hold any booking logic, so you&apos;d run reservations exactly the
+              way you do today.
             </Bullet>
             <Bullet>
-              The buttons above are live. Click them now to see the experience a guest gets.
+              The buttons above go to your live OpenTable pages — click to preview the experience
+              a guest would get.
             </Bullet>
           </ul>
         </div>
@@ -240,8 +243,8 @@ export default function PreviewPage() {
       {/* 02 Daily features */}
       <Section
         kicker="02 · Daily features"
-        title="Tonight's specials, running themselves."
-        lead="Your weekly lineup is set once. The homepage then shows tonight's feature automatically — Mule Tuesday, Martini Wednesday, the Thursday prix-fixe — and flips to the next one at midnight. Change the list once and every page updates."
+        title="Tonight's specials, set to run themselves."
+        lead="Your weekly lineup would be set once. The homepage would then show tonight's feature automatically — Mule Tuesday, Martini Wednesday, the Thursday prix-fixe — and flip to the next one at midnight. Change the list once, every page updates."
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <DayCard
@@ -276,9 +279,9 @@ export default function PreviewPage() {
             edit
           </span>
           <p className="font-body text-base text-on-surface-variant font-medium leading-relaxed">
-            <span className="text-white font-bold">Update specials in one place.</span>{' '}
-            One short list — change it and every page updates. We&apos;ll walk you through it in
-            10 minutes at handoff, and write it down so you never need us for it again.
+            <span className="text-white font-bold">You&apos;d update specials in one place.</span>{' '}
+            One short list — change it and every page would update. We&apos;d walk you through it
+            in 10 minutes at handoff, and write it down so you&apos;d never need us for it again.
           </p>
         </div>
 
@@ -292,7 +295,7 @@ export default function PreviewPage() {
             </h3>
             <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
               Half-priced apps, $6 domestic pints, $10 off wine bottles, half-price tequila.
-              Always visible on the homepage.
+              Would sit beside tonight&apos;s feature, always visible on the homepage.
             </p>
           </div>
           <div className="bg-navy-deep border border-white/10 rounded-3xl p-7 flex flex-col gap-3">
@@ -300,11 +303,11 @@ export default function PreviewPage() {
               Open / closed · live
             </span>
             <h3 className="font-headline text-xl md:text-2xl font-bold text-white tracking-tight">
-              Your site knows your hours.
+              Your site would know your hours.
             </h3>
             <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
-              A green dot says &ldquo;Open · closes 9pm&rdquo; when you are, and the right
-              re-open time when you aren&apos;t. Guests never guess.
+              A green dot would read &ldquo;Open · closes 9pm&rdquo; when you are, and the next
+              opening time when you aren&apos;t. Guests would never have to guess.
             </p>
           </div>
           <div className="bg-navy-deep border border-white/10 rounded-3xl p-7 flex flex-col gap-3">
@@ -312,11 +315,11 @@ export default function PreviewPage() {
               Built to be found
             </span>
             <h3 className="font-headline text-xl md:text-2xl font-bold text-white tracking-tight">
-              When someone searches Eleven Sixty, you show up.
+              When someone searches Eleven Sixty, you&apos;d show up.
             </h3>
             <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
-              Proper hours, addresses, menu schema, review links, and share previews — wired in
-              so Google and social show your site, not the competition&apos;s.
+              Proper hours, addresses, menu schema, review links, and share previews — we&apos;d
+              wire it in so Google and social show your site, not the competition&apos;s.
             </p>
           </div>
         </div>
@@ -325,8 +328,8 @@ export default function PreviewPage() {
       {/* 03 Group events + Birthday Club */}
       <Section
         kicker="03 · Events"
-        title="Two streams that bring people back."
-        lead="A dedicated page for group events with an inquiry form that drops structured leads in your inbox. A Birthday Club that quietly fills seats on the quiet nights."
+        title="Two streams to bring people back."
+        lead="A dedicated page for group events with an inquiry form that would drop structured leads in your inbox. A Birthday Club that would quietly fill seats on the quiet nights."
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="md:col-span-2 md:row-span-2 bg-navy-deep border border-white/5 rounded-3xl p-8 md:p-12 flex flex-col gap-5 justify-between min-h-[320px]">
@@ -341,8 +344,8 @@ export default function PreviewPage() {
                 45
               </span>
               <p className="font-body text-lg text-on-surface-variant font-medium leading-relaxed max-w-md">
-                Corporate lunches, birthdays, fundraisers. Inquiries come in with date, headcount,
-                occasion, and notes — ready to quote.
+                Corporate lunches, birthdays, fundraisers. Inquiries would land with date,
+                headcount, occasion, and notes — ready for you to quote.
               </p>
             </div>
           </div>
@@ -362,8 +365,8 @@ export default function PreviewPage() {
               Inquiry forms
             </h3>
             <p className="font-body text-sm text-on-surface-variant font-medium leading-relaxed">
-              Contact and group-events forms collect the information your team actually needs —
-              no free-text phone tag.
+              Contact and group-events forms would collect the information your team actually
+              needs — no free-text phone tag.
             </p>
           </div>
         </div>
@@ -373,18 +376,18 @@ export default function PreviewPage() {
       <Section
         kicker="04 · On their phone"
         title="Most of your guests are on phones."
-        lead="Here's what they see. The menu opens as a full-screen panel, the reserve buttons sit at the bottom where thumbs live, and a sticky bar keeps both phone numbers one tap away while they read the menu."
+        lead="Here's what they'd see. The menu would open as a full-screen panel, reserve buttons would sit at the bottom where thumbs live, and a sticky bar would keep both phone numbers one tap away while they read the menu."
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <ul className="flex flex-col gap-4">
             <Bullet>Tap the menu icon, see every page — not a tiny dropdown.</Bullet>
-            <Bullet>Both locations&apos; reserve and call buttons always at the bottom.</Bullet>
+            <Bullet>Both locations&apos; reserve and call buttons would sit at the bottom.</Bullet>
             <Bullet>
-              The green &ldquo;Open&rdquo; dot shows up inside the menu so guests know before
-              they try to book.
+              The green &ldquo;Open&rdquo; dot would show up inside the menu so guests knew
+              before they tried to book.
             </Bullet>
             <Bullet>
-              A gold bar marks the page they&apos;re on so they don&apos;t lose track.
+              A gold bar would mark the page they&apos;re on so they don&apos;t lose track.
             </Bullet>
           </ul>
           <div className="relative mx-auto w-full max-w-[340px] aspect-[9/20] rounded-[3rem] border border-white/10 bg-navy-deep overflow-hidden shadow-2xl shadow-black/50">
