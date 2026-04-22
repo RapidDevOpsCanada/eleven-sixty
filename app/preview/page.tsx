@@ -16,8 +16,8 @@ export default function PreviewPage() {
       <header className="border-b border-white/5">
         <div className="max-w-6xl mx-auto px-6 md:px-12 py-6 flex items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <span className="w-8 h-8 rounded-full bg-gold-luxe flex items-center justify-center text-navy-deep text-[10px] font-black">
-              11
+            <span className="px-2 py-1 rounded-full bg-gold-luxe flex items-center justify-center text-navy-deep text-[10px] font-black tracking-tight">
+              1160
             </span>
             <span className="font-label text-[11px] uppercase tracking-[0.25em] text-white/60 font-bold">
               Design Concept · Confidential
@@ -399,11 +399,11 @@ export default function PreviewPage() {
             <div className="relative h-full px-4 pt-4 pb-3 flex flex-col gap-3">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <span className="w-6 h-6 rounded-full bg-gold-luxe text-navy-deep text-[8px] font-black flex items-center justify-center">
-                    11
+                  <span className="px-1.5 py-0.5 rounded-full bg-gold-luxe text-navy-deep text-[8px] font-black flex items-center justify-center tracking-tight">
+                    1160
                   </span>
                   <span className="text-sm font-headline font-bold text-white tracking-tight">
-                    ELEVEN <span className="text-gold-luxe">SIXTY</span>
+                    Eleven<span className="text-gold-luxe">Sixty</span>
                   </span>
                 </div>
                 <span className="material-symbols-outlined text-white/80 text-xl">close</span>

@@ -67,10 +67,10 @@ export default function MobileMenu() {
             onClick={() => setOpen(false)}
             className="text-xl font-headline font-bold tracking-tight text-white flex items-center gap-2"
           >
-            <span className="w-8 h-8 rounded-full bg-gold-luxe flex items-center justify-center text-navy-deep text-xs font-black">
-              11
+            <span className="px-2 py-1 rounded-full bg-gold-luxe flex items-center justify-center text-navy-deep text-[11px] font-black tracking-tight">
+              1160
             </span>
-            ELEVEN <span className="text-gold-luxe">SIXTY</span>
+            Eleven<span className="text-gold-luxe">Sixty</span>
           </Link>
           <button
             aria-label="Close menu"

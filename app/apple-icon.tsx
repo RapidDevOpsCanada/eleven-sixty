@@ -19,20 +19,19 @@ export default function AppleIcon() {
       >
         <div
           style={{
-            width: 128,
-            height: 128,
+            padding: '16px 28px',
             background: '#C5A059',
-            borderRadius: '50%',
+            borderRadius: '999px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             color: '#0F1733',
-            fontSize: 72,
+            fontSize: 60,
             fontWeight: 900,
-            letterSpacing: '-0.02em'
+            letterSpacing: '-0.03em'
           }}
         >
-          11
+          1160
         </div>
       </div>
     ),

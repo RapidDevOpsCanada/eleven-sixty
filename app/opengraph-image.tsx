@@ -25,29 +25,29 @@ export default async function Image() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div
             style={{
-              width: '52px',
-              height: '52px',
+              padding: '10px 18px',
               borderRadius: '999px',
               background: '#C5A059',
               color: '#0F1733',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              fontSize: '22px',
-              fontWeight: 900
+              fontSize: '24px',
+              fontWeight: 900,
+              letterSpacing: '-0.02em'
             }}
           >
-            11
+            1160
           </div>
           <div
             style={{
-              fontSize: '28px',
+              fontSize: '32px',
               fontWeight: 800,
-              letterSpacing: '0.04em',
+              letterSpacing: '-0.01em',
               color: '#ffffff'
             }}
           >
-            ELEVEN <span style={{ color: '#D9AE5E' }}>SIXTY</span>
+            Eleven<span style={{ color: '#D9AE5E' }}>Sixty</span>
           </div>
         </div>
 

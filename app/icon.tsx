@@ -11,18 +11,18 @@ export default function Icon() {
           width: '100%',
           height: '100%',
           background: '#C5A059',
-          borderRadius: '50%',
+          borderRadius: '999px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           color: '#0F1733',
-          fontSize: 32,
+          fontSize: 22,
           fontWeight: 900,
-          letterSpacing: '-0.02em',
+          letterSpacing: '-0.03em',
           fontFamily: 'system-ui, -apple-system, sans-serif'
         }}
       >
-        11
+        1160
       </div>
     ),
     { ...size }

@@ -13,10 +13,10 @@ export default function Nav() {
             href="/"
             className="text-xl font-headline font-bold tracking-tight text-white flex items-center gap-2.5 shrink-0"
           >
-            <span className="w-9 h-9 rounded-full bg-gold-luxe flex items-center justify-center text-navy-deep text-xs font-black">
-              11
+            <span className="px-2.5 py-1.5 rounded-full bg-gold-luxe flex items-center justify-center text-navy-deep text-[11px] font-black tracking-tight">
+              1160
             </span>
-            ELEVEN <span className="text-gold-luxe">SIXTY</span>
+            Eleven<span className="text-gold-luxe">Sixty</span>
           </Link>
 
           <div className="hidden md:flex gap-8 items-center">
