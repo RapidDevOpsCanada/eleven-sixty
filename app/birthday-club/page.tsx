@@ -34,7 +34,7 @@ export default function BirthdayClubPage() {
           <div className="lg:col-span-2 relative aspect-[4/3] rounded-3xl overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Birthday dessert with a candle"
+              alt="A plated dessert"
               src="/images/birthday-cake.jpg"
               className="w-full h-full object-cover"
             />

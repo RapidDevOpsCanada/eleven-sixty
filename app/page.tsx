@@ -158,7 +158,7 @@ export default function HomePage() {
             <div className="w-3/4 md:w-2/3 self-end md:self-auto md:absolute md:-bottom-10 md:left-0 aspect-square bg-navy-deep rounded-2xl md:border-8 md:border-background overflow-hidden -mt-10 md:mt-0 relative z-10">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                alt="Guests at the table"
+                alt="A plated dish from the kitchen"
                 loading="lazy"
                 className="w-full h-full object-cover"
                 src="/images/family-dining.jpg"
@@ -267,7 +267,7 @@ export default function HomePage() {
               {
                 href: '/birthday-club/',
                 img: '/images/birthday-cake.jpg',
-                alt: 'Birthday dessert with a candle',
+                alt: 'A plated dessert',
                 title: 'Birthday Club',
                 body: 'Sign up — dessert on us on your birthday.',
                 cta: 'Sign up'
@@ -275,7 +275,7 @@ export default function HomePage() {
               {
                 href: '/group-events/',
                 img: '/images/private-event.jpg',
-                alt: 'The private event space',
+                alt: 'A fine-dining plate',
                 title: 'Group Events',
                 body: 'Private dining for up to 45 with a big-screen TV.',
                 cta: 'Book the space'

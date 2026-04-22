@@ -10,25 +10,25 @@ export const metadata = {
 const eventTypes = [
   {
     image: '/images/corporate-dinner.jpg',
-    alt: 'A corporate dinner table',
+    alt: 'Shared appetizer platter',
     title: 'Corporate Function',
     description: 'Off-sites, year-end parties, client dinners, and team lunches.'
   },
   {
     image: '/images/family-dining.jpg',
-    alt: 'A large table gathering',
+    alt: 'A plated dish',
     title: 'Fundraiser',
     description: 'A private space and a shared table designed to help the group focus.'
   },
   {
     image: '/images/birthday-cake.jpg',
-    alt: 'A celebration in progress',
+    alt: 'A plated dessert',
     title: 'Private Party',
     description: 'Birthdays, anniversaries, retirements — up to 45 of your favourite people.'
   },
   {
     image: '/images/sports-watch.jpg',
-    alt: 'Watching the game at the bar',
+    alt: 'Chicken wings',
     title: 'Special Event',
     description: 'Big-screen TV for the game, set menus, and a space that knows how to host.'
   }
@@ -62,7 +62,7 @@ export default function GroupEventsPage() {
           <div className="lg:col-span-2 relative aspect-[4/3] rounded-3xl overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="A private space set for a group"
+              alt="A fine-dining plate"
               src="/images/private-event.jpg"
               className="w-full h-full object-cover"
             />
