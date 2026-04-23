@@ -82,11 +82,6 @@ export default function PreviewPage() {
             space would fill up, and how the whole thing would feel on a phone — where most of
             your guests are.
           </p>
-          <p className="font-body text-sm text-white/50 font-medium italic leading-relaxed max-w-2xl">
-            Grizzly Agency has been building and maintaining independent restaurant and trades
-            websites in Western Canada since 2017.
-          </p>
-
           <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-4 pt-6 border-t border-white/10">
             {[
               { stat: '11', label: 'Pages in scope' },
