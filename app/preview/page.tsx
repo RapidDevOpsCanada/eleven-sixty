@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { Metadata } from 'next';
 import { OPENTABLE_LONDON, OPENTABLE_ST_THOMAS } from '@/lib/booking';
 
@@ -129,9 +128,9 @@ export default function PreviewPage() {
                   "Your current site is 6 years old. Google's ranking signals, Core Web Vitals, and mobile-first indexing have all changed — older sites get quietly pushed down."
               },
               {
-                icon: 'smartphone',
+                icon: 'security',
                 body:
-                  "70%+ of restaurant traffic is now mobile. A site built pre-2020 wasn't designed for how guests actually browse today."
+                  'Older sites accumulate broken plugins, patchy security, and features that stopped working years ago. A modern build starts clean — nothing to maintain, nothing breaking in the background.'
               },
               {
                 icon: 'verified',
@@ -631,9 +630,9 @@ export default function PreviewPage() {
           <div className="flex items-center gap-5 font-label text-[10px] uppercase tracking-[0.2em] text-white/30 font-bold">
             <span>Confidential</span>
             <span className="h-3 w-px bg-white/15" />
-            <Link href="/" className="hover:text-gold-luxe transition-colors">
-              Open the site →
-            </Link>
+            <a href="#top" className="hover:text-gold-luxe transition-colors">
+              Back to top ↑
+            </a>
           </div>
         </div>
       </footer>
