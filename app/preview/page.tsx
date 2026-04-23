@@ -709,17 +709,15 @@ function DayCard({
           : 'bg-navy-deep/60 border-white/5'
       }`}
     >
-      <div className="flex items-center justify-between gap-3">
-        <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
-          {day}
+      {highlighted && (
+        <span className="inline-flex self-start items-center gap-1.5 font-label text-[9px] uppercase tracking-[0.2em] font-bold text-white whitespace-nowrap">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+          Showing tonight
         </span>
-        {highlighted && (
-          <span className="inline-flex items-center gap-1.5 font-label text-[9px] uppercase tracking-[0.2em] font-bold text-white whitespace-nowrap">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            Showing tonight
-          </span>
-        )}
-      </div>
+      )}
+      <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-luxe font-bold">
+        {day}
+      </span>
       <div className="flex items-baseline justify-between gap-3">
         <h3 className="font-headline text-xl md:text-2xl font-bold text-white tracking-tight">
           {feature}
