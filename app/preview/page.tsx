@@ -621,10 +621,10 @@ export default function PreviewPage() {
               Eleven Sixty on {TODAY}.
             </p>
             <a
-              href="mailto:grizzlyagencyhello@gmail.com"
+              href="mailto:hello@grizzlyagency.com"
               className="font-label text-xs uppercase tracking-[0.2em] text-white hover:text-gold-luxe transition-colors font-bold"
             >
-              grizzlyagencyhello@gmail.com
+              hello@grizzlyagency.com
             </a>
           </div>
           <div className="flex items-center gap-5 font-label text-[10px] uppercase tracking-[0.2em] text-white/30 font-bold">
